@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Fri Aug 14 2020 22:04:49 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Sat Aug 15 2020 00:05:37 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="5f30cc2363b9d1cd527db104" data-wf-site="5f2cf9b5e09a28c65685a8b2">
 <head>
   <meta charset="utf-8">
@@ -45,32 +45,90 @@
     <div class="cast-and-crew-title">CAST &amp; CREW</div>
     <div class="film-members-line">
       <div class="text-block-18">DIRECTORS: </div>
-      <div data-w-id="73285e6a-ef85-e6c8-2702-03861b021d10" class="actor-hyperlink">ROB ADLER</div>
+      <div class="actor-hyperlink rob-adler-link">ROB ADLER</div>
     </div>
     <div class="film-members-line">
       <div class="text-block-18">WRITERS</div>
-      <div class="actor-hyperlink">ROB ADLER</div>
+      <div class="actor-hyperlink rob-adler-link">ROB ADLER</div>
     </div>
     <div class="film-members-line">
       <div class="text-block-18">STARS:</div>
-      <div class="actor-hyperlink">MARIANA ANAYA</div>
+      <div class="actor-hyperlink mariana-anaya-link">MARIANA ANAYA</div>
       <div class="text-block-19">,</div>
-      <div class="actor-hyperlink">MARK ATHERLAY</div>
+      <div class="actor-hyperlink mark-atherlay-link">MARK ATHERLAY</div>
       <div class="text-block-19">,</div>
-      <div class="actor-hyperlink">JESSIE BAINBRIDGE</div>
+      <div class="actor-hyperlink jesse-bainbridge-link">JESSE BAINBRIDGE</div>
       <div class="text-block-19 cast-and-crew-line"> | </div>
       <div class="actor-hyperlink">SEE FULL CAST &amp; CREW</div>
     </div>
-    <div class="share-film-wrapper"><a href="#" class="share-film-button w-button">SHARE FILM</a></div>
-    <div class="follow-me-card">
-      <div class="w-layout-grid grid-14"><img src="images/rob-adler-headshot.png" width="103" alt="" class="image-23">
+    <div class="share-film-wrapper"><a href="#" class="share-film-button w-button">SHARE FILM</a></div><img src="images/marina-anaya-headshot.png" width="68" alt="" class="image-26"><img src="images/mark-atherlay-headshot.png" width="68" alt="" class="image-27"><img src="images/jesse-bainbridge-headshot.png" width="68" alt="" class="image-28">
+    <div id="follow-me" class="follow-me-card">
+      <div class="w-layout-grid grid-14"><img src="images/rob-adler-headshot.png" width="103" id="profile-picture" alt="" class="image-23">
         <div class="div-block-35">
           <div class="div-block-37"></div>
-          <div class="text-block-30">ROB ADLER</div>
-          <div><img src="images/imdb-icon.png" width="35" srcset="images/imdb-icon-p-500.png 500w, images/imdb-icon-p-800.png 800w, images/imdb-icon.png 1200w" sizes="(max-width: 1439px) 35px, (max-width: 1919px) 2vw, 35px" alt="" class="image-22"></div>
+          <div id="follow-me-name" class="text-block-30">ROB ADLER</div>
+          <div><img src="images/imdb-icon.png" width="35" srcset="images/imdb-icon-p-500.png 500w, images/imdb-icon-p-800.png 800w, images/imdb-icon.png 1200w" sizes="(max-width: 1279px) 35px, (max-width: 1919px) 100vw, 35px" alt="" class="image-22"></div>
           <div class="div-block-36">
-            <div class="text-block-29">FOLLOW ME</div><img src="images/contact-filmmaker-social-icons.png" width="73" srcset="images/contact-filmmaker-social-icons-p-500.png 500w, images/contact-filmmaker-social-icons.png 816w" sizes="73px" alt="" class="image-21"></div><a href="#" class="button-3 w-button">CONTACT FILMMAKER</a></div>
+            <div class="text-block-29">FOLLOW ME</div><img src="images/contact-filmmaker-social-icons.png" width="73" srcset="images/contact-filmmaker-social-icons-p-500.png 500w, images/contact-filmmaker-social-icons.png 816w" sizes="(max-width: 1279px) 73px, (max-width: 1919px) 100vw, 73px" alt="" class="image-21"></div><a href="#" class="button-3 w-button">CONTACT FILMMAKER</a></div>
       </div>
+    </div>
+    <div class="code-for-popup w-embed w-script">
+      <script>
+        // Card Pointers
+        hoverPopup = document.getElementById("follow-me");
+        imgToReplace = document.getElementById("profile-picture");
+        followMeName = document.getElementById("follow-me-name"); 
+        // Souce Sets
+        adlerSourceSet = "images/rob-adler-headshot.png 500w, images/rob-adler-headshot.png 800w, images/rob-adler-headshot.png 1080w, images/rob-adler-headshot.png 1280w";
+        anayaSourceSet = "images/marina-anaya-headshot.png 500w, images/marina-anaya-headshot.png 800w, images/marina-anaya-headshot.png 1080w, images/marina-anaya-headshot.png 1280w";
+        atherlaySourceSet = "images/mark-atherlay-headshot.png 500w, images/mark-atherlay-headshot.png 800w, images/mark-atherlay-headshot.png 1080w, images/mark-atherlay-headshot.png 1280w";
+        bainbridgeSourceSet = "images/jesse-bainbridge-headshot.png 500w, images/jesse-bainbridge-headshot.png 800w, images/jesse-bainbridge-headshot.png 1080w, images/jesse-bainbridge-headshot.png 1280w";
+        // Pointers To Links
+        adlerElems = document.getElementsByClassName("rob-adler-link"); 
+        anayaElem = document.getElementsByClassName("mariana-anaya-link")[0];
+        atherlayElem = document.getElementsByClassName("mark-atherlay-link")[0];
+        bainbridgeElem = document.getElementsByClassName("jesse-bainbridge-link")[0];
+        arrayOfLinks = [adlerElems[0], adlerElems[1], anayaElem, atherlayElem, bainbridgeElem];
+        function triggerHover() {
+          rect = this.getBoundingClientRect();
+          if (this.classList.contains("rob-adler-link")) {
+            imgToReplace.srcset = adlerSourceSet; 
+            followMeName.innerHTML = "ROB ADLER";
+          } 
+          if (this.classList.contains("mariana-anaya-link")) {
+            imgToReplace.srcset = anayaSourceSet; 
+						followMeName.innerHTML = "MARIANA ANAYA";
+          } 
+          if (this.classList.contains("mark-atherlay-link")) {
+            imgToReplace.srcset = atherlaySourceSet; 
+            followMeName.innerHTML = "MARK ATHERLAY";
+          }
+          if (this.classList.contains("jesse-bainbridge-link")) {
+            imgToReplace.srcset = bainbridgeSourceSet; 
+            followMeName.innerHTML = "JESSE BAINBRIDGE";
+          }
+          hoverPopup.style.display = "block";
+          hoverPopup.style.top = (event.pageY + 25).toString() + "px";
+          hoverPopup.style.left = rect.left - 100 + "px"; 
+          hoverPopup.style.opacity = "1";
+          hoverPopup.style.zIndex = "4";
+          hoverPopup.style.position = "absolute";
+        } 
+        function fadeOutHover() {  
+            hoverPopup.style.opacity = "0";
+            hoverPopup.style.zIndex = "-4";
+          }
+        for (i = 0; i < adlerElems.length; i++) {
+          adlerElems[i].addEventListener('mouseover', triggerHover);
+          adlerElems[i].addEventListener('mouseout', fadeOutHover); 
+        } 
+        anayaElem.addEventListener('mouseover', triggerHover);
+        anayaElem.addEventListener('mouseout', fadeOutHover);
+        atherlayElem.addEventListener('mouseover', triggerHover);
+        atherlayElem.addEventListener('mouseout', fadeOutHover);
+        bainbridgeElem.addEventListener('mouseover', triggerHover);
+        bainbridgeElem.addEventListener('mouseout', fadeOutHover);
+  </script>
     </div>
   </div>
   <div class="footer">
