@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Sat Aug 15 2020 00:05:37 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Sat Aug 15 2020 00:15:25 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="5f2cf9b5e09a28442a85a8b3" data-wf-site="5f2cf9b5e09a28c65685a8b2">
 <head>
   <meta charset="utf-8">
@@ -17,7 +17,7 @@
 </head>
 <body class="body">
   <div data-collapse="medium" data-animation="default" data-duration="400" id="navbar-home-transparent" role="banner" class="navbar navbar-home w-nav"><a href="index.html" aria-current="page" class="brand w-nav-brand w--current"><img src="images/blue-festiv-logo-with-text.png" width="120" id="festiv-logo-navbar" srcset="images/blue-festiv-logo-with-text-p-500.png 500w, images/blue-festiv-logo-with-text-p-800.png 800w, images/blue-festiv-logo-with-text-p-1080.png 1080w, images/blue-festiv-logo-with-text.png 1280w" sizes="(max-width: 479px) 57vw, 120px" alt="" class="image-2"></a>
-    <nav role="navigation" class="w-nav-menu"><img src="images/magnifying-glass.svg" width="19" alt="" class="image"><a href="sign-up.html" id="acquire-films-navbar-link" class="nav-link home-nav-link w-nav-link">ACQUIRE FILMS</a><a href="#" id="submit-films-navbar-link" class="nav-link-2 home-nav-link w-nav-link">SUBMIT FILMS</a><a id="sign-in-navbar-button" href="subscriber-homepage.html" class="button w-button">SIGN IN</a></nav>
+    <nav role="navigation" class="w-nav-menu"><img src="images/magnifying-glass.svg" width="19" id="navbar-magnifying-glass" alt="" class="image"><a href="sign-up.html" id="acquire-films-navbar-link" class="nav-link home-nav-link w-nav-link">ACQUIRE FILMS</a><a href="#" id="submit-films-navbar-link" class="nav-link-2 home-nav-link w-nav-link">SUBMIT FILMS</a><a id="sign-in-navbar-button" href="subscriber-homepage.html" class="button w-button">SIGN IN</a></nav>
     <div class="script-for-popup-navbar w-embed w-script">
       <script>
 //Makes the background pop up upon scrolling
@@ -101,6 +101,7 @@ function makeNavbarBlue() {
   acquireFilmsNavbar = document.getElementById("submit-films-navbar-link");
   signInNavbar = document.getElementById("sign-in-navbar-button");
   navbarImage = document.getElementById("festiv-logo-navbar");
+  magGlass = document.getElementById("navbar-magnifying-glass");
   function makeNavbarWhite() {
   	submitFilmsNavbar.style.color = "white"; 
     acquireFilmsNavbar.style.color = "white"; 
@@ -110,6 +111,7 @@ function makeNavbarBlue() {
     setTimeout(function() {
 	    navbarImage.style.opacity = ".5"; 
 	    navbarImage.srcset = "images/white-festiv-logo.png 500w, images/white-festiv-logo.png 800w, images/white-festiv-logo.png 1080w, images/white-festiv-logo.png 1280w" 
+      magGlass.srcset = "images/white-magnifying-glass.png 500w, images/white-magnifying-glass.png 800w, images/white-magnifying-glass.png 1080w, images/white-magnifying-glass.png 1280w" 
 	    navbarImage.style.opacity = "1"; 
     }, 1000); 
   } 
@@ -123,6 +125,7 @@ function makeNavbarBlue() {
 		setTimeout(function() {
       navbarImage.style.opacity = ".5"; 
       navbarImage.srcset = "images/blue-festiv-logo-with-text.png 500w, images/blue-festiv-logo-with-text.png 800w, images/blue-festiv-logo-with-text.png 1080w, images/blue-festiv-logo-with-text.png 1280w" 
+      magGlass.srcset = "images/magnifying-glass.png 500w, images/magnifying-glass.png 800w, images/magnifying-glass.png 1080w, images/magnifying-glass.png 1280w" 
       navbarImage.style.opacity = "1"; 
     }, 1000);
   } 
@@ -563,7 +566,7 @@ function makeNavbarBlue() {
       </div>
     </div>
   </div>
-  <div class="spacer-div"><img src="images/white-festiv-logo.png" srcset="images/white-festiv-logo-p-500.png 500w, images/white-festiv-logo.png 1019w" sizes="100vw" alt="" class="image-25"></div>
+  <div class="spacer-div"><img src="images/white-festiv-logo.png" srcset="images/white-festiv-logo-p-500.png 500w, images/white-festiv-logo.png 1019w" sizes="100vw" alt="" class="image-25"><img src="images/white-magnifying-glass.png" alt="" class="image-29"></div>
   <div class="footer">
     <div class="w-layout-grid grid-6">
       <div id="w-node-e7f1494548a6-494548a4">

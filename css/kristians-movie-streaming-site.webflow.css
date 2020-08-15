@@ -95,6 +95,8 @@
 .image {
   margin-top: -3px;
   margin-right: 14px;
+  -webkit-transition: all 325ms ease;
+  transition: all 325ms ease;
   cursor: pointer;
 }
 
@@ -2081,6 +2083,9 @@
     position: relative;
     left: 427px;
     top: -224px;
+  }
+  .image-29 {
+    display: none;
   }
 }
 
