@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Mon Aug 17 2020 06:42:31 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Mon Aug 17 2020 12:00:01 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="5f30cc2363b9d1cd527db104" data-wf-site="5f2cf9b5e09a28c65685a8b2">
 <head>
   <meta charset="utf-8">
@@ -18,13 +18,16 @@
   <link href="images/webclip.png" rel="apple-touch-icon">
 </head>
 <body>
-  <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navbar w-nav"><a href="index.html" class="brand w-nav-brand"><img src="images/blue-festiv-logo-with-text.png" width="102" srcset="images/blue-festiv-logo-with-text-p-500.png 500w, images/blue-festiv-logo-with-text-p-800.png 800w, images/blue-festiv-logo-with-text-p-1080.png 1080w, images/blue-festiv-logo-with-text.png 1280w" sizes="102px" alt="" class="image-2"></a>
+  <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navbar w-nav"><a href="index.html" class="brand w-nav-brand"><img src="images/blue-festiv-logo-with-text.png" width="102" srcset="images/blue-festiv-logo-with-text-p-500.png 500w, images/blue-festiv-logo-with-text-p-800.png 800w, images/blue-festiv-logo-with-text-p-1080.png 1080w, images/blue-festiv-logo-with-text.png 1280w" sizes="(max-width: 479px) 49vw, 102px" alt="" class="image-2"></a>
     <nav role="navigation" class="nav-menu w-nav-menu"><img src="images/magnifying-glass.svg" width="19" alt="" class="image"><a href="sign-up.html" class="nav-link w-nav-link">ACQUIRE FILMS</a><a href="sign-up.html" class="nav-link-2 w-nav-link">SUBMIT FILMS</a><a href="subscriber-homepage.html" class="link-block-6 w-inline-block"><img src="images/user-icon.png" width="35" alt="" class="image-13"><div class="text-block-13">ALLEN</div></a></nav>
     <div class="w-nav-button">
       <div class="w-icon-nav-menu"></div>
     </div>
   </div>
-  <div class="section-3"><img src="images/blurred-background-photo-screening-room.png" srcset="images/blurred-background-photo-screening-room-p-500.png 500w, images/blurred-background-photo-screening-room-p-800.png 800w, images/blurred-background-photo-screening-room-p-1080.png 1080w, images/blurred-background-photo-screening-room-p-1600.png 1600w, images/blurred-background-photo-screening-room.png 1946w" sizes="100vw" alt="" class="image-15"><img src="images/ivote-film-preview.png" srcset="images/ivote-film-preview-p-500.png 500w, images/ivote-film-preview-p-800.png 800w, images/ivote-film-preview-p-1080.png 1080w, images/ivote-film-preview.png 1528w" sizes="100vw" alt="" class="image-16"></div>
+  <div class="section-3">
+    <div id="video-wrapper" class="div-block-47"><img src="images/ivote-movie-backdrop.png" id="filler-image" srcset="images/ivote-movie-backdrop.png 500w, images/ivote-movie-backdrop.png 800w, images/ivote-movie-backdrop.png 1080w, images/ivote-movie-backdrop.png 1528w" sizes="100vw" alt="" class="image-16"></div>
+    <div class="div-block-46"><img src="images/screening-room-play-button.png" width="104" id="screening-room-play-button" alt="" class="image-31"></div>
+  </div>
   <div class="film-description-section">
     <div class="w-layout-grid grid-16">
       <div>
@@ -38,38 +41,68 @@
         </div>
       </div>
       <div class="div-block-34">
-        <div class="text-block-24">16,763 Views</div><img src="images/martini-rating-icons-no-mouse.png" width="143" srcset="images/martini-rating-icons-no-mouse-p-500.png 500w, images/martini-rating-icons-no-mouse-p-800.png 800w, images/martini-rating-icons-no-mouse.png 1140w" sizes="143px" alt="" class="image-20"></div>
+        <div class="text-block-24">16,763 Views</div><img src="images/martini-rating-icons-no-mouse.png" width="117" srcset="images/martini-rating-icons-no-mouse-p-500.png 500w, images/martini-rating-icons-no-mouse-p-800.png 800w, images/martini-rating-icons-no-mouse.png 1140w" sizes="(max-width: 479px) 102px, 117px" alt="" class="image-20">
+        <div data-w-id="fa1a8e90-3993-fe9c-0795-b2d328357eb1" style="opacity:0" class="rate-this-film-popup">
+          <div class="text-block-31">RATE THIS FILM</div>
+          <div class="div-block-44"></div>
+          <div data-w-id="93e5ac38-5949-ee7f-7d86-27038b638bbc" class="text-block-32"> X </div>
+        </div>
+      </div>
     </div>
+  </div>
+  <div class="html-embed w-embed w-script">
+    <script>
+	btn = document.getElementById("screening-room-play-button"); 
+  fillerImage = document.getElementById("filler-image"); 
+  videoWrapper = document.getElementById("video-wrapper");
+	function swapInVideo() { 
+    console.log('event triggered');
+		btn.style.opacity = "0";
+    setTimeout(function () {btn.style.display = "none";}, 550)
+		var video = document.createElement('video');
+    video.style.position = "relative";
+    video.style.height = "100%";
+    video.src = "https://festivdata.s3.us-east-2.amazonaws.com/videos/iVote+UCLA+CUT+WEB.mp4";
+    video.autoplay = "autoplay";
+    video.controls = "controls";
+    fillerImage.style.opacity = "0"; 
+    setTimeout(function () {fillerImage.style.display = "none";}, 550)
+    videoWrapper.appendChild(video);
+  } 
+  btn.addEventListener('click', swapInVideo);
+</script>
   </div>
   <div class="cast-and-crew-section">
     <div class="cast-and-crew-title">CAST &amp; CREW</div>
     <div class="film-members-line">
       <div class="text-block-18">DIRECTORS: </div>
-      <div class="actor-hyperlink rob-adler-link">ROB ADLER</div>
+      <div class="actor-hyperlink rob-adler-link-one">ROB ADLER</div>
     </div>
     <div class="film-members-line">
       <div class="text-block-18">WRITERS</div>
-      <div class="actor-hyperlink rob-adler-link">ROB ADLER</div>
+      <div class="actor-hyperlink rob-adler-link-two">ROB ADLER</div>
     </div>
     <div class="film-members-line">
       <div class="text-block-18">STARS:</div>
-      <div class="actor-hyperlink mariana-anaya-link">MARIANA ANAYA</div>
+      <div class="actor-hyperlink eric-roberts-link">ERIC ROBERTS</div>
       <div class="text-block-19">,</div>
-      <div class="actor-hyperlink mark-atherlay-link">MARK ATHERLAY</div>
+      <div class="actor-hyperlink dan-lauria-link">DAN LAURIA</div>
       <div class="text-block-19">,</div>
-      <div class="actor-hyperlink jesse-bainbridge-link">JESSE BAINBRIDGE</div>
+      <div class="actor-hyperlink sharon-lawrence-link">SHARON LAWRENCE</div>
       <div class="text-block-19 cast-and-crew-line"> | </div>
-      <div class="actor-hyperlink">SEE FULL CAST &amp; CREW</div>
+      <div class="actor-hyperlink">SEE FULL CAST &amp; CREW &gt;&gt;</div>
     </div>
-    <div class="share-film-wrapper"><a href="#" class="share-film-button w-button">SHARE FILM</a></div><img src="images/marina-anaya-headshot.png" width="68" alt="" class="image-26"><img src="images/mark-atherlay-headshot.png" width="68" alt="" class="image-27"><img src="images/jesse-bainbridge-headshot.png" width="68" alt="" class="image-28">
+    <div class="share-film-wrapper"><a href="#" class="share-film-button w-button">SHARE FILM</a></div><img src="images/eric-roberts-headshot.png" width="68" srcset="images/eric-roberts-headshot-p-500.png 500w, images/eric-roberts-headshot.png 785w" sizes="100vw" alt="" class="image-26"><img src="images/dan-lauria-headshot.png" width="68" srcset="images/dan-lauria-headshot-p-500.png 500w, images/dan-lauria-headshot.png 785w" sizes="100vw" alt="" class="image-27"><img src="images/sharon-lawrence-headshot.png" width="68" srcset="images/sharon-lawrence-headshot-p-500.png 500w, images/sharon-lawrence-headshot.png 785w" sizes="100vw" alt="" class="image-28">
     <div id="follow-me" class="follow-me-card">
       <div class="w-layout-grid grid-14"><img src="images/rob-adler-headshot.png" width="103" id="profile-picture" alt="" class="image-23">
         <div class="div-block-35">
           <div class="div-block-37"></div>
           <div id="follow-me-name" class="text-block-30">ROB ADLER</div>
-          <div><img src="images/imdb-icon.png" width="35" srcset="images/imdb-icon-p-500.png 500w, images/imdb-icon-p-800.png 800w, images/imdb-icon.png 1200w" sizes="(max-width: 1279px) 35px, (max-width: 1919px) 100vw, 35px" alt="" class="image-22"></div>
+          <div><a href="https://www.imdb.com/name/nm0012228/?ref_=fn_al_nm_1" target="_blank" class="link-block-8 w-inline-block"><img src="images/imdb-icon.png" width="45" srcset="images/imdb-icon-p-500.png 500w, images/imdb-icon-p-800.png 800w, images/imdb-icon.png 1200w" sizes="(max-width: 1279px) 45px, (max-width: 1919px) 100vw, 45px" alt="" class="image-22"></a></div>
           <div class="div-block-36">
-            <div class="text-block-29">FOLLOW ME</div><img src="images/contact-filmmaker-social-icons.png" width="73" srcset="images/contact-filmmaker-social-icons-p-500.png 500w, images/contact-filmmaker-social-icons.png 816w" sizes="(max-width: 1279px) 73px, (max-width: 1919px) 100vw, 73px" alt="" class="image-21"></div><a href="#" class="button-3 w-button">CONTACT FILMMAKER</a></div>
+            <div class="text-block-29">FOLLOW ME</div>
+            <div class="div-block-42"><a href="https://www.instagram.com/adlerimprov/" target="_blank" class="follow-me-links w-inline-block"><img src="images/blue-instagram-icon.png" alt=""></a><a href="#" class="follow-me-links w-inline-block"><img src="images/blue-facebook-icon.png" alt=""></a><a href="https://twitter.com/adlerimprov" target="_blank" class="follow-me-links w-inline-block"><img src="images/blue-twitter-icon.png" alt=""></a></div>
+          </div><a href="#" class="button-3 w-button">CONTACT FILMMAKER</a></div>
       </div>
     </div>
     <div class="code-for-popup w-embed w-script">
@@ -80,32 +113,82 @@
         followMeName = document.getElementById("follow-me-name"); 
         // Souce Sets
         adlerSourceSet = "images/rob-adler-headshot.png 500w, images/rob-adler-headshot.png 800w, images/rob-adler-headshot.png 1080w, images/rob-adler-headshot.png 1280w";
-        anayaSourceSet = "images/marina-anaya-headshot.png 500w, images/marina-anaya-headshot.png 800w, images/marina-anaya-headshot.png 1080w, images/marina-anaya-headshot.png 1280w";
-        atherlaySourceSet = "images/mark-atherlay-headshot.png 500w, images/mark-atherlay-headshot.png 800w, images/mark-atherlay-headshot.png 1080w, images/mark-atherlay-headshot.png 1280w";
-        bainbridgeSourceSet = "images/jesse-bainbridge-headshot.png 500w, images/jesse-bainbridge-headshot.png 800w, images/jesse-bainbridge-headshot.png 1080w, images/jesse-bainbridge-headshot.png 1280w";
+        robertsSourceSet = "images/eric-roberts-headshot.png 500w, images/eric-roberts-headshot.png 800w, images/eric-roberts-headshot.png 1080w, images/eric-roberts-headshot.png 1280w";
+        lauriaSourceSet = "images/dan-lauria-headshot.png 500w, images/dan-lauria-headshot.png 800w, images/dan-lauria-headshot.png 1080w, images/dan-lauria-headshot.png 1280w";
+        lawrenceSourceSet = "images/sharon-lawrence-headshot.png 500w, images/sharon-lawrence-headshot.png 800w, images/sharon-lawrence-headshot.png 1080w, images/sharon-lawrence-headshot.png 1280w";
         // Pointers To Links
-        adlerElems = document.getElementsByClassName("rob-adler-link"); 
-        anayaElem = document.getElementsByClassName("mariana-anaya-link")[0];
-        atherlayElem = document.getElementsByClassName("mark-atherlay-link")[0];
-        bainbridgeElem = document.getElementsByClassName("jesse-bainbridge-link")[0];
-        arrayOfLinks = [adlerElems[0], adlerElems[1], anayaElem, atherlayElem, bainbridgeElem];
+        adlerElemOne = document.getElementsByClassName("rob-adler-link-one")[0]; 
+        adlerElemTwo = document.getElementsByClassName("rob-adler-link-two")[0]; 
+        robertsElem = document.getElementsByClassName("eric-roberts-link")[0];
+        lauriaElem = document.getElementsByClassName("dan-lauria-link")[0];
+        lawrenceElem = document.getElementsByClassName("sharon-lawrence-link")[0];
+        //arrayOfLinks = [adlerElemOne, adlerElemTwo, robertsElem, lawrenceElem, lawrenceElem];
+        //Pointers to know what elements the mouse is hovered over
+        hoverOverAdlerOne = false; 
+        hoverOverAdlerTwo = false; 
+        hoverOverRoberts = false; 
+        hoverOverLauria = false; 
+        hoverOverLawrence = false; 
+        hoverOverPopup = false; 
+        hoverArray = [hoverOverAdlerOne, hoverOverAdlerTwo, hoverOverRoberts, hoverOverLauria, hoverOverLawrence, hoverOverPopup];
+        adlerElemOne.addEventListener('mouseenter', function() {hoverOverAdlerOne = true;}); 
+        adlerElemOne.addEventListener('mouseleave', function() {hoverOverAdlerOne = false;
+        setTimeout(function () {if(!hoverOverAdlerOne && !hoverOverAdlerTwo && !hoverOverRoberts && !hoverOverLauria && !hoverOverLawrence && !hoverOverPopup) {fadeOutHover();}} , 400)}); 
+        adlerElemTwo.addEventListener('mouseenter', function() {hoverOverAdlerTwo = true;}); 
+        adlerElemTwo.addEventListener('mouseleave', function() {hoverOverAdlerTwo = false;
+          setTimeout(function () {if(!hoverOverAdlerOne && !hoverOverAdlerTwo && !hoverOverRoberts && !hoverOverLauria && !hoverOverLawrence && !hoverOverPopup) {fadeOutHover();}} , 400)}); 
+        robertsElem.addEventListener('mouseenter', function() {hoverOverRoberts = true;});
+        robertsElem.addEventListener('mouseleave', function() {hoverOverRoberts = false;
+          setTimeout(function () {if(!hoverOverAdlerOne && !hoverOverAdlerTwo && !hoverOverRoberts && !hoverOverLauria && !hoverOverLawrence && !hoverOverPopup) {fadeOutHover();}} , 400)}); 
+        lauriaElem.addEventListener('mouseenter', function() {hoverOverLauria = true;});
+        lauriaElem.addEventListener('mouseleave', function() {hoverOverLauria = false;
+          setTimeout(function () {if(!hoverOverAdlerOne && !hoverOverAdlerTwo && !hoverOverRoberts && !hoverOverLauria && !hoverOverLawrence && !hoverOverPopup) {fadeOutHover();}} , 400)}); 
+        lawrenceElem.addEventListener('mouseenter', function() {hoverOverLawrence = true;});
+        lawrenceElem.addEventListener('mouseleave', function() {hoverOverLawrence = false;
+          setTimeout(function () {if(!hoverOverAdlerOne && !hoverOverAdlerTwo && !hoverOverRoberts && !hoverOverLauria && !hoverOverLawrence && !hoverOverPopup) {fadeOutHover();}} , 400)}); 
+        hoverPopup.addEventListener('mouseenter', function() {hoverOverPopup = true;});
+        hoverPopup.addEventListener('mouseleave', function() {hoverOverPopup = false;});
+        function fadeOutHover() {  
+            hoverPopup.style.opacity = "0";
+            hoverPopup.style.zIndex = "-4";
+          }
+        // Dictate How Long Have To Over Over Elem To Make It Accessable
         function triggerHover() {
           rect = this.getBoundingClientRect();
-          if (this.classList.contains("rob-adler-link")) {
+          if (this.classList.contains("rob-adler-link-one")) {
             imgToReplace.srcset = adlerSourceSet; 
             followMeName.innerHTML = "ROB ADLER";
+            setTimeout(function() {
+              if(!hoverOverAdlerOne && !hoverOverPopup) {fadeOutHover();}
+            }, 500);
           } 
-          if (this.classList.contains("mariana-anaya-link")) {
-            imgToReplace.srcset = anayaSourceSet; 
-						followMeName.innerHTML = "MARIANA ANAYA";
+          if (this.classList.contains("rob-adler-link-two")) {
+            imgToReplace.srcset = adlerSourceSet; 
+            followMeName.innerHTML = "ROB ADLER";
+            setTimeout(function() {
+              if(!hoverOverAdlerTwo && !hoverOverPopup) {fadeOutHover();}
+            }, 500);
           } 
-          if (this.classList.contains("mark-atherlay-link")) {
-            imgToReplace.srcset = atherlaySourceSet; 
-            followMeName.innerHTML = "MARK ATHERLAY";
+          if (this.classList.contains("eric-roberts-link")) {
+            imgToReplace.srcset = robertsSourceSet; 
+						followMeName.innerHTML = "ERIC ROBERTS";
+            setTimeout(function() {
+              if(!hoverOverRoberts && !hoverOverPopup) {fadeOutHover();}
+            }, 500);
+          } 
+          if (this.classList.contains("dan-lauria-link")) {
+            imgToReplace.srcset = lauriaSourceSet; 
+            followMeName.innerHTML = "DAN LAURIA";
+            setTimeout(function() {
+              if(!hoverOverLauria && !hoverOverPopup) {fadeOutHover();}
+            }, 500);
           }
-          if (this.classList.contains("jesse-bainbridge-link")) {
-            imgToReplace.srcset = bainbridgeSourceSet; 
-            followMeName.innerHTML = "JESSE BAINBRIDGE";
+          if (this.classList.contains("sharon-lawrence-link")) {
+            imgToReplace.srcset = lawrenceSourceSet; 
+            followMeName.innerHTML = "SHARON LAWRENCE";
+            setTimeout(function() {
+              if(!hoverOverLawrence && !hoverOverPopup) {fadeOutHover();}
+            }, 500);
           }
           hoverPopup.style.display = "block";
           hoverPopup.style.top = (event.pageY + 25).toString() + "px";
@@ -114,20 +197,15 @@
           hoverPopup.style.zIndex = "4";
           hoverPopup.style.position = "absolute";
         } 
-        function fadeOutHover() {  
-            hoverPopup.style.opacity = "0";
-            hoverPopup.style.zIndex = "-4";
-          }
-        for (i = 0; i < adlerElems.length; i++) {
-          adlerElems[i].addEventListener('mouseover', triggerHover);
-          adlerElems[i].addEventListener('mouseout', fadeOutHover); 
-        } 
-        anayaElem.addEventListener('mouseover', triggerHover);
-        anayaElem.addEventListener('mouseout', fadeOutHover);
-        atherlayElem.addEventListener('mouseover', triggerHover);
-        atherlayElem.addEventListener('mouseout', fadeOutHover);
-        bainbridgeElem.addEventListener('mouseover', triggerHover);
-        bainbridgeElem.addEventListener('mouseout', fadeOutHover);
+        adlerElemOne.addEventListener('mouseenter', triggerHover);
+        adlerElemTwo.addEventListener('mouseenter', triggerHover);
+        robertsElem.addEventListener('mouseenter', triggerHover);
+        // robertsElem.addEventListener('mouseout', fadeOutHover);
+        lauriaElem.addEventListener('mouseenter', triggerHover);
+        // lauriaElem.addEventListener('mouseout', fadeOutHover);
+        lawrenceElem.addEventListener('mouseenter', triggerHover);
+        // lawrenceElem.addEventListener('mouseout', fadeOutHover);
+        hoverPopup.addEventListener('mouseleave', fadeOutHover); 
   </script>
     </div>
   </div>
