@@ -176,7 +176,7 @@
 }
 
 .image-2 {
-  margin-top: -8px;
+  margin-top: -9px;
   -webkit-transition: all 325ms ease;
   transition: all 325ms ease;
   font-size: 14px;
@@ -1066,7 +1066,7 @@
 }
 
 .div-block-19 {
-  padding-top: 29px;
+  padding-top: 14px;
   padding-bottom: 18px;
   text-align: center;
 }
@@ -1233,8 +1233,9 @@
 }
 
 .movie-description-grid-description.wth-desc {
+  margin-bottom: 14px;
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
 }
 
@@ -1281,7 +1282,7 @@
 .movie-description-grid-stats.we-the-children-time {
   font-family: 'Brandon re', sans-serif;
   color: #17aa81;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 20px;
 }
 
@@ -2016,6 +2017,35 @@
   display: none;
 }
 
+.image-29 {
+  display: none;
+}
+
+.social-link {
+  width: 25px;
+  margin-right: 5px;
+  margin-left: 5px;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  cursor: pointer;
+}
+
+.social-link:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.social-link:active {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.image-30 {
+  margin-left: -1px;
+}
+
 @media screen and (min-width: 1280px) {
   .text-block-2 {
     width: 43%;
@@ -2243,7 +2273,7 @@
     letter-spacing: 2px;
   }
   .image-2 {
-    margin-top: -13px;
+    margin-top: 0px;
   }
   .text-block-3 {
     font-size: 26px;
@@ -2484,7 +2514,7 @@
     line-height: 22px;
   }
   .image-2 {
-    margin-top: 0px;
+    margin-top: -10px;
   }
   .tab-pane-tab-2 {
     height: 70vh;
@@ -2610,6 +2640,7 @@
     display: none;
   }
   .featured-films-title-homepage {
+    max-width: 618px;
     margin-bottom: 20px;
     padding-top: 0px;
     font-size: 18px;
@@ -2644,7 +2675,7 @@
     line-height: 23px;
   }
   .div-block-23 {
-    max-width: 650px;
+    max-width: 618px;
   }
   .div-block-25 {
     max-width: 650px;
@@ -2814,7 +2845,7 @@
     margin-top: 2%;
   }
   .image-2 {
-    margin-top: -2px;
+    margin-top: -9px;
   }
   .text-block-3 {
     font-size: 15px;
@@ -3112,6 +3143,11 @@
   .left-arrow-2 {
     left: -43px;
   }
+  .social-link {
+    width: 23px;
+    margin-right: 4px;
+    margin-left: 4px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -3133,14 +3169,14 @@
   .movie-entry-grid {
     padding-right: 0px;
     padding-left: 0px;
-    grid-column-gap: 13px;
+    grid-column-gap: 11.5vw;
     grid-row-gap: 15px;
   }
   .movie-entry {
     width: 120px;
   }
   .movie-div-wrapper {
-    width: 124px;
+    width: auto;
   }
   .button {
     display: block;
@@ -3171,6 +3207,10 @@
     line-height: 20px;
     letter-spacing: 1px;
   }
+  .text-block-2.white-subtitle {
+    width: 76%;
+    max-width: 452px;
+  }
   .button-2 {
     margin-top: 2px;
     padding-right: 15px;
@@ -3192,17 +3232,20 @@
     line-height: 15px;
     letter-spacing: 0.6px;
   }
+  .tab-pane-tab-2 {
+    background-position: 39% 50%;
+  }
   .navbar.navbar-home {
     height: 60px;
     padding-right: 20px;
     padding-left: 20px;
-    background-color: #fff;
+    background-color: hsla(0, 0%, 100%, 0);
   }
   .div-block-3 {
     margin-top: 63px;
   }
   .div-block-4 {
-    margin-top: -10%;
+    margin-top: -21%;
   }
   .text-block-5 {
     font-size: 11px;
@@ -3215,13 +3258,17 @@
     line-height: 25px;
   }
   .movie-image {
-    width: 122px;
-    height: 177px;
+    width: 130px;
+    height: 180px;
   }
   .image-6 {
     width: 90%;
     margin-top: -14px;
     padding-top: 0%;
+  }
+  .image-6.fuel-your-passion-white-text {
+    width: 63%;
+    margin-top: 0px;
   }
   .nav-link {
     display: block;
@@ -3500,7 +3547,6 @@
   }
   .section-5 {
     position: relative;
-    top: 20px;
   }
   .grid-15 {
     width: 270px;
@@ -3556,6 +3602,11 @@
   }
   .link-block-6.w--current {
     text-align: left;
+  }
+  .social-link {
+    width: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
   }
 }
 
@@ -3617,26 +3668,13 @@
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
-  -ms-grid-column-align: center;
-  justify-self: center;
+  -ms-grid-column-align: end;
+  justify-self: end;
 }
 
 #w-node-ed89cac8a110-ebadf4bd {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
-}
-
-#w-node-127c125abc2e-ebadf4bd {
-  -ms-grid-row: span 1;
-  grid-row-start: span 1;
-  -ms-grid-row-span: 1;
-  grid-row-end: span 1;
-  -ms-grid-column: span 1;
-  grid-column-start: span 1;
-  -ms-grid-column-span: 1;
-  grid-column-end: span 1;
   -ms-grid-row-align: center;
   align-self: center;
 }
@@ -4165,6 +4203,10 @@
 }
 
 @media screen and (max-width: 479px) {
+  #w-node-e7f1494548f3-494548a4 {
+    -ms-grid-column-align: end;
+    justify-self: end;
+  }
   #w-node-7ccf9330d521-2f7bd24e {
     -ms-grid-column-align: center;
     justify-self: center;
