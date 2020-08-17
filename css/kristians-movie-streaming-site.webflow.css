@@ -2012,7 +2012,7 @@
 }
 
 .code-for-popup {
-  display: none;
+  display: block;
 }
 
 .image-26 {
@@ -3856,6 +3856,9 @@
   }
   .link-block-6.w--current {
     text-align: left;
+  }
+  .code-for-popup {
+    display: none;
   }
   .social-link {
     width: 20px;
