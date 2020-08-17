@@ -3608,17 +3608,18 @@
     line-height: 15px;
   }
   .featured-film-card-description.lil-buck-decription {
-    width: 114px;
+    width: 108px;
     margin-top: 9px;
     font-size: 12px;
     line-height: 15px;
   }
   .featured-film-card-description.planet-carlos-ff-description {
+    width: 103px;
     font-size: 12px;
     line-height: 15px;
   }
   .featured-film-card-description.caroline-ff-description {
-    width: 116px;
+    width: 113px;
     margin-top: 25px;
     font-size: 12px;
     line-height: 15px;
@@ -3642,7 +3643,7 @@
     line-height: 17px;
   }
   .featured-film-card-title.caroline-ff-title {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 17px;
   }
   .image-7 {
@@ -3655,18 +3656,21 @@
   .div-block-9 {
     padding-top: 16px;
     padding-right: 15px;
-    padding-left: 0px;
+    padding-left: 10px;
   }
   .div-block-9.lil-buck-feature-card {
     padding-top: 10px;
+    padding-left: 10px;
   }
   .div-block-9.caroline-ff-card {
     margin-left: -5px;
     padding-top: 28px;
+    padding-left: 10px;
   }
   .div-block-9.ivote-ff-card {
     padding-top: 11px;
     padding-right: 5px;
+    padding-left: 10px;
   }
   .featured-film-card-info.ivote-stats-feature-film {
     margin-top: 0px;
@@ -3675,7 +3679,7 @@
   }
   .featured-film-card-info.lil-buck-stats-ff {
     margin-top: 2px;
-    font-size: 11px;
+    font-size: 10px;
     line-height: 23px;
   }
   .featured-film-card-info.caroline-ff-stats {
@@ -3683,6 +3687,7 @@
     line-height: 22px;
   }
   .featured-film-card-info.planet-carlos-ff-stats {
+    margin-top: 13px;
     font-size: 9px;
     line-height: 17px;
   }
@@ -3718,8 +3723,8 @@
     padding-left: 0%;
   }
   .image-12 {
-    width: 13px;
-    height: 14px;
+    width: 12px;
+    height: 13px;
     margin-left: 4px;
   }
   .text-block-13 {
@@ -3780,9 +3785,9 @@
     padding-left: 25px;
   }
   .play-button-wrapper-div {
-    width: 33px;
-    height: 33px;
-    padding-top: 5px;
+    width: 31px;
+    height: 31px;
+    padding-top: 4px;
   }
   .film-description-section {
     padding-top: 20px;
@@ -4688,6 +4693,10 @@
   #w-node-e7f1494548f3-494548a4 {
     -ms-grid-column-align: end;
     justify-self: end;
+  }
+  #w-node-798ac7fc12eb-2f7bd24e {
+    -ms-grid-column-align: center;
+    justify-self: center;
   }
   #w-node-7ccf9330d521-2f7bd24e {
     -ms-grid-column-align: center;
