@@ -3619,7 +3619,7 @@
     line-height: 15px;
   }
   .featured-film-card-description.caroline-ff-description {
-    width: 113px;
+    width: 111px;
     margin-top: 25px;
     font-size: 12px;
     line-height: 15px;
@@ -3656,21 +3656,20 @@
   .div-block-9 {
     padding-top: 16px;
     padding-right: 15px;
-    padding-left: 10px;
+    padding-left: 15px;
   }
   .div-block-9.lil-buck-feature-card {
     padding-top: 10px;
-    padding-left: 10px;
+    padding-left: 15px;
   }
   .div-block-9.caroline-ff-card {
-    margin-left: -5px;
     padding-top: 28px;
-    padding-left: 10px;
+    padding-left: 15px;
   }
   .div-block-9.ivote-ff-card {
     padding-top: 11px;
     padding-right: 5px;
-    padding-left: 10px;
+    padding-left: 15px;
   }
   .featured-film-card-info.ivote-stats-feature-film {
     margin-top: 0px;
@@ -3683,7 +3682,7 @@
     line-height: 23px;
   }
   .featured-film-card-info.caroline-ff-stats {
-    font-size: 12px;
+    font-size: 11px;
     line-height: 22px;
   }
   .featured-film-card-info.planet-carlos-ff-stats {
