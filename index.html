@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Mon Aug 17 2020 05:24:44 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Mon Aug 17 2020 06:42:31 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="5f2cf9b5e09a28442a85a8b3" data-wf-site="5f2cf9b5e09a28c65685a8b2">
 <head>
   <meta charset="utf-8">
@@ -16,18 +16,32 @@
   <link href="images/webclip.png" rel="apple-touch-icon">
 </head>
 <body class="body">
-  <div data-collapse="medium" data-animation="default" data-duration="400" id="navbar-home-transparent" role="banner" class="navbar navbar-home w-nav"><a href="index.html" aria-current="page" class="brand w-nav-brand w--current"><img src="images/blue-festiv-logo-with-text.png" width="84" id="festiv-logo-navbar" srcset="images/blue-festiv-logo-with-text-p-500.png 500w, images/blue-festiv-logo-with-text-p-800.png 800w, images/blue-festiv-logo-with-text-p-1080.png 1080w, images/blue-festiv-logo-with-text.png 1280w" sizes="(max-width: 479px) 42vw, 84px" alt="" class="image-2"></a>
+  <div data-collapse="medium" data-animation="default" data-duration="400" id="navbar-home-transparent" role="banner" class="navbar navbar-home w-nav"><a href="index.html" aria-current="page" class="brand w-nav-brand w--current"><img src="images/blue-festiv-logo-with-text.png" width="115" id="festiv-logo-navbar" srcset="images/blue-festiv-logo-with-text-p-500.png 500w, images/blue-festiv-logo-with-text-p-800.png 800w, images/blue-festiv-logo-with-text-p-1080.png 1080w, images/blue-festiv-logo-with-text.png 1280w" sizes="(max-width: 479px) 55vw, 115px" alt="" class="image-2"></a>
     <nav role="navigation" class="w-nav-menu"><img src="images/magnifying-glass.svg" width="19" id="navbar-magnifying-glass" alt="" class="image"><a href="sign-up.html" id="acquire-films-navbar-link" class="nav-link home-nav-link w-nav-link">ACQUIRE FILMS</a><a href="http://filmfreeway.com/festiv" id="submit-films-navbar-link" target="_blank" class="nav-link-2 home-nav-link w-nav-link">SUBMIT FILMS</a><a id="sign-in-navbar-button" href="subscriber-homepage.html" class="button w-button">SIGN IN</a></nav>
     <div class="script-for-popup-navbar w-embed w-script">
       <script>
-//Makes the background pop up upon scrolling
-function makeNavbarBlue() {
+submitFilmsNavbar = document.getElementById("acquire-films-navbar-link");
+  acquireFilmsNavbar = document.getElementById("submit-films-navbar-link");
+  signInNavbar = document.getElementById("sign-in-navbar-button");
+  navbarImage = document.getElementById("festiv-logo-navbar");
+  magGlass = document.getElementById("navbar-magnifying-glass");
+  function makeNavbarWhite() {
+  	submitFilmsNavbar.style.color = "white"; 
+    acquireFilmsNavbar.style.color = "white"; 
+    signInNavbar.style.backgroundColor = "white";
+    signInNavbar.style.color = "#333e51";
+    //Also Need To Swap Out Logo With White Logo
+    navbarImage.srcset = "images/white-festiv-logo.png 500w, images/white-festiv-logo.png 800w, images/white-festiv-logo.png 1080w, images/white-festiv-logo.png 1280w" 
+    magGlass.srcset = "images/white-magnifying-glass.png 500w, images/white-magnifying-glass.png 800w, images/white-magnifying-glass.png 1080w, images/white-magnifying-glass.png 1280w" 
+  } 
+  function makeNavbarBlue() {
   	submitFilmsNavbar.style.color = "#333e51"; 
     acquireFilmsNavbar.style.color = "#333e51"; 
     signInNavbar.style.backgroundColor = "#333e51";
     signInNavbar.style.color = "white";
     //Swap White Logo For Original Blue Logo
-    navbarImage.src = "/images/blue-festiv-logo-with-text-p-800.png" 
+    navbarImage.srcset = "images/blue-festiv-logo-with-text.png 500w, images/blue-festiv-logo-with-text.png 800w, images/blue-festiv-logo-with-text.png 1080w, images/blue-festiv-logo-with-text.png 1280w" 
+    magGlass.srcset = "images/magnifying-glass.svg 500w, images/magnifying-glass.svg 800w, images/magnifying-glass.svg 1080w, images/magnifying-glass.svg 1280w" 
   } 
   window.addEventListener('scroll', function () {
     navbar = document.getElementById("navbar-home-transparent"); 
@@ -37,6 +51,7 @@ function makeNavbarBlue() {
       makeNavbarBlue(); 
     } else {
       navbar.style.backgroundColor = "rgba(255,255,255,0)"; 
+      makeNavbarWhite();
     } 
     });
 </script>
@@ -103,17 +118,16 @@ function makeNavbarBlue() {
   navbarImage = document.getElementById("festiv-logo-navbar");
   magGlass = document.getElementById("navbar-magnifying-glass");
   function makeNavbarWhite() {
-  	submitFilmsNavbar.style.color = "white"; 
-    acquireFilmsNavbar.style.color = "white"; 
-    signInNavbar.style.backgroundColor = "white";
-    signInNavbar.style.color = "#333e51";
-    //Also Need To Swap Out Logo With White Logo
-    setTimeout(function() {
-	    navbarImage.style.opacity = ".5"; 
-	    navbarImage.srcset = "images/white-festiv-logo.png 500w, images/white-festiv-logo.png 800w, images/white-festiv-logo.png 1080w, images/white-festiv-logo.png 1280w" 
+    // only apply when the navbar background is hidden
+    if (window.pageYOffset < 100) {
+      submitFilmsNavbar.style.color = "white"; 
+      acquireFilmsNavbar.style.color = "white"; 
+      signInNavbar.style.backgroundColor = "white";
+      signInNavbar.style.color = "#333e51";
+      //Also Need To Swap Out Logo With White Logo
+      navbarImage.srcset = "images/white-festiv-logo.png 500w, images/white-festiv-logo.png 800w, images/white-festiv-logo.png 1080w, images/white-festiv-logo.png 1280w" 
       magGlass.srcset = "images/white-magnifying-glass.png 500w, images/white-magnifying-glass.png 800w, images/white-magnifying-glass.png 1080w, images/white-magnifying-glass.png 1280w" 
-	    navbarImage.style.opacity = "1"; 
-    }, 1000); 
+    }
   } 
   function makeNavbarBlue() {
   	submitFilmsNavbar.style.color = "#333e51"; 
@@ -121,13 +135,8 @@ function makeNavbarBlue() {
     signInNavbar.style.backgroundColor = "#333e51";
     signInNavbar.style.color = "white";
     //Swap White Logo For Original Blue Logo
-    //navbarImage.src = "images/filmmaker-image-cropped-2.png" 
-		setTimeout(function() {
-      navbarImage.style.opacity = ".5"; 
-      navbarImage.srcset = "images/blue-festiv-logo-with-text.png 500w, images/blue-festiv-logo-with-text.png 800w, images/blue-festiv-logo-with-text.png 1080w, images/blue-festiv-logo-with-text.png 1280w" 
-      magGlass.srcset = "images/magnifying-glass.svg 500w, images/magnifying-glass.svg 800w, images/magnifying-glass.svg 1080w, images/magnifying-glass.svg 1280w" 
-      navbarImage.style.opacity = "1"; 
-    }, 1000);
+    navbarImage.srcset = "images/blue-festiv-logo-with-text.png 500w, images/blue-festiv-logo-with-text.png 800w, images/blue-festiv-logo-with-text.png 1080w, images/blue-festiv-logo-with-text.png 1280w" 
+    magGlass.srcset = "images/magnifying-glass.svg 500w, images/magnifying-glass.svg 800w, images/magnifying-glass.svg 1080w, images/magnifying-glass.svg 1280w" 
   } 
   slideArray = document.getElementsByClassName('tabs-menu')[0].childNodes;
   tempArray = []; 
@@ -143,6 +152,10 @@ function makeNavbarBlue() {
       if (slideArray[1].classList.contains('w--current')) {return 1;}
       else {return 2;}
   }
+  //Create Event Listeners For Each Of The Tabs -- this will trigger the color change 
+  slideArray[0].addEventListener('click', makeNavbarBlue);
+  slideArray[1].addEventListener('click', makeNavbarWhite);
+  slideArray[2].addEventListener('click', makeNavbarWhite);
   var curr = 0; 
   function clickOnNewTab () {
       var tempCurr = getCurr(); 
@@ -157,16 +170,6 @@ function makeNavbarBlue() {
           else {curr = 0;}
       }
       slideArray[curr].click(); 
-			if (curr > 0) {
-      	//if Y Axis Isn't Scrolled Down More Than X Pixels: 
-        if (window.pageYOffset < 100) {
-	        makeNavbarWhite(); 
-        }    	
-      }
-      else {
-      	makeNavbarBlue(); 
-      }
-      return;
   } 
   const interval = setInterval(clickOnNewTab, 5000);
   </script>
@@ -219,7 +222,7 @@ function makeNavbarBlue() {
                       <div id="w-node-ed89cac8a110-ebadf4bd" class="div-block-20">
                         <div class="movie-description-grid-title we-the-children-title">IVOTE</div>
                         <div class="movie-description-grid-year wtf-year">2012</div>
-                      </div><a href="screening-room.html" class="w-inline-block"><img src="images/ivote-play-button.png" width="56" alt="" class="play-button wtc-play-button"></a></div>
+                      </div><a href="screening-room.html" class="link-block-7 w-inline-block"><img src="images/ivote-play-button.png" width="56" alt="" class="play-button wtc-play-button"></a></div>
                   </div>
                 </div>
                 <div class="div-block-21">

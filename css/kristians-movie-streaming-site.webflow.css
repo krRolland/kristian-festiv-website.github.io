@@ -176,7 +176,7 @@
 }
 
 .image-2 {
-  margin-top: -9px;
+  margin-top: 0px;
   -webkit-transition: all 325ms ease;
   transition: all 325ms ease;
   font-size: 14px;
@@ -983,7 +983,7 @@
 }
 
 .movie-description.we-the-children-description {
-  padding-top: 6px;
+  padding-top: 15px;
   padding-right: 18px;
   padding-left: 18px;
   background-color: #010101;
@@ -1004,7 +1004,7 @@
 }
 
 .movie-description.prego-description {
-  padding-top: 10px;
+  padding-top: 26px;
   background-color: #000;
 }
 
@@ -1235,7 +1235,7 @@
 .movie-description-grid-description.wth-desc {
   margin-bottom: 14px;
   color: #fff;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 20px;
 }
 
@@ -1399,6 +1399,7 @@
 }
 
 .play-button.wtc-play-button {
+  margin-bottom: 11px;
   margin-left: -25px;
 }
 
@@ -2046,6 +2047,11 @@
   margin-left: -1px;
 }
 
+.link-block-7 {
+  position: relative;
+  margin-top: 24px;
+}
+
 @media screen and (min-width: 1280px) {
   .text-block-2 {
     width: 43%;
@@ -2058,7 +2064,7 @@
     line-height: 30px;
   }
   .image-2 {
-    margin-top: -5px;
+    margin-top: -4px;
   }
   .text-block-3 {
     font-size: 17px;
@@ -2143,7 +2149,7 @@
     line-height: 31px;
   }
   .image-2 {
-    margin-top: -8px;
+    margin-top: -5px;
   }
   .text-block-3 {
     font-size: 22px;
@@ -2273,7 +2279,7 @@
     letter-spacing: 2px;
   }
   .image-2 {
-    margin-top: 0px;
+    margin-top: -1px;
   }
   .text-block-3 {
     font-size: 26px;
@@ -2418,12 +2424,19 @@
     font-size: 30px;
     line-height: 39px;
   }
+  .movie-description-grid-description.wth-desc {
+    padding-top: 2px;
+    font-size: 31px;
+    line-height: 35px;
+  }
   .movie-description-grid-stats {
     font-size: 30px;
     line-height: 30px;
   }
   .movie-description-grid-stats.we-the-children-time {
-    font-size: 30px;
+    padding-top: 2px;
+    font-size: 29px;
+    line-height: 33px;
   }
   .movie-description-grid-stats.pc-stats {
     font-size: 28px;

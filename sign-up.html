@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Mon Aug 17 2020 05:24:44 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Mon Aug 17 2020 06:42:31 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="5f2fc9397d8a080e83e64489" data-wf-site="5f2cf9b5e09a28c65685a8b2">
 <head>
   <meta charset="utf-8">
@@ -18,18 +18,32 @@
   <link href="images/webclip.png" rel="apple-touch-icon">
 </head>
 <body class="body-2">
-  <div data-collapse="medium" data-animation="default" data-duration="400" id="navbar-home-transparent" role="banner" class="navbar navbar-home w-nav"><a href="index.html" class="brand w-nav-brand"><img src="images/blue-festiv-logo-with-text.png" width="84" id="festiv-logo-navbar" srcset="images/blue-festiv-logo-with-text-p-500.png 500w, images/blue-festiv-logo-with-text-p-800.png 800w, images/blue-festiv-logo-with-text-p-1080.png 1080w, images/blue-festiv-logo-with-text.png 1280w" sizes="(max-width: 479px) 42vw, 84px" alt="" class="image-2"></a>
+  <div data-collapse="medium" data-animation="default" data-duration="400" id="navbar-home-transparent" role="banner" class="navbar navbar-home w-nav"><a href="index.html" class="brand w-nav-brand"><img src="images/blue-festiv-logo-with-text.png" width="115" id="festiv-logo-navbar" srcset="images/blue-festiv-logo-with-text-p-500.png 500w, images/blue-festiv-logo-with-text-p-800.png 800w, images/blue-festiv-logo-with-text-p-1080.png 1080w, images/blue-festiv-logo-with-text.png 1280w" sizes="(max-width: 479px) 55vw, 115px" alt="" class="image-2"></a>
     <nav role="navigation" class="w-nav-menu"><img src="images/magnifying-glass.svg" width="19" id="navbar-magnifying-glass" alt="" class="image"><a href="sign-up.html" id="acquire-films-navbar-link" aria-current="page" class="nav-link home-nav-link w-nav-link w--current">ACQUIRE FILMS</a><a href="http://filmfreeway.com/festiv" id="submit-films-navbar-link" target="_blank" class="nav-link-2 home-nav-link w-nav-link">SUBMIT FILMS</a><a id="sign-in-navbar-button" href="subscriber-homepage.html" class="button w-button">SIGN IN</a></nav>
     <div class="script-for-popup-navbar w-embed w-script">
       <script>
-//Makes the background pop up upon scrolling
-function makeNavbarBlue() {
+submitFilmsNavbar = document.getElementById("acquire-films-navbar-link");
+  acquireFilmsNavbar = document.getElementById("submit-films-navbar-link");
+  signInNavbar = document.getElementById("sign-in-navbar-button");
+  navbarImage = document.getElementById("festiv-logo-navbar");
+  magGlass = document.getElementById("navbar-magnifying-glass");
+  function makeNavbarWhite() {
+  	submitFilmsNavbar.style.color = "white"; 
+    acquireFilmsNavbar.style.color = "white"; 
+    signInNavbar.style.backgroundColor = "white";
+    signInNavbar.style.color = "#333e51";
+    //Also Need To Swap Out Logo With White Logo
+    navbarImage.srcset = "images/white-festiv-logo.png 500w, images/white-festiv-logo.png 800w, images/white-festiv-logo.png 1080w, images/white-festiv-logo.png 1280w" 
+    magGlass.srcset = "images/white-magnifying-glass.png 500w, images/white-magnifying-glass.png 800w, images/white-magnifying-glass.png 1080w, images/white-magnifying-glass.png 1280w" 
+  } 
+  function makeNavbarBlue() {
   	submitFilmsNavbar.style.color = "#333e51"; 
     acquireFilmsNavbar.style.color = "#333e51"; 
     signInNavbar.style.backgroundColor = "#333e51";
     signInNavbar.style.color = "white";
     //Swap White Logo For Original Blue Logo
-    navbarImage.src = "/images/blue-festiv-logo-with-text-p-800.png" 
+    navbarImage.srcset = "images/blue-festiv-logo-with-text.png 500w, images/blue-festiv-logo-with-text.png 800w, images/blue-festiv-logo-with-text.png 1080w, images/blue-festiv-logo-with-text.png 1280w" 
+    magGlass.srcset = "images/magnifying-glass.svg 500w, images/magnifying-glass.svg 800w, images/magnifying-glass.svg 1080w, images/magnifying-glass.svg 1280w" 
   } 
   window.addEventListener('scroll', function () {
     navbar = document.getElementById("navbar-home-transparent"); 
@@ -39,6 +53,7 @@ function makeNavbarBlue() {
       makeNavbarBlue(); 
     } else {
       navbar.style.backgroundColor = "rgba(255,255,255,0)"; 
+      makeNavbarWhite();
     } 
     });
 </script>
