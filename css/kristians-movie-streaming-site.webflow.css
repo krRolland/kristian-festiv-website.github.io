@@ -3891,18 +3891,21 @@
     height: 140px;
   }
   .follow-me-card {
-    z-index: -4;
-    opacity: 0;
+    z-index: 1;
+    opacity: 1;
   }
   .grid-15 {
-    width: 270px;
+    width: 275px;
     height: 200px;
   }
   .slide-5 {
-    width: 122%;
+    width: 275px;
   }
   .mask-4 {
-    width: 290px;
+    width: 295px;
+  }
+  .slide-6 {
+    width: 275px;
   }
   .slider-4 {
     width: 320px;
@@ -3974,7 +3977,11 @@
   .text-block-30 {
     display: block;
   }
+  .div-block-35 {
+    padding-left: 8px;
+  }
   .button-3 {
+    margin-top: 8px;
     padding-top: 5px;
     padding-bottom: 5px;
     font-size: 9px;
@@ -3983,12 +3990,12 @@
   }
   .div-block-36 {
     display: inline-block;
-    margin-top: 26px;
+    margin-top: 18px;
     padding-left: 6px;
     text-align: center;
   }
   .slide-7 {
-    width: 270px;
+    width: 275px;
   }
   .div-block-39 {
     width: 100%;
