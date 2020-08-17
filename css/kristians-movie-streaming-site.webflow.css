@@ -3450,6 +3450,7 @@
     left: 14px;
     top: 9px;
     display: block;
+    width: 21px;
   }
   .tab-pane-tab-1 {
     background-position: 66% 109%;
@@ -3535,8 +3536,10 @@
   .nav-link {
     display: block;
     margin-right: 0px;
-    margin-bottom: 3px;
+    margin-bottom: 0px;
     margin-left: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .nav-link.home-nav-link {
     display: block;
@@ -3545,9 +3548,11 @@
   }
   .nav-link-2 {
     display: block;
-    margin-top: 3px;
+    margin-top: 0px;
     margin-right: 0px;
     margin-left: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .nav-link-2.home-nav-link {
     display: block;
@@ -3881,6 +3886,14 @@
   .section-5 {
     position: relative;
   }
+  .grid-14 {
+    width: 294px;
+    height: 140px;
+  }
+  .follow-me-card {
+    z-index: -4;
+    opacity: 0;
+  }
   .grid-15 {
     width: 270px;
     height: 200px;
@@ -3918,6 +3931,10 @@
     margin-left: 15px;
     clear: left;
   }
+  .nav-menu {
+    box-shadow: 0 1px 3px 0 #000;
+    text-align: left;
+  }
   .text-block-24 {
     top: 34px;
     right: 10px;
@@ -3949,6 +3966,27 @@
     top: 38px;
     right: 15px;
   }
+  .text-block-29 {
+    display: none;
+    font-size: 12px;
+    letter-spacing: 0px;
+  }
+  .text-block-30 {
+    display: block;
+  }
+  .button-3 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 9px;
+    line-height: 18px;
+    letter-spacing: 1px;
+  }
+  .div-block-36 {
+    display: inline-block;
+    margin-top: 26px;
+    padding-left: 6px;
+    text-align: center;
+  }
   .slide-7 {
     width: 270px;
   }
@@ -3968,7 +4006,9 @@
     width: 50px;
   }
   .link-block-6 {
-    display: block;
+    display: inline-block;
+    padding-top: 4px;
+    padding-bottom: 4px;
   }
   .link-block-6.w--current {
     text-align: left;
@@ -3979,6 +4019,9 @@
   .social-link {
     width: 20px;
     margin-right: 0px;
+    margin-left: 0px;
+  }
+  .div-block-42 {
     margin-left: 0px;
   }
   .rate-this-film-popup {
@@ -4008,7 +4051,7 @@
     top: 49%;
   }
   .html-embed {
-    display: block;
+    display: none;
   }
   .nav-menu-2 {
     padding-top: 5px;
@@ -4024,6 +4067,9 @@
   .image-33 {
     width: 85px;
     margin-top: -5px;
+  }
+  .div-block-48 {
+    display: inline-block;
   }
 }
 
