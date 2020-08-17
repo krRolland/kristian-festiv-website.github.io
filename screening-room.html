@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Mon Aug 17 2020 13:39:35 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Mon Aug 17 2020 13:46:26 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="5f30cc2363b9d1cd527db104" data-wf-site="5f2cf9b5e09a28c65685a8b2">
 <head>
   <meta charset="utf-8">
@@ -61,13 +61,13 @@
     setTimeout(function () {btn.style.display = "none";}, 550)
 		var video = document.createElement('video');
     video.style.position = "relative";
-    video.style.height = "100%";
+    video.style.width = "100%";
+    video.style.height = "auto";
     video.src = "https://festivdata.s3.us-east-2.amazonaws.com/videos/iVote+UCLA+CUT+WEB.mp4";
     video.autoplay = "autoplay";
     video.controls = "controls";
     fillerImage.style.opacity = "0"; 
-    setTimeout(function () {fillerImage.style.display = "none";}, 550)
-    videoWrapper.appendChild(video);
+    setTimeout(function () {fillerImage.style.display = "none"; videoWrapper.appendChild(video);}, 550)
   } 
   btn.addEventListener('click', swapInVideo);
 </script>

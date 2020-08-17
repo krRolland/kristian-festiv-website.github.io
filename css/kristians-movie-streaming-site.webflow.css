@@ -3967,7 +3967,7 @@
     top: 49%;
   }
   .html-embed {
-    display: none;
+    display: block;
   }
   .nav-menu-2 {
     padding-top: 5px;
