@@ -1072,7 +1072,7 @@
 }
 
 .div-block-19.wkvd-title-wrapper {
-  padding-top: 27px;
+  padding-top: 26px;
 }
 
 .div-block-19.tremors-title-wrapper {
@@ -2462,10 +2462,21 @@
     width: 65%;
     font-size: 19px;
   }
+  .grid-5.planet-carlos-title-grid {
+    margin-bottom: 20px;
+  }
   .featured-film-card-description {
     margin-top: 4px;
     font-size: 24px;
     line-height: 32px;
+  }
+  .featured-film-card-description.lil-buck-decription {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .featured-film-card-description.planet-carlos-ff-description {
+    margin-bottom: 20px;
+    font-size: 23px;
   }
   .featured-film-card-date {
     font-size: 32px;
@@ -2476,15 +2487,29 @@
     line-height: 29px;
   }
   .film-screenshots-small {
-    width: 102px;
+    width: 95px;
   }
   .div-block-9 {
-    padding-top: 34px;
+    padding-top: 35px;
+    padding-right: 27px;
+  }
+  .div-block-9.lil-buck-feature-card {
+    padding-top: 24px;
+    padding-right: 39px;
+  }
+  .div-block-9.ivote-ff-card {
+    padding-top: 15px;
   }
   .featured-film-card-info {
     margin-top: 16px;
     font-size: 24px;
     line-height: 23px;
+  }
+  .grid-8 {
+    grid-column-gap: 30px;
+  }
+  .slider-2 {
+    width: 1400px;
   }
   .heading-4.featured-films-title-subhomepage {
     display: inline-block;
@@ -2500,8 +2525,9 @@
     text-align: center;
   }
   .image-12 {
-    width: 29px;
-    height: 34px;
+    width: 28px;
+    height: 33px;
+    margin-left: 7px;
   }
   .featured-film-card-images-wrapper {
     margin-top: 20px;
@@ -2511,6 +2537,15 @@
   }
   .code-for-film-grid {
     display: none;
+  }
+  .variety-article-element {
+    left: auto;
+  }
+  .slide-4 {
+    width: 600px;
+  }
+  .mask-2 {
+    width: 1400px;
   }
   .movie-description {
     padding-right: 30px;
@@ -2615,9 +2650,9 @@
     max-width: 1500px;
   }
   .play-button-wrapper-div {
-    width: 75px;
-    height: 75px;
-    padding-top: 21px;
+    width: 70px;
+    height: 70px;
+    padding-top: 19px;
   }
   .div-block-23 {
     max-width: 1700px;
@@ -2658,6 +2693,12 @@
   .right-arrow-2 {
     left: 826px;
     top: -226px;
+  }
+  .right-arrow-3 {
+    left: 1316px;
+  }
+  .image-34 {
+    width: 200px;
   }
 }
 
