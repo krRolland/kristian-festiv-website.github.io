@@ -176,7 +176,7 @@
 }
 
 .image-2 {
-  margin-top: -7px;
+  margin-top: -8px;
   -webkit-transition: all 325ms ease;
   transition: all 325ms ease;
   font-size: 14px;
@@ -577,7 +577,7 @@
   padding-left: 10px;
   font-family: 'Brandon bld', sans-serif;
   color: #000;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 20px;
   letter-spacing: 1px;
 }
@@ -833,7 +833,7 @@
 }
 
 .code-for-film-grid {
-  display: block;
+  display: none;
   height: 100px;
 }
 
@@ -1845,6 +1845,10 @@
   height: 60px;
 }
 
+.rotating-slides {
+  display: none;
+}
+
 .grid-16 {
   display: inline-block;
   max-width: 600px;
@@ -2186,6 +2190,10 @@
 }
 
 .html-embed {
+  display: none;
+}
+
+.html-embed-2 {
   display: none;
 }
 
@@ -2768,11 +2776,20 @@
     font-size: 19px;
     line-height: 26px;
   }
+  .grid-8 {
+    -ms-grid-columns: 0.25fr;
+    grid-template-columns: 0.25fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+  }
   .heading-4.featured-films-title-subhomepage {
     max-width: 650px;
   }
   .code-for-film-grid {
     display: none;
+  }
+  .variety-article-element {
+    left: auto;
   }
   .grid-9 {
     -webkit-box-orient: vertical;
@@ -2782,6 +2799,7 @@
     flex-direction: column;
   }
   .div-block-14 {
+    display: inline-block;
     width: 600px;
   }
   .slide-4 {
@@ -2987,8 +3005,15 @@
     top: 51px;
     right: 70px;
   }
+  .div-block-39 {
+    padding-top: 10px;
+    text-align: center;
+  }
   .right-arrow-3 {
-    left: 407px;
+    left: 561px;
+  }
+  .left-arrow-2 {
+    left: -38px;
   }
   .rate-this-film-popup {
     left: 11.734px;
@@ -3016,7 +3041,7 @@
     margin-top: 2%;
   }
   .image-2 {
-    margin-top: -7px;
+    margin-top: -8px;
   }
   .text-block-3 {
     font-size: 15px;
@@ -3075,7 +3100,7 @@
     letter-spacing: 0.9px;
   }
   .text-block-8 {
-    font-size: 19px;
+    font-size: 17px;
   }
   .featured-film-card-description.ivote-description {
     margin-top: 21px;
@@ -3083,17 +3108,20 @@
     line-height: 19px;
   }
   .featured-film-card-description.lil-buck-decription {
+    width: 190px;
+    margin-top: 21px;
     font-size: 15px;
     line-height: 23px;
   }
   .featured-film-card-description.planet-carlos-ff-description {
-    font-size: 17px;
-    line-height: 23px;
+    margin-top: 21px;
+    font-size: 16px;
+    line-height: 19px;
   }
   .featured-film-card-description.caroline-ff-description {
-    margin-top: 27px;
-    font-size: 17px;
-    line-height: 23px;
+    margin-top: 21px;
+    font-size: 16px;
+    line-height: 19px;
   }
   .featured-film-card-date {
     font-size: 18px;
@@ -3108,8 +3136,8 @@
     line-height: 23px;
   }
   .featured-film-card-title.planet-carlos-ff-description {
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 23px;
+    line-height: 23px;
   }
   .featured-film-card-title.caroline-ff-title {
     font-size: 25px;
@@ -3123,9 +3151,10 @@
     padding-left: 2px;
   }
   .div-block-9 {
-    padding: 17px 25px 0% 4px;
+    padding: 18px 25px 0% 4px;
   }
   .div-block-9.lil-buck-feature-card {
+    padding-top: 16px;
     padding-right: 14px;
   }
   .div-block-9.caroline-ff-card {
@@ -3136,15 +3165,18 @@
     font-size: 16px;
   }
   .featured-film-card-info.lil-buck-stats-ff {
+    margin-top: 18px;
     font-size: 16px;
   }
   .featured-film-card-info.caroline-ff-stats {
+    margin-top: 18px;
     font-size: 15px;
     line-height: 24px;
   }
   .featured-film-card-info.planet-carlos-ff-stats {
+    margin-top: 18px;
     font-size: 16px;
-    line-height: 23px;
+    line-height: 19px;
   }
   .section-2 {
     padding-right: 20px;
@@ -3169,6 +3201,7 @@
     display: none;
   }
   .variety-article-element {
+    left: -108px;
     margin-right: 15px;
     margin-left: 15px;
   }
@@ -3181,7 +3214,11 @@
   .featured-article-description {
     font-size: 11px;
   }
+  .featured-article-description.mulan-description {
+    padding-top: 1px;
+  }
   .div-block-15 {
+    padding-top: 6px;
     padding-left: 8px;
   }
   .featured-article-title {
@@ -3325,6 +3362,9 @@
   .div-block-46 {
     top: 42%;
   }
+  .image-32 {
+    width: 100px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -3346,14 +3386,14 @@
   .movie-entry-grid {
     padding-right: 0px;
     padding-left: 0px;
-    grid-column-gap: 11.5vw;
+    grid-column-gap: 6vw;
     grid-row-gap: 15px;
   }
   .movie-entry {
-    width: 120px;
+    width: 135px;
   }
   .movie-div-wrapper {
-    width: auto;
+    width: 135px;
   }
   .button {
     display: block;
@@ -3396,6 +3436,7 @@
     line-height: 19px;
   }
   .image-2 {
+    width: 20px;
     margin-top: -6px;
   }
   .text-block-3 {
@@ -3411,6 +3452,9 @@
   }
   .tab-pane-tab-2 {
     background-position: 39% 50%;
+  }
+  .navbar {
+    padding-left: 20px;
   }
   .navbar.navbar-home {
     height: 60px;
@@ -3435,8 +3479,8 @@
     line-height: 25px;
   }
   .movie-image {
-    width: 130px;
-    height: 180px;
+    width: 135px;
+    height: 190px;
   }
   .image-6 {
     width: 90%;
@@ -3455,7 +3499,7 @@
   }
   .nav-link.home-nav-link {
     display: block;
-    margin: 10px 0px 0px;
+    margin: 14px 0px 0px;
     font-size: 16px;
   }
   .nav-link-2 {
@@ -3509,16 +3553,18 @@
   }
   .text-block-8 {
     padding-left: 5px;
-    font-size: 14px;
+    font-size: 13px;
   }
   .featured-film-card-description.ivote-description {
+    width: 122px;
     margin-top: 8px;
     font-size: 12px;
     line-height: 15px;
   }
   .featured-film-card-description.lil-buck-decription {
-    margin-top: 10px;
-    font-size: 11px;
+    width: 114px;
+    margin-top: 9px;
+    font-size: 12px;
     line-height: 15px;
   }
   .featured-film-card-description.planet-carlos-ff-description {
@@ -3526,6 +3572,7 @@
     line-height: 15px;
   }
   .featured-film-card-description.caroline-ff-description {
+    width: 116px;
     margin-top: 25px;
     font-size: 12px;
     line-height: 15px;
@@ -3565,13 +3612,14 @@
     padding-left: 0px;
   }
   .div-block-9.lil-buck-feature-card {
-    padding-top: 13px;
+    padding-top: 10px;
   }
   .div-block-9.caroline-ff-card {
+    margin-left: -5px;
     padding-top: 28px;
   }
   .div-block-9.ivote-ff-card {
-    padding-top: 10px;
+    padding-top: 11px;
     padding-right: 5px;
   }
   .featured-film-card-info.ivote-stats-feature-film {
@@ -3580,7 +3628,7 @@
     line-height: 24px;
   }
   .featured-film-card-info.lil-buck-stats-ff {
-    margin-top: 5px;
+    margin-top: 2px;
     font-size: 11px;
     line-height: 23px;
   }
@@ -3607,13 +3655,14 @@
     padding-left: 9px;
   }
   .heading-4 {
-    padding-left: 8%;
+    padding-left: 30px;
     letter-spacing: 2px;
   }
   .heading-4.featured-films-title-subhomepage {
     padding-left: 30px;
   }
   .heading-4.recc-films-title {
+    margin-bottom: 20px;
     padding-left: 30px;
   }
   .div-block-10 {
@@ -3630,6 +3679,9 @@
   .text-block-13 {
     margin-top: 5px;
   }
+  .variety-article-element {
+    left: 0px;
+  }
   .grid-9 {
     width: 250px;
     height: 115px;
@@ -3638,6 +3690,7 @@
     grid-template-columns: 105px auto;
   }
   .div-block-14 {
+    width: 100%;
     text-align: center;
   }
   .featured-article-description {
@@ -3645,7 +3698,14 @@
     font-size: 9px;
     line-height: 16px;
   }
+  .featured-article-description.mulan-description {
+    overflow: hidden;
+    padding-top: 4px;
+    font-size: 10px;
+  }
   .div-block-15 {
+    padding-top: 1px;
+    padding-right: 10px;
     padding-left: 5px;
   }
   .featured-article-title {
@@ -3760,6 +3820,15 @@
   .mobile-plan-titles {
     font-size: 4vw;
   }
+  .menu-button.w--open {
+    position: fixed;
+    left: 0px;
+    width: 100vw;
+    background-color: #d8d8d8;
+    -webkit-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+    background-clip: border-box;
+  }
   .text-block-22 {
     font-size: 11px;
     letter-spacing: 0.3px;
@@ -3775,6 +3844,9 @@
     width: 270px;
     height: 200px;
   }
+  .slide-5 {
+    width: 122%;
+  }
   .mask-4 {
     width: 290px;
   }
@@ -3784,23 +3856,26 @@
   }
   .left-arrow {
     left: 9px;
-    width: 30px;
-    height: 30px;
+    top: 1px;
+    width: 40px;
+    height: 40px;
   }
   .image-18 {
-    width: 9px;
-    margin-top: 2px;
-    margin-left: 9px;
+    width: 12px;
+    margin-top: 10px;
+    margin-left: 11px;
   }
   .right-arrow-2 {
-    left: 274px;
-    width: 30px;
-    height: 30px;
+    left: 269px;
+    top: 1px;
+    width: 40px;
+    height: 40px;
   }
   .image-19 {
-    width: 9px;
-    margin-top: 2px;
-    margin-left: 12px;
+    width: 12px;
+    margin-top: 10px;
+    margin-left: 15px;
+    clear: left;
   }
   .text-block-24 {
     top: 34px;
@@ -3843,7 +3918,7 @@
     text-align: center;
   }
   .right-arrow-3 {
-    left: 255px;
+    left: 265px;
     width: 30px;
   }
   .left-arrow-2 {
@@ -3866,23 +3941,48 @@
     margin-left: 0px;
   }
   .rate-this-film-popup {
-    left: -2.266px;
+    left: 8px;
     top: 40px;
-    width: 120px;
+    width: 110px;
+    height: 24px;
     font-size: 13px;
+    line-height: 18px;
   }
   .text-block-31 {
-    font-size: 9px;
+    position: relative;
+    top: 0px;
+    padding-top: 0px;
+    padding-right: 12px;
+    font-size: 8px;
+    line-height: 24px;
   }
   .text-block-32 {
-    left: 101px;
-    top: -23px;
+    left: 91px;
+    top: -21px;
+  }
+  .div-block-44 {
+    left: 47px;
   }
   .div-block-46 {
     top: 49%;
   }
   .html-embed {
     display: none;
+  }
+  .nav-menu-2 {
+    padding-top: 5px;
+    background-color: #dad7d7;
+    box-shadow: 0 1px 7px -1px #000;
+  }
+  .icon-5 {
+    text-align: right;
+  }
+  .image-32 {
+    width: 80px;
+  }
+  .image-33 {
+    width: 85px;
+    margin-top: -5px;
   }
 }
 
