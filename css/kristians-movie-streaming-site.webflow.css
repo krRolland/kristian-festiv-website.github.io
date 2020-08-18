@@ -983,6 +983,7 @@
 }
 
 .movie-description.we-the-children-description {
+  display: block;
   padding-top: 15px;
   padding-right: 18px;
   padding-left: 18px;
