@@ -461,6 +461,8 @@
 
 .select-plan-title-text.how-it-works-title-text {
   font-size: 14px;
+  line-height: 21px;
+  cursor: default;
 }
 
 .plan-image {
@@ -1641,7 +1643,7 @@
 }
 
 .text-block-21.how-it-works-description {
-  padding-top: 40px;
+  padding-top: 15%;
   font-family: Brandon, sans-serif;
   font-size: 1.8vw;
   line-height: 3vw;
@@ -1649,11 +1651,11 @@
 }
 
 .text-block-21.how-it-works-description.oot-description {
-  padding-top: 45px;
+  padding-top: 22%;
 }
 
 .text-block-21.how-it-works-description.theatrical-distribution-description {
-  padding-top: 60px;
+  padding-top: 25%;
 }
 
 .select-plan-button {
@@ -2274,6 +2276,7 @@
   }
   .select-plan-title-text.how-it-works-title-text {
     font-size: 18px;
+    line-height: 25px;
   }
   .footer-col-text-title {
     font-size: 18px;
@@ -2379,6 +2382,7 @@
   }
   .select-plan-title-text.how-it-works-title-text {
     font-size: 19px;
+    line-height: 26px;
   }
   .grid-5 {
     margin-bottom: 14px;
@@ -2446,15 +2450,6 @@
     width: 70px;
     height: 70px;
     padding-top: 20px;
-  }
-  .text-block-21.how-it-works-description {
-    padding-top: 50px;
-  }
-  .text-block-21.how-it-works-description.oot-description {
-    padding-top: 70px;
-  }
-  .text-block-21.how-it-works-description.theatrical-distribution-description {
-    padding-top: 70px;
   }
   .text-block-22 {
     font-size: 20px;
@@ -2525,6 +2520,7 @@
   }
   .select-plan-title-text.how-it-works-title-text {
     font-size: 27px;
+    line-height: 36px;
   }
   .grid-5.planet-carlos-title-grid {
     margin-bottom: 20px;
@@ -2723,15 +2719,6 @@
   }
   .div-block-25 {
     max-width: 1700px;
-  }
-  .text-block-21.how-it-works-description {
-    padding-top: 80px;
-  }
-  .text-block-21.how-it-works-description.oot-description {
-    padding-top: 90px;
-  }
-  .text-block-21.how-it-works-description.theatrical-distribution-description {
-    padding-top: 90px;
   }
   .text-block-22 {
     font-size: 25px;
@@ -3008,15 +2995,15 @@
     line-height: 4.2vw;
   }
   .text-block-21.how-it-works-description {
-    padding-top: 100px;
+    padding-top: 31%;
     font-size: 30px;
     line-height: 37px;
   }
   .text-block-21.how-it-works-description.oot-description {
-    padding-top: 110px;
+    padding-top: 37%;
   }
   .text-block-21.how-it-works-description.theatrical-distribution-description {
-    padding-top: 125px;
+    padding-top: 38%;
   }
   .select-plan-button {
     padding-right: 3vw;
@@ -3087,8 +3074,9 @@
   }
   .mobile-plan-titles.mobile-how-it-works-titles {
     color: rgba(51, 62, 81, 0.89);
-    font-size: 2.5vw;
+    font-size: 2.3vw;
     line-height: 27px;
+    cursor: default;
   }
   .mobile-plan-title-grid {
     display: block;
