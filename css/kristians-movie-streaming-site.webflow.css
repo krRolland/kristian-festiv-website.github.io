@@ -451,6 +451,10 @@
   position: relative;
 }
 
+.select-plan-image.select-plan-image-how-it-works {
+  cursor: default;
+}
+
 .select-plan-title-text {
   font-family: Brandon, sans-serif;
   font-size: 22px;
@@ -959,6 +963,10 @@
   -webkit-transition: all 550ms linear;
   transition: all 550ms linear;
   cursor: pointer;
+}
+
+.plan-card-div.plan-card-div-how-it-works {
+  cursor: default;
 }
 
 .movie-description {
