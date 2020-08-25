@@ -394,6 +394,10 @@
   margin-bottom: 34px;
 }
 
+.heading-2.select-your-plan-heading.final-headline-how-it-works {
+  margin-top: 50px;
+}
+
 .body-2 {
   background-color: #f7f7f7;
   font-family: 'Brandon bld', sans-serif;
@@ -1651,7 +1655,7 @@
 }
 
 .text-block-21.how-it-works-description {
-  padding-top: 15%;
+  padding-top: 10%;
   font-family: Brandon, sans-serif;
   font-size: 1.8vw;
   line-height: 3vw;
@@ -1659,7 +1663,7 @@
 }
 
 .text-block-21.how-it-works-description.oot-description {
-  padding-top: 22%;
+  padding-top: 20%;
 }
 
 .text-block-21.how-it-works-description.theatrical-distribution-description {
@@ -2458,6 +2462,9 @@
     width: 70px;
     height: 70px;
     padding-top: 20px;
+  }
+  .text-block-21.how-it-works-description {
+    padding-top: 14%;
   }
   .text-block-22 {
     font-size: 20px;
