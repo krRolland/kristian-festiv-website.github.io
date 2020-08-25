@@ -391,7 +391,7 @@
 }
 
 .heading-2.select-your-plan-heading {
-  margin-top: 20px;
+  margin-top: 25px;
   margin-bottom: 34px;
 }
 
@@ -1751,10 +1751,8 @@
 }
 
 .grid-15 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   width: 850px;
   height: 359px;
   max-height: 375px;
@@ -1763,8 +1761,13 @@
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
   -ms-grid-columns: auto auto;
   grid-template-columns: auto auto;
+  -ms-grid-rows: 100%;
+  grid-template-rows: 100%;
 }
 
 .mask-3 {
