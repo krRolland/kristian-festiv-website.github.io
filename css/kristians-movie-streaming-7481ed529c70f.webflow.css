@@ -2804,9 +2804,11 @@
   }
   .slide-5 {
     width: 850px;
+    margin-right: 7px;
+    margin-left: 7px;
   }
   .slide-6 {
-    width: 870px;
+    width: 850px;
     margin-right: 7px;
     margin-left: 7px;
   }
@@ -2817,12 +2819,14 @@
     top: -59px;
   }
   .right-arrow-2 {
-    left: 844px;
+    left: 822px;
     top: -223px;
   }
   .slide-7 {
     width: 850px;
     height: auto;
+    margin-right: 7px;
+    margin-left: 7px;
   }
   .right-arrow-3 {
     left: 1316px;
