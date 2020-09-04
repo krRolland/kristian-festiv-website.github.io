@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Tue Aug 25 2020 23:02:41 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="5f2cf9b5e09a28442a85a8b3" data-wf-site="5f2cf9b5e09a28c65685a8b2">
+<!--  Last Published: Fri Sep 04 2020 18:31:32 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="5f5275e1165352446e6aca76" data-wf-site="5f5275e1165352d7446aca77">
 <head>
   <meta charset="utf-8">
   <title>Festiv - The Fetival Of Film Festivals</title>
@@ -9,15 +9,15 @@
   <meta content="Webflow" name="generator">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/webflow.css" rel="stylesheet" type="text/css">
-  <link href="css/kristians-movie-streaming-site.webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/kristians-movie-streaming-7481ed529c70f.webflow.css" rel="stylesheet" type="text/css">
   <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
   <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
   <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
   <link href="images/webclip.png" rel="apple-touch-icon">
 </head>
 <body class="body">
-  <div data-collapse="medium" data-animation="default" data-duration="400" id="navbar-home-transparent" role="banner" class="navbar navbar-home w-nav"><a href="index.html" aria-current="page" class="brand w-nav-brand w--current"><img src="images/blue-festiv-logo-with-text.png" width="115" id="festiv-logo-navbar" srcset="images/blue-festiv-logo-with-text-p-500.png 500w, images/blue-festiv-logo-with-text-p-800.png 800w, images/blue-festiv-logo-with-text-p-1080.png 1080w, images/blue-festiv-logo-with-text.png 1280w" sizes="(max-width: 479px) 80px, (max-width: 767px) 100px, 115px" alt="" class="image-32"></a>
-    <nav role="navigation" class="nav-menu-2 w-nav-menu"><img src="images/magnifying-glass.svg" width="19" id="navbar-magnifying-glass" alt="" class="image"><a href="sign-up.html" id="acquire-films-navbar-link" class="nav-link home-nav-link w-nav-link">ACQUIRE FILMS</a><a href="http://filmfreeway.com/festiv" id="submit-films-navbar-link" target="_blank" class="nav-link-2 home-nav-link w-nav-link">SUBMIT FILMS</a><a id="sign-in-navbar-button" href="subscriber-homepage.html" class="button w-button">SIGN IN</a></nav>
+  <div data-collapse="medium" data-animation="default" data-duration="400" id="navbar-home-transparent" role="banner" class="navbar navbar-home w-nav"><a href="index.html" aria-current="page" class="brand w-nav-brand w--current"><img src="images/blue-festiv-logo-with-text.png" width="115" id="festiv-logo-navbar" srcset="images/blue-festiv-logo-with-text-p-500.png 500w, images/blue-festiv-logo-with-text-p-800.png 800w, images/blue-festiv-logo-with-text-p-1080.png 1080w, images/blue-festiv-logo-with-text.png 1280w" sizes="(max-width: 479px) 42vw, (max-width: 767px) 100px, 115px" alt="" class="image-32"></a>
+    <nav role="navigation" class="nav-menu-2 w-nav-menu"><a id="sign-in-navbar-button" href="subscriber-homepage.html" class="button w-button">SIGN IN</a></nav>
     <div class="script-for-popup-navbar w-embed w-script">
       <script>
 document.addEventListener("DOMContentLoaded", () => {
@@ -35,40 +35,36 @@ slideArray = document.getElementsByClassName('tabs-menu')[0].childNodes;
       if (slideArray[1].classList.contains('w--current')) {return 1;}
       else {return 2;}
   }
-submitFilmsNavbar = document.getElementById("acquire-films-navbar-link");
-  acquireFilmsNavbar = document.getElementById("submit-films-navbar-link");
   signInNavbar = document.getElementById("sign-in-navbar-button");
   navbarImage = document.getElementById("festiv-logo-navbar");
-  magGlass = document.getElementById("navbar-magnifying-glass");
   function makeNavbarWhite() {
-  	submitFilmsNavbar.style.color = "white"; 
-    acquireFilmsNavbar.style.color = "white"; 
-    signInNavbar.style.backgroundColor = "white";
-    signInNavbar.style.color = "#333e51";
+    signInNavbar.style.backgroundColor = "rgba(0,0,0,0)";
+    signInNavbar.style.color = "white";
     //Also Need To Swap Out Logo With White Logo
     navbarImage.srcset = "images/white-festiv-logo.png 500w, images/white-festiv-logo.png 800w, images/white-festiv-logo.png 1080w, images/white-festiv-logo.png 1280w" 
-    magGlass.srcset = "images/white-magnifying-glass.png 500w, images/white-magnifying-glass.png 800w, images/white-magnifying-glass.png 1080w, images/white-magnifying-glass.png 1280w" 
   } 
   function makeNavbarBlue() {
-  	submitFilmsNavbar.style.color = "#333e51"; 
-    acquireFilmsNavbar.style.color = "#333e51"; 
-    signInNavbar.style.backgroundColor = "#333e51";
-    signInNavbar.style.color = "white";
+    signInNavbar.style.backgroundColor = "rgba(0,0,0,0)";
+    signInNavbar.style.color = "#333e51";
     //Swap White Logo For Original Blue Logo
     navbarImage.srcset = "images/blue-festiv-logo-with-text.png 500w, images/blue-festiv-logo-with-text.png 800w, images/blue-festiv-logo-with-text.png 1080w, images/blue-festiv-logo-with-text.png 1280w" 
-    magGlass.srcset = "images/magnifying-glass.svg 500w, images/magnifying-glass.svg 800w, images/magnifying-glass.svg 1080w, images/magnifying-glass.svg 1280w" 
   } 
   window.addEventListener('scroll', function () {
     navbar = document.getElementById("navbar-home-transparent"); 
     // Set starting position
     if (window.pageYOffset >= 100) {
       navbar.style.backgroundColor = "rgba(255,255,255,1)"; 
-      makeNavbarBlue(); 
+      makeNavbarBlue();
     } else {
       navbar.style.backgroundColor = "rgba(255,255,255,0)"; 
       if (getCurr() !=0) {makeNavbarWhite();}
+      else {makeNavbarBlue();} 
     } 
     });
+    console.log(window.pageYOffset);
+  slideArray[0].addEventListener('click', () => { if(window.scrollY < 100) {setTimeout(makeNavbarBlue, 100);}});
+  slideArray[1].addEventListener('click', () => { if(window.scrollY < 100) {setTimeout(makeNavbarWhite, 100);}});
+  slideArray[2].addEventListener('click', () => { if(window.scrollY < 100) {setTimeout(makeNavbarWhite, 100);}});
   });
 </script>
     </div>
@@ -77,7 +73,7 @@ submitFilmsNavbar = document.getElementById("acquire-films-navbar-link");
     </div>
   </div>
   <div class="section-5">
-    <div data-duration-in="1200" data-easing="ease-in-out-quad" data-duration-out="1200" class="w-tabs">
+    <div data-duration-in="1000" data-easing="ease-in-out-quad" data-duration-out="500" class="w-tabs">
       <div class="w-tab-content">
         <div data-w-tab="Tab 1" class="tab-pane-tab-1 w-tab-pane w--tab-active">
           <div class="w-layout-grid grid">
@@ -87,29 +83,29 @@ submitFilmsNavbar = document.getElementById("acquire-films-navbar-link");
             <div id="w-node-87a548750e94-48750e8f" class="div-block-4">
               <div class="div-block-32">
                 <div class="text-block-2">ACCESS TOP DECISION MAKERS WITH UNLIMITED GLOBAL SCREENINGS.</div>
-              </div><a id="homepage-conversion-button" href="http://filmfreeway.com/festiv" target="_blank" class="button-2 w-button">SUBMIT FILMS</a></div>
+              </div><a id="homepage-conversion-button" href="sign-up.html" class="button-2 w-button">SIGN UP</a></div>
           </div>
         </div>
         <div data-w-tab="Tab 2" class="tab-pane-tab-2 w-tab-pane">
           <div class="w-layout-grid grid">
-            <div id="w-node-86a765efe3ea-2a85a8b3" class="div-block-3"><img src="images/Fuel-Your-Passion-white-1.png" width="652" srcset="images/Fuel-Your-Passion-white-1-p-500.png 500w, images/Fuel-Your-Passion-white-1-p-800.png 800w, images/Fuel-Your-Passion-white-1-p-1080.png 1080w, images/Fuel-Your-Passion-white-1-p-1600.png 1600w, images/Fuel-Your-Passion-white-1.png 2457w" sizes="(max-width: 479px) 53vw, 38vw" alt="" class="image-6 fuel-your-passion-white-text">
+            <div id="w-node-86a765efe3ea-6e6aca76" class="div-block-3"><img src="images/Fuel-Your-Passion-white-1.png" width="652" srcset="images/Fuel-Your-Passion-white-1-p-500.png 500w, images/Fuel-Your-Passion-white-1-p-800.png 800w, images/Fuel-Your-Passion-white-1-p-1080.png 1080w, images/Fuel-Your-Passion-white-1-p-1600.png 1600w, images/Fuel-Your-Passion-white-1.png 2457w" sizes="(max-width: 479px) 53vw, 38vw" alt="" class="image-6 fuel-your-passion-white-text">
               <h1 class="heading white-heading">THE FESTIVAL OF FILM FESTIVALS</h1>
             </div>
-            <div id="w-node-86a765efe3ee-2a85a8b3" class="div-block-4">
+            <div id="w-node-86a765efe3ee-6e6aca76" class="div-block-4">
               <div class="div-block-32">
                 <div class="text-block-2 white-subtitle">DISCOVER THE BEST INDEPENDENT FILMMAKERS FOR A LOW MONTHLY RATE.</div>
-              </div><a id="homepage-conversion-button" href="sign-up.html" class="button-2 action-button-white w-button">ACQUIRE FILMS</a></div>
+              </div><a id="homepage-conversion-button" href="sign-up.html" class="button-2 action-button-white w-button">SIGN UP</a></div>
           </div>
         </div>
         <div data-w-tab="Tab 3" class="tab-pane-tab-3 w-tab-pane">
           <div class="w-layout-grid grid">
-            <div id="w-node-804838ccba26-2a85a8b3" class="div-block-3"><img src="images/Fuel-Your-Passion-white-1.png" width="652" srcset="images/Fuel-Your-Passion-white-1-p-500.png 500w, images/Fuel-Your-Passion-white-1-p-800.png 800w, images/Fuel-Your-Passion-white-1-p-1080.png 1080w, images/Fuel-Your-Passion-white-1-p-1600.png 1600w, images/Fuel-Your-Passion-white-1.png 2457w" sizes="(max-width: 479px) 53vw, 38vw" alt="" class="image-6 fuel-your-passion-white-text">
+            <div id="w-node-804838ccba26-6e6aca76" class="div-block-3"><img src="images/Fuel-Your-Passion-white-1.png" width="652" srcset="images/Fuel-Your-Passion-white-1-p-500.png 500w, images/Fuel-Your-Passion-white-1-p-800.png 800w, images/Fuel-Your-Passion-white-1-p-1080.png 1080w, images/Fuel-Your-Passion-white-1-p-1600.png 1600w, images/Fuel-Your-Passion-white-1.png 2457w" sizes="(max-width: 479px) 53vw, 38vw" alt="" class="image-6 fuel-your-passion-white-text">
               <h1 class="heading white-heading heading-audiences">THE FESTIVAL OF FILM FESTIVALS</h1>
             </div>
-            <div id="w-node-804838ccba2a-2a85a8b3" class="div-block-4">
+            <div id="w-node-804838ccba2a-6e6aca76" class="div-block-4">
               <div class="div-block-32">
                 <div class="text-block-2 white-subtitle">STREAM THE NEWEST INDEPENDENT FILMS, UPDATED DAILY.</div>
-              </div><a id="homepage-conversion-button" href="sign-up.html" class="button-2 action-button-white w-button">WATCH FILMS</a></div>
+              </div><a id="homepage-conversion-button" href="sign-up.html" class="button-2 action-button-white w-button">SIGN UP</a></div>
           </div>
         </div>
       </div>
@@ -125,70 +121,6 @@ submitFilmsNavbar = document.getElementById("acquire-films-navbar-link");
         </a>
       </div>
     </div>
-  </div>
-  <div class="rotating-slides w-embed w-script">
-    <script>  
-	submitFilmsNavbar = document.getElementById("acquire-films-navbar-link");
-  acquireFilmsNavbar = document.getElementById("submit-films-navbar-link");
-  signInNavbar = document.getElementById("sign-in-navbar-button");
-  navbarImage = document.getElementById("festiv-logo-navbar");
-  magGlass = document.getElementById("navbar-magnifying-glass");
-  function makeNavbarWhite() {
-    // only apply when the navbar background is hidden
-    if (window.pageYOffset < 100) {
-      submitFilmsNavbar.style.color = "white"; 
-      acquireFilmsNavbar.style.color = "white"; 
-      signInNavbar.style.backgroundColor = "white";
-      signInNavbar.style.color = "#333e51";
-      //Also Need To Swap Out Logo With White Logo
-      navbarImage.srcset = "images/white-festiv-logo.png 500w, images/white-festiv-logo.png 800w, images/white-festiv-logo.png 1080w, images/white-festiv-logo.png 1280w" 
-      magGlass.srcset = "images/white-magnifying-glass.png 500w, images/white-magnifying-glass.png 800w, images/white-magnifying-glass.png 1080w, images/white-magnifying-glass.png 1280w" 
-    }
-  } 
-  function makeNavbarBlue() {
-  	submitFilmsNavbar.style.color = "#333e51"; 
-    acquireFilmsNavbar.style.color = "#333e51"; 
-    signInNavbar.style.backgroundColor = "#333e51";
-    signInNavbar.style.color = "white";
-    //Swap White Logo For Original Blue Logo
-    navbarImage.srcset = "images/blue-festiv-logo-with-text.png 500w, images/blue-festiv-logo-with-text.png 800w, images/blue-festiv-logo-with-text.png 1080w, images/blue-festiv-logo-with-text.png 1280w" 
-    magGlass.srcset = "images/magnifying-glass.svg 500w, images/magnifying-glass.svg 800w, images/magnifying-glass.svg 1080w, images/magnifying-glass.svg 1280w" 
-  } 
-  slideArray = document.getElementsByClassName('tabs-menu')[0].childNodes;
-  tempArray = []; 
-  for (i = 0; i < slideArray.length; i ++) {
-    if (slideArray[i].classList != null) {
-      tempArray.push(slideArray[i]);
-    }
-  }
-  slideArray = tempArray; 
-  //returns current slide index 
-  function getCurr() {
-      if (slideArray[0].classList.contains('w--current')) {return 0;}
-      if (slideArray[1].classList.contains('w--current')) {return 1;}
-      else {return 2;}
-  }
-  //Create Event Listeners For Each Of The Tabs -- this will trigger the color change 
-  slideArray[0].addEventListener('click', makeNavbarBlue);
-  slideArray[1].addEventListener('click', makeNavbarWhite);
-  slideArray[2].addEventListener('click', makeNavbarWhite);
-  var curr = 0; 
-  function clickOnNewTab () {
-      var tempCurr = getCurr(); 
-      if (tempCurr != curr) {
-          curr = tempCurr;
-          return; 
-      } 
-      else {
-          if(curr < 2) {
-              curr = curr + 1; 
-          } 
-          else {curr = 0;}
-      }
-      slideArray[curr].click(); 
-  } 
-  const interval = setInterval(clickOnNewTab, 7000);
-  </script>
   </div>
   <div class="div-block-10">
     <div class="featured-films-title-homepage">FEATURED</div>
@@ -682,7 +614,7 @@ submitFilmsNavbar = document.getElementById("acquire-films-navbar-link");
       <div id="w-node-e7f1494548f3-494548a4" class="div-block-41"><a href="https://www.instagram.com/festivmedia/?hl=en" class="social-link w-inline-block"><img src="images/instagram-icon.png" alt=""></a><a href="https://www.facebook.com/Festiv-101470541497280" class="social-link w-inline-block"><img src="images/facebook-icon.png" alt="" class="image-30"></a><a href="https://twitter.com/festiv12" class="social-link w-inline-block"><img src="images/twitter-icon.png" alt=""></a><a href="mailto:info@festivmedia.com?subject=Inquiry%20About%20Festiv" class="social-link w-inline-block"><img src="images/mail-icon.png" alt=""></a></div>
     </div>
   </div>
-  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5f2cf9b5e09a28c65685a8b2" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5f5275e1165352d7446aca77" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
 </body>
