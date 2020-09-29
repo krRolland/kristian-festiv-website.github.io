@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Tue Sep 29 2020 01:40:26 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Tue Sep 29 2020 01:45:38 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="5f5275e1165352f27d6aca7a" data-wf-site="5f5275e1165352d7446aca77">
 <head>
   <meta charset="utf-8">
@@ -36,7 +36,8 @@
       <div class="html-embed-3 w-embed w-script">
         <script>
 function stuff() {
-  container = document.getElementById("welcome-container"); 
+  setTimeout(() => {
+    container = document.getElementById("welcome-container"); 
   container.style.paddingTop = "140px";
   container.style.opacity = "1"; 
   function showContent() {
@@ -46,6 +47,7 @@ function stuff() {
   } 
     watchButton = document.getElementById("start-watching-button");
     watchButton.addEventListener('click', showContent)
+  }, 500);
 } 
 document.addEventListener("DOMContentLoaded", stuff); 
 </script>

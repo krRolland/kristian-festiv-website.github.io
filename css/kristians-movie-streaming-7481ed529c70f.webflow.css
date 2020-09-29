@@ -2789,8 +2789,8 @@
 .container-3 {
   padding-top: 175px;
   opacity: 0.12;
-  -webkit-transition: padding 400ms ease, opacity 400ms ease;
-  transition: padding 400ms ease, opacity 400ms ease;
+  -webkit-transition: padding 500ms ease-in-out, opacity 500ms ease-in-out;
+  transition: padding 500ms ease-in-out, opacity 500ms ease-in-out;
 }
 
 .image-41 {
