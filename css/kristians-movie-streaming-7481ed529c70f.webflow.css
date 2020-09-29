@@ -2749,7 +2749,7 @@
 
 .div-block-50 {
   top: 90px;
-  z-index: -3;
+  z-index: -5;
   display: none;
   height: 560px;
   opacity: 0;
@@ -2823,6 +2823,10 @@
   display: none;
   width: 100px;
   height: 100px;
+}
+
+.html-embed-4 {
+  display: none;
 }
 
 @media screen and (min-width: 1280px) {
@@ -5036,7 +5040,7 @@
     margin-bottom: 14px;
   }
   .show-password-toggle-button {
-    top: 296px;
+    top: 275px;
     right: 12px;
   }
   .slide-8 {
