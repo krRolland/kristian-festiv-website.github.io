@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Fri Sep 04 2020 21:41:51 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Tue Sep 29 2020 01:26:17 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="5f5275e1165352f27d6aca7a" data-wf-site="5f5275e1165352d7446aca77">
 <head>
   <meta charset="utf-8">
@@ -19,12 +19,38 @@
 </head>
 <body class="body-3">
   <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navbar w-nav"><a href="index.html" class="brand w-nav-brand"><img src="images/blue-festiv-logo-with-text.png" width="115" srcset="images/blue-festiv-logo-with-text-p-500.png 500w, images/blue-festiv-logo-with-text-p-800.png 800w, images/blue-festiv-logo-with-text-p-1080.png 1080w, images/blue-festiv-logo-with-text.png 1280w" sizes="(max-width: 479px) 85px, 115px" alt="" class="image-33"></a>
-    <nav role="navigation" class="nav-menu w-nav-menu"><img src="images/magnifying-glass.svg" width="19" alt="" class="image"><a href="sign-up.html" class="nav-link w-nav-link">ACQUIRE FILMS</a><a href="http://filmfreeway.com/festiv" target="_blank" class="nav-link-2 w-nav-link">SUBMIT FILMS</a><a href="subscriber-homepage.html" aria-current="page" class="link-block-6 w-inline-block w--current"><img src="images/user-icon.png" width="35" alt="" class="image-13"><div class="text-block-13">ALLEN</div></a></nav>
+    <nav role="navigation" class="nav-menu w-nav-menu"><img src="images/magnifying-glass.svg" width="19" alt="" class="image"><a href="sign-up.html" class="nav-link w-nav-link">ACQUIRE FILMS</a><a href="#" target="_blank" class="nav-link-2 w-nav-link">SUBMIT FILMS</a><a href="subscriber-homepage.html" aria-current="page" class="link-block-6 w-inline-block w--current"><img src="images/user-icon.png" width="35" alt="" class="image-13"><div class="text-block-13">ALLEN</div></a></nav>
     <div class="w-nav-button">
       <div class="w-icon-nav-menu"></div>
     </div>
   </div>
   <div class="section-4">
+    <div id="fixed-welcome-div" class="div-block-51">
+      <div id="welcome-container" class="container-3 w-container">
+        <div class="festiv-logo-wrapper-welcome"><img src="images/festiv-logo.svg" loading="lazy" alt="" class="image-41"></div>
+        <div class="welcome-wrapper">
+          <div class="welcome-text">WELCOME</div>
+        </div>
+        <div class="start-watching-button-wrapper"><a id="start-watching-button" href="#" class="button-4 w-button">START WATCHING</a></div>
+      </div>
+      <div class="html-embed-3 w-embed w-script">
+        <script>
+function stuff() {
+  container = document.getElementById("welcome-container"); 
+  container.style.paddingTop = "140px";
+  container.style.opacity = "1"; 
+  function showContent() {
+    welcomeDiv = document.getElementById("fixed-welcome-div");
+    welcomeDiv.style.opacity = "0";
+      setTimeout( () => {welcomeDiv.style.display = "none";}, 400)
+  } 
+    watchButton = document.getElementById("start-watching-button");
+    watchButton.addEventListener('click', showContent)
+} 
+document.addEventListener("DOMContentLoaded", stuff); 
+</script>
+      </div>
+    </div>
     <div class="homepage-container">
       <div class="featured-films-title-wrapper">
         <h1 class="heading-4 featured-films-title-subhomepage">FEATURED</h1>
@@ -32,7 +58,7 @@
       <div data-delay="6000" data-animation="slide" data-autoplay="1" data-easing="ease-in-out" data-duration="700" data-infinite="1" class="slider-4 w-slider">
         <div class="mask-4 w-slider-mask">
           <div class="slide-7 w-slide">
-            <div class="w-layout-grid grid-4 grid-11 grid-15"><img src="images/ivote-keyart-vertical-hq.png" width="348" srcset="images/ivote-keyart-vertical-hq-p-500.png 500w, images/ivote-keyart-vertical-hq.png 738w" sizes="(max-width: 479px) 123px, (max-width: 767px) 165px, (max-width: 991px) 219.5px, 245px" alt="" class="image-7">
+            <div class="w-layout-grid grid-4 grid-11 grid-15"><img src="images/ivote-keyart-vertical-hq.png" width="348" srcset="images/ivote-keyart-vertical-hq-p-500.png 500w, images/ivote-keyart-vertical-hq.png 738w" sizes="(max-width: 479px) 123px, (max-width: 767px) 165px, (max-width: 991px) 240px, 245px" alt="" class="image-7">
               <div id="w-node-f1b15410f35f-7d6aca7a" class="div-block-9 ivote-ff-card">
                 <div class="w-layout-grid grid-5">
                   <div id="w-node-f1b15410f361-7d6aca7a">
@@ -56,7 +82,7 @@
             </div>
           </div>
           <div class="slide-5 w-slide">
-            <div class="w-layout-grid grid-4 grid-11 grid-15"><img src="images/film-art-demo.png" width="348" srcset="images/film-art-demo-p-500.png 500w, images/film-art-demo-p-800.png 800w, images/film-art-demo.png 918w" sizes="(max-width: 479px) 123px, (max-width: 767px) 165px, (max-width: 991px) 188.671875px, 245px" alt="" class="image-7">
+            <div class="w-layout-grid grid-4 grid-11 grid-15"><img src="images/film-art-demo.png" width="348" srcset="images/film-art-demo-p-500.png 500w, images/film-art-demo-p-800.png 800w, images/film-art-demo.png 918w" sizes="(max-width: 479px) 123px, (max-width: 767px) 165px, (max-width: 991px) 240px, 245px" alt="" class="image-7">
               <div id="w-node-798ac7fc12e9-7d6aca7a" class="div-block-9 caroline-ff-card">
                 <div class="w-layout-grid grid-5">
                   <div id="w-node-798ac7fc12eb-7d6aca7a">
@@ -80,7 +106,7 @@
             </div>
           </div>
           <div class="slide-6 w-slide">
-            <div class="w-layout-grid grid-4 grid-11 grid-15"><img src="images/real-swan-cover-art.jpeg" width="348" srcset="images/real-swan-cover-art-p-500.jpeg 500w, images/real-swan-cover-art-p-800.jpeg 800w, images/real-swan-cover-art.jpeg 960w" sizes="(max-width: 479px) 123px, (max-width: 767px) 165px, (max-width: 991px) 190.765625px, 245px" alt="" class="image-7">
+            <div class="w-layout-grid grid-4 grid-11 grid-15"><img src="images/real-swan-cover-art.jpeg" width="348" srcset="images/real-swan-cover-art-p-500.jpeg 500w, images/real-swan-cover-art-p-800.jpeg 800w, images/real-swan-cover-art.jpeg 960w" sizes="(max-width: 479px) 123px, (max-width: 767px) 165px, (max-width: 991px) 240px, 245px" alt="" class="image-7">
               <div id="w-node-8fd080c41a8b-7d6aca7a" class="div-block-9 lil-buck-feature-card">
                 <div class="w-layout-grid grid-5 lil-buck-title-grid">
                   <div id="w-node-8fd080c41a8d-7d6aca7a">
@@ -104,7 +130,7 @@
             </div>
           </div>
           <div class="slide-6 w-slide">
-            <div class="w-layout-grid grid-4 grid-11 grid-15"><img src="images/planet-carlos-cover-art.jpeg" width="348" srcset="images/planet-carlos-cover-art-p-500.jpeg 500w, images/planet-carlos-cover-art-p-800.jpeg 800w, images/planet-carlos-cover-art.jpeg 907w" sizes="(max-width: 479px) 123px, (max-width: 767px) 165px, (max-width: 991px) 211.234375px, 245px" alt="" class="image-7">
+            <div class="w-layout-grid grid-4 grid-11 grid-15"><img src="images/planet-carlos-cover-art.jpeg" width="348" srcset="images/planet-carlos-cover-art-p-500.jpeg 500w, images/planet-carlos-cover-art-p-800.jpeg 800w, images/planet-carlos-cover-art.jpeg 907w" sizes="(max-width: 479px) 123px, (max-width: 767px) 165px, (max-width: 991px) 240px, 245px" alt="" class="image-7">
               <div id="w-node-f6566020450f-7d6aca7a" class="div-block-9">
                 <div class="w-layout-grid grid-5 planet-carlos-title-grid">
                   <div id="w-node-f65660204511-7d6aca7a">
@@ -627,7 +653,7 @@
         <a href="how-it-works.html" class="link-block w-inline-block">
           <div class="text-block-6">How It Works</div>
         </a>
-        <a href="http://filmfreeway.com/festiv" class="link-block w-inline-block">
+        <a href="#" class="link-block w-inline-block">
           <div class="text-block-6">Submit Your Film Here</div>
         </a>
         <a href="#" class="link-block w-inline-block">

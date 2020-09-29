@@ -2279,6 +2279,552 @@
   width: 70%;
 }
 
+.utility-page-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  max-height: 100%;
+  max-width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.utility-page-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 260px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+
+.utility-page-form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.pop-up-background {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.pop-up-card {
+  position: fixed;
+  left: 50%;
+  top: 70px;
+  z-index: -4;
+  display: block;
+  width: 1000px;
+  height: 570px;
+  margin-left: -500px;
+  background-color: #fff;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease, top 200ms ease;
+  transition: opacity 200ms ease, top 200ms ease;
+}
+
+.pop-up-header-background {
+  position: relative;
+  width: 100%;
+  background-color: #333e51;
+}
+
+.pop-up-header {
+  margin-top: 0px;
+  opacity: 1;
+  font-family: 'Brandon bld', sans-serif;
+  color: #fff;
+  font-size: 27px;
+  line-height: 80px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.pop-up-content-grid {
+  display: -ms-grid;
+  display: grid;
+  padding: 25px 20px;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 15px;
+  -ms-grid-columns: 1fr 0.75fr;
+  grid-template-columns: 1fr 0.75fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.account-creation-wrapper {
+  padding-right: 35px;
+  padding-left: 35px;
+}
+
+.cancel-button-wrapper {
+  position: absolute;
+  left: 94%;
+  top: 15px;
+  width: 50px;
+  height: 50px;
+  padding-top: 14px;
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cancel-button-wrapper:hover {
+  -webkit-transform: scale(1.06);
+  -ms-transform: scale(1.06);
+  transform: scale(1.06);
+}
+
+.cancel-button-wrapper:active {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+.cancel-button {
+  width: 20px;
+  -webkit-transform: scale3d(0.85, 1, 1);
+  transform: scale3d(0.85, 1, 1);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.benefits-and-image-grid {
+  margin-top: 10px;
+  grid-column-gap: 8px;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.benefits-list {
+  font-family: 'Brandon med', sans-serif;
+  color: #333e51;
+  line-height: 29px;
+}
+
+.benefits-list-title {
+  margin-bottom: 10px;
+  font-family: 'Brandon blk', sans-serif;
+  font-size: 19px;
+  letter-spacing: 1px;
+}
+
+.sign-up-slider {
+  display: block;
+  width: 400px;
+  background-color: transparent;
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+}
+
+.slide-nav-4 {
+  display: none;
+}
+
+.slide-nav-5 {
+  display: none;
+}
+
+.computer-image-wrapper {
+  text-align: center;
+}
+
+.image-36 {
+  width: 410px;
+  margin-top: 35px;
+}
+
+.slider-5 {
+  background-color: transparent;
+  -webkit-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+}
+
+.create-account-title-wrapper {
+  text-align: center;
+}
+
+.create-new-account-title {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: 'Brandon blk', sans-serif;
+  color: #333e51;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.image-37 {
+  width: 55px;
+}
+
+.screen-anytime-title {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-family: 'Brandon bld', sans-serif;
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.submit-button {
+  display: inline-block;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-radius: 2px;
+  background-color: #333e51;
+  -webkit-transition: box-shadow 200ms ease;
+  transition: box-shadow 200ms ease;
+  font-family: 'Brandon blk', sans-serif;
+  color: #fff;
+  font-size: 16px;
+  line-height: 38px;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  box-shadow: 0 1px 7px 1px rgba(0, 0, 0, 0.29);
+}
+
+.form-input {
+  margin-top: 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(51, 62, 81, 0.13);
+  border-radius: 2px;
+  box-shadow: 0 0 1.5px 0 rgba(0, 0, 0, 0.08);
+  -webkit-transition: box-shadow 200ms ease;
+  transition: box-shadow 200ms ease;
+  font-family: 'Brandon re', sans-serif;
+  color: #333e51;
+  letter-spacing: 0.5px;
+}
+
+.form-input.form-input-half-row {
+  display: inline-block;
+  width: 160px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+}
+
+.form-input.form-input-half-row.last-half {
+  width: 48%;
+  margin-right: 0px;
+  float: right;
+}
+
+.form-input.form-input-half-row.billing-input {
+  width: 49%;
+  margin-right: 0px;
+}
+
+.form-input.form-input-half-row.create-account-input-first-name {
+  width: 48%;
+  margin-right: 0px;
+}
+
+.form-input.billing-input {
+  height: 31px;
+  margin-top: 14px;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.show-password-toggle-button {
+  position: absolute;
+  left: 331px;
+  top: 253px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.next-button-wrapper {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.text-block-33 {
+  font-family: 'Brandon re', sans-serif;
+  color: #333e51;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+}
+
+.mask-5 {
+  overflow: hidden;
+  height: auto;
+}
+
+.billing-information-wrapper {
+  padding-right: 35px;
+  padding-left: 35px;
+}
+
+.billing-information-title {
+  font-family: 'Brandon blk', sans-serif;
+  color: #333e51;
+  letter-spacing: 2px;
+}
+
+.image-38 {
+  width: 160px;
+}
+
+.submit-button-2 {
+  display: inline-block;
+  width: 190px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-radius: 2px;
+  background-color: #333e51;
+  -webkit-transition: box-shadow 200ms ease;
+  transition: box-shadow 200ms ease;
+  font-family: 'Brandon bld', sans-serif;
+  color: #fff;
+  font-size: 10px;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.submit-button-2:hover {
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.start-membership-button-wrapper {
+  margin-top: 15px;
+  text-align: right;
+}
+
+.billing-frequency-title {
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-family: 'Brandon blk', sans-serif;
+  color: #333e51;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+}
+
+.monthly-billing-button {
+  display: inline-block;
+  width: 49%;
+  padding-left: 30px;
+  border-radius: 2px;
+  background-color: #333e51;
+  -webkit-transition: background-color 200ms ease, box-shadow 200ms ease;
+  transition: background-color 200ms ease, box-shadow 200ms ease;
+  text-align: left;
+  cursor: pointer;
+}
+
+.monthly-billing-button:hover {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.text-block-34 {
+  display: inline-block;
+  margin-left: 16px;
+  font-family: 'Brandon bld', sans-serif;
+  color: #fff;
+  line-height: 45px;
+  letter-spacing: 2px;
+}
+
+.text-block-34.monthly-button-text {
+  -webkit-transition: color 200ms ease;
+  transition: color 200ms ease;
+  font-size: 10px;
+  line-height: 35px;
+}
+
+.text-block-34.annual-button-text {
+  -webkit-transition: color 200ms ease;
+  transition: color 200ms ease;
+  color: #333e51;
+  font-size: 10px;
+  line-height: 35px;
+}
+
+.image-39 {
+  width: 25px;
+}
+
+.image-39.annual-billing-icon {
+  width: 15px;
+}
+
+.image-39.monthly-billing-icon {
+  width: 18px;
+}
+
+.annual-billing-button {
+  display: inline-block;
+  width: 48%;
+  margin-left: 2%;
+  padding-left: 27px;
+  border: 1px solid #333e51;
+  border-radius: 2px;
+  -webkit-transition: background-color 200ms ease, box-shadow 200ms ease;
+  transition: background-color 200ms ease, box-shadow 200ms ease;
+  cursor: pointer;
+}
+
+.annual-billing-button:hover {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.text-block-35 {
+  position: absolute;
+  left: 30px;
+  display: inline-block;
+  margin-right: 45px;
+  padding-top: 8px;
+  font-family: 'Brandon re', sans-serif;
+  color: #333e51;
+}
+
+.left-arrow-3 {
+  display: none;
+}
+
+.right-arrow-4 {
+  display: none;
+}
+
+.right-arrow-5 {
+  display: none;
+}
+
+.left-arrow-4 {
+  display: none;
+}
+
+.image-40 {
+  display: none;
+}
+
+.popup-js {
+  display: none;
+  width: 100%;
+  height: 100px;
+}
+
+.div-block-50 {
+  top: 90px;
+  z-index: -3;
+  display: none;
+  height: 560px;
+  opacity: 0;
+}
+
+.slide-9 {
+  height: auto;
+}
+
+.div-block-51 {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 2500;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(0, 0%, 93.3%, 0.97);
+  -webkit-transition: opacity 400ms ease;
+  transition: opacity 400ms ease;
+}
+
+.festiv-logo-wrapper-welcome {
+  margin-bottom: 40px;
+}
+
+.welcome-text {
+  margin-bottom: 20px;
+  font-family: Brandon, sans-serif;
+  font-size: 70px;
+  line-height: 90px;
+  letter-spacing: 5px;
+}
+
+.container-3 {
+  padding-top: 175px;
+  opacity: 0.12;
+  -webkit-transition: padding 400ms ease, opacity 400ms ease;
+  transition: padding 400ms ease, opacity 400ms ease;
+}
+
+.image-41 {
+  width: 90px;
+}
+
+.button-4 {
+  padding-right: 40px;
+  padding-left: 40px;
+  border-radius: 2px;
+  background-color: #333e51;
+  -webkit-transition: box-shadow 200ms ease;
+  transition: box-shadow 200ms ease;
+  font-family: 'Brandon bld', sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 1.8px;
+  cursor: pointer;
+}
+
+.button-4:hover {
+  box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.33);
+}
+
+.button-4:active {
+  box-shadow: 1px 1px 5px -6px rgba(0, 0, 0, 0.33);
+}
+
+.html-embed-3 {
+  display: none;
+  width: 100px;
+  height: 100px;
+}
+
 @media screen and (min-width: 1280px) {
   .text-block-2 {
     width: 43%;
@@ -2899,6 +3445,9 @@
   .body-2 {
     background-color: #f7f7f7;
   }
+  .div-block-5 {
+    max-height: 2200px;
+  }
   .grid-2 {
     padding-right: 90px;
     padding-left: 90px;
@@ -3163,6 +3712,8 @@
   .grid-15 {
     width: 650px;
     height: 350px;
+    -ms-grid-columns: 240px auto;
+    grid-template-columns: 240px auto;
   }
   .slider-4 {
     display: inline-block;
@@ -3229,6 +3780,108 @@
   }
   .image-35 {
     width: 90%;
+  }
+  .pop-up-content-grid {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+  .account-creation-wrapper {
+    overflow: visible;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .cancel-button-wrapper {
+    left: 91%;
+  }
+  .benefits-list-title {
+    margin-top: 40px;
+  }
+  .sign-up-slider {
+    overflow: hidden;
+    width: auto;
+    height: auto;
+  }
+  .slider-5 {
+    height: auto;
+  }
+  .create-new-account-title {
+    display: inline-block;
+  }
+  .image-37 {
+    width: 40px;
+    margin-right: 20px;
+    padding-bottom: 8px;
+  }
+  .screen-anytime-title {
+    margin-top: 10px;
+  }
+  .submit-button {
+    padding-right: 100px;
+    padding-left: 100px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(51, 62, 81, 0.29);
+    background-color: #fff;
+    color: #333e51;
+  }
+  .form-input.form-input-half-row.last-half {
+    width: 48%;
+    float: right;
+  }
+  .form-input.form-input-half-row.billing-input {
+    width: 49%;
+    margin-right: 0px;
+  }
+  .form-input.form-input-half-row.create-account-input-first-name {
+    width: 48%;
+    margin-right: 1%;
+  }
+  .show-password-toggle-button {
+    left: auto;
+    top: 199px;
+    right: 76px;
+  }
+  .text-block-33 {
+    opacity: 0.7;
+    text-decoration: underline;
+  }
+  .slide-8 {
+    overflow: visible;
+  }
+  .mask-5 {
+    overflow: hidden;
+  }
+  .div-block-50 {
+    position: absolute;
+    left: auto;
+    top: 0px;
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+    background-color: #fff;
+  }
+  .mask-6 {
+    overflow: visible;
+    height: auto;
+  }
+  .divider-line {
+    display: inline-block;
+    width: 93%;
+    height: 0.2px;
+    padding-bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.22);
+  }
+  .divider-line-wrapper {
+    margin-top: 42px;
+    margin-bottom: 0px;
+    text-align: center;
   }
 }
 
@@ -3590,6 +4243,22 @@
   }
   .image-32 {
     width: 100px;
+  }
+  .pop-up-content-grid {
+    padding-bottom: 40px;
+  }
+  .cancel-button-wrapper {
+    left: 88%;
+    top: 13px;
+  }
+  .benefits-list-title {
+    margin-top: 10px;
+  }
+  .form-input.form-input-half-row.create-account-input-first-name {
+    margin-right: 1%;
+  }
+  .show-password-toggle-button {
+    right: 75px;
   }
 }
 
@@ -4296,6 +4965,135 @@
   }
   .div-block-48 {
     display: inline-block;
+  }
+  .pop-up-header {
+    padding: 20px 40px;
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 3px;
+  }
+  .pop-up-content-grid {
+    padding-top: 0px;
+  }
+  .account-creation-wrapper {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .cancel-button-wrapper {
+    left: 85%;
+    top: 9px;
+    width: 30px;
+  }
+  .cancel-button {
+    width: 17px;
+  }
+  .benefits-and-image-grid {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .benefits-list {
+    padding-left: 20px;
+  }
+  .benefits-list-title {
+    text-align: center;
+  }
+  .create-new-account-title {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  .image-37 {
+    width: 30px;
+    margin-right: 10px;
+  }
+  .form-input.form-input-half-row.last-half {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    float: left;
+  }
+  .form-input.form-input-half-row.last-half.billing-input {
+    display: block;
+    margin-bottom: 14px;
+  }
+  .form-input.form-input-half-row.billing-input {
+    display: block;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  .form-input.form-input-half-row.create-account-input-first-name {
+    display: block;
+    width: 100%;
+    margin-right: 0%;
+  }
+  .form-input.billing-input {
+    margin-bottom: 14px;
+  }
+  .show-password-toggle-button {
+    top: 296px;
+    right: 12px;
+  }
+  .slide-8 {
+    padding-top: 20px;
+  }
+  .mask-5 {
+    overflow: hidden;
+  }
+  .billing-information-wrapper {
+    overflow: visible;
+    height: 610px;
+  }
+  .billing-information-title {
+    padding-top: 10px;
+  }
+  .start-membership-button-wrapper {
+    text-align: center;
+  }
+  .monthly-billing-button {
+    padding-left: 8px;
+  }
+  .text-block-34.monthly-button-text {
+    margin-left: 5px;
+  }
+  .text-block-34.annual-button-text {
+    margin-left: 5px;
+  }
+  .annual-billing-button {
+    padding-left: 5px;
+    float: right;
+  }
+  .text-block-35 {
+    position: relative;
+    left: auto;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .mask-6 {
+    overflow: hidden;
+  }
+  .divider-line-wrapper {
+    margin-top: 60px;
+  }
+  .slide-9 {
+    overflow: visible;
+    max-height: 540px;
+  }
+  .welcome-text {
+    font-size: 40px;
+  }
+  .image-41 {
+    width: 80px;
+  }
+  .button-4 {
+    padding: 11px 30px;
   }
 }
 
