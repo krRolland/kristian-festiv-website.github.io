@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Sun Oct 18 2020 04:37:39 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Sun Oct 18 2020 04:40:52 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="5f5275e1165352f27d6aca7a" data-wf-site="5f5275e1165352d7446aca77">
 <head>
   <meta charset="utf-8">
@@ -31,13 +31,32 @@ submitFilmsButton.href = "mailto:info@festivmedia.com?subject=Film Submission&bo
     </div>
   </div>
   <div class="featured-films">
-    <div id="fixed-welcome-div" class="div-block-51">
+    <div id="fixed-welcome-div" class="film-popup">
       <div id="welcome-container" class="container-3 w-container">
         <div class="festiv-logo-wrapper-welcome"><img src="images/festiv-logo.svg" loading="lazy" alt="" class="image-41"></div>
         <div class="welcome-wrapper">
           <div class="welcome-text">WELCOME</div>
         </div>
         <div class="start-watching-button-wrapper"><a id="start-watching-button" href="#" class="button-4 w-button">START WATCHING</a></div>
+      </div>
+      <div class="html-embed-3 w-embed w-script">
+        <script>
+function stuff() {
+  setTimeout(() => {
+    container = document.getElementById("welcome-container"); 
+  container.style.paddingTop = "140px";
+  container.style.opacity = "1"; 
+  function showContent() {
+    welcomeDiv = document.getElementById("fixed-welcome-div");
+    welcomeDiv.style.opacity = "0";
+      setTimeout( () => {welcomeDiv.style.display = "none";}, 400)
+  } 
+    watchButton = document.getElementById("start-watching-button");
+    watchButton.addEventListener('click', showContent)
+  }, 500);
+} 
+document.addEventListener("DOMContentLoaded", stuff); 
+</script>
       </div>
     </div>
     <div class="homepage-container">
@@ -147,25 +166,6 @@ submitFilmsButton.href = "mailto:info@festivmedia.com?subject=Film Submission&bo
         <div class="right-arrow-2 w-slider-arrow-right"><img src="images/right-arrow-icon.png" alt="" class="image-19"></div>
         <div class="slide-nav-3 w-slider-nav w-round"></div>
       </div>
-    </div>
-    <div class="html-embed-3 w-embed w-script">
-      <script>
-function stuff() {
-  setTimeout(() => {
-    container = document.getElementById("welcome-container"); 
-  container.style.paddingTop = "140px";
-  container.style.opacity = "1"; 
-  function showContent() {
-    welcomeDiv = document.getElementById("fixed-welcome-div");
-    welcomeDiv.style.opacity = "0";
-      setTimeout( () => {welcomeDiv.style.display = "none";}, 400)
-  } 
-    watchButton = document.getElementById("start-watching-button");
-    watchButton.addEventListener('click', showContent)
-  }, 500);
-} 
-document.addEventListener("DOMContentLoaded", stuff); 
-</script>
     </div>
   </div>
   <div class="div-block-11">
