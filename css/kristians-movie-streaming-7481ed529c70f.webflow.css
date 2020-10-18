@@ -2792,6 +2792,7 @@
   opacity: 0.12;
   -webkit-transition: padding 500ms ease-in-out, opacity 500ms ease-in-out;
   transition: padding 500ms ease-in-out, opacity 500ms ease-in-out;
+  text-align: center;
 }
 
 .image-41 {
@@ -2821,7 +2822,7 @@
 }
 
 .html-embed-3 {
-  display: block;
+  display: none;
   width: 100px;
   height: 100px;
 }
