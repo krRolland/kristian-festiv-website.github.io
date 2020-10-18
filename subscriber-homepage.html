@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Sun Oct 18 2020 02:23:49 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Sun Oct 18 2020 02:41:42 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="5f5275e1165352f27d6aca7a" data-wf-site="5f5275e1165352d7446aca77">
 <head>
   <meta charset="utf-8">
@@ -19,7 +19,7 @@
 </head>
 <body class="body-3">
   <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navbar w-nav"><a href="index.html" class="brand w-nav-brand"><img src="images/blue-festiv-logo-with-text.png" width="115" sizes="(max-width: 479px) 85px, 115px" srcset="images/blue-festiv-logo-with-text-p-500.png 500w, images/blue-festiv-logo-with-text-p-800.png 800w, images/blue-festiv-logo-with-text-p-1080.png 1080w, images/blue-festiv-logo-with-text.png 1280w" alt="" class="image-33"></a>
-    <nav role="navigation" class="nav-menu w-nav-menu"><img src="images/magnifying-glass.svg" width="19" alt="" class="image"><a href="sign-up.html" class="nav-link w-nav-link">ACQUIRE FILMS</a><a href="mailto:info@festivmedia.com?subject=Film%20Submission" class="nav-link-2 w-nav-link">SUBMIT FILMS</a><a href="subscriber-homepage.html" aria-current="page" class="link-block-6 w-inline-block w--current"><img src="images/user-icon.png" width="35" alt="" class="image-13"><div class="text-block-13">ALLEN</div></a></nav>
+    <nav role="navigation" class="nav-menu w-nav-menu"><img src="images/magnifying-glass.svg" width="19" alt="" class="image"><a href="sign-up.html" class="nav-link w-nav-link">ACQUIRE FILMS</a><a href="#" id="submit-films-button" class="nav-link-2 w-nav-link">SUBMIT FILMS</a><a href="subscriber-homepage.html" aria-current="page" class="link-block-6 w-inline-block w--current"><img src="images/user-icon.png" width="35" alt="" class="image-13"><div class="text-block-13">ALLEN</div></a></nav>
     <div class="w-nav-button">
       <div class="w-icon-nav-menu"></div>
     </div>
@@ -55,12 +55,18 @@ document.addEventListener("DOMContentLoaded", stuff);
     </div>
     <div class="homepage-container">
       <div class="featured-films-title-wrapper">
+        <div class="html-embed-5 w-embed w-script">
+          <script>
+submitFilmsButton = document.getElementById("submit-films-button");
+submitFilmsButton.href = "mailto:info@festivmedia.com?subject=Film Submission&body=Please paste a Google Drive or Dropbox link to your film in the space below. If your link is private, remember to give info@festivmedia.com viewing access."
+</script>
+        </div>
         <h1 class="heading-4 featured-films-title-subhomepage">FEATURED</h1>
       </div>
       <div data-delay="6000" data-animation="slide" data-autoplay="1" data-easing="ease-in-out" data-duration="700" data-infinite="1" class="slider-4 w-slider">
         <div class="mask-4 w-slider-mask">
           <div class="slide-7 w-slide">
-            <div class="w-layout-grid grid-4 grid-11 grid-15"><img src="images/ivote-keyart-vertical-hq.png" width="348" srcset="images/ivote-keyart-vertical-hq-p-500.png 500w, images/ivote-keyart-vertical-hq.png 738w" sizes="(max-width: 479px) 123px, (max-width: 767px) 165px, (max-width: 991px) 240px, 245px" alt="" class="image-7">
+            <div class="w-layout-grid grid-4 grid-11 grid-15"><img src="images/ivote-keyart-vertical-hq.png" width="348" sizes="(max-width: 479px) 123px, (max-width: 767px) 165px, (max-width: 991px) 240px, 245px" srcset="images/ivote-keyart-vertical-hq-p-500.png 500w, images/ivote-keyart-vertical-hq.png 738w" alt="" class="image-7">
               <div id="w-node-f1b15410f35f-7d6aca7a" class="div-block-9 ivote-ff-card">
                 <div class="w-layout-grid grid-5">
                   <div id="w-node-f1b15410f361-7d6aca7a">
@@ -79,12 +85,12 @@ document.addEventListener("DOMContentLoaded", stuff);
                 <div class="div-block-28">
                   <div class="featured-film-card-info ivote-stats-feature-film">21 min  |  English  |  USA</div>
                 </div>
-                <div class="featured-film-card-images-wrapper ivote-card-images-wrapper"><img src="images/ivote-screenshot-1.png" width="77" srcset="images/ivote-screenshot-1-p-500.png 500w, images/ivote-screenshot-1-p-800.png 800w, images/ivote-screenshot-1.png 1345w" sizes="(max-width: 767px) 100vw, (max-width: 991px) 74px, (max-width: 1919px) 122px, 95px" alt="" class="film-screenshots-small"><img src="images/ivote-screenshot-2.png" width="77" srcset="images/ivote-screenshot-2-p-500.png 500w, images/ivote-screenshot-2-p-800.png 800w, images/ivote-screenshot-2-p-1080.png 1080w, images/ivote-screenshot-2.png 1353w" sizes="(max-width: 767px) 100vw, (max-width: 991px) 74px, (max-width: 1919px) 122px, 95px" alt="" class="film-screenshots-small"><img src="images/ivote-screenshot-3.png" width="77" srcset="images/ivote-screenshot-3-p-500.png 500w, images/ivote-screenshot-3-p-800.png 800w, images/ivote-screenshot-3-p-1080.png 1080w, images/ivote-screenshot-3.png 1353w" sizes="(max-width: 767px) 100vw, (max-width: 991px) 74px, (max-width: 1919px) 122px, 95px" alt="" class="film-screenshots-small"><img src="images/ivote-screenshot-4.png" width="77" srcset="images/ivote-screenshot-4-p-500.png 500w, images/ivote-screenshot-4-p-800.png 800w, images/ivote-screenshot-4-p-1080.png 1080w, images/ivote-screenshot-4.png 1352w" sizes="(max-width: 767px) 100vw, (max-width: 991px) 74px, (max-width: 1919px) 122px, 95px" alt="" class="film-screenshots-small"></div>
+                <div class="featured-film-card-images-wrapper ivote-card-images-wrapper"><img src="images/ivote-screenshot-1.png" width="77" sizes="(max-width: 767px) 100vw, (max-width: 991px) 74px, (max-width: 1919px) 122px, 95px" srcset="images/ivote-screenshot-1-p-500.png 500w, images/ivote-screenshot-1-p-800.png 800w, images/ivote-screenshot-1.png 1345w" alt="" class="film-screenshots-small"><img src="images/ivote-screenshot-2.png" width="77" sizes="(max-width: 767px) 100vw, (max-width: 991px) 74px, (max-width: 1919px) 122px, 95px" srcset="images/ivote-screenshot-2-p-500.png 500w, images/ivote-screenshot-2-p-800.png 800w, images/ivote-screenshot-2-p-1080.png 1080w, images/ivote-screenshot-2.png 1353w" alt="" class="film-screenshots-small"><img src="images/ivote-screenshot-3.png" width="77" sizes="(max-width: 767px) 100vw, (max-width: 991px) 74px, (max-width: 1919px) 122px, 95px" srcset="images/ivote-screenshot-3-p-500.png 500w, images/ivote-screenshot-3-p-800.png 800w, images/ivote-screenshot-3-p-1080.png 1080w, images/ivote-screenshot-3.png 1353w" alt="" class="film-screenshots-small"><img src="images/ivote-screenshot-4.png" width="77" sizes="(max-width: 767px) 100vw, (max-width: 991px) 74px, (max-width: 1919px) 122px, 95px" srcset="images/ivote-screenshot-4-p-500.png 500w, images/ivote-screenshot-4-p-800.png 800w, images/ivote-screenshot-4-p-1080.png 1080w, images/ivote-screenshot-4.png 1352w" alt="" class="film-screenshots-small"></div>
               </div>
             </div>
           </div>
           <div class="slide-5 w-slide">
-            <div class="w-layout-grid grid-4 grid-11 grid-15"><img src="images/film-art-demo.png" width="348" srcset="images/film-art-demo-p-500.png 500w, images/film-art-demo-p-800.png 800w, images/film-art-demo.png 918w" sizes="(max-width: 479px) 123px, (max-width: 767px) 165px, (max-width: 991px) 240px, 245px" alt="" class="image-7">
+            <div class="w-layout-grid grid-4 grid-11 grid-15"><img src="images/film-art-demo.png" width="348" sizes="(max-width: 479px) 123px, (max-width: 767px) 165px, (max-width: 991px) 240px, 245px" srcset="images/film-art-demo-p-500.png 500w, images/film-art-demo-p-800.png 800w, images/film-art-demo.png 918w" alt="" class="image-7">
               <div id="w-node-798ac7fc12e9-7d6aca7a" class="div-block-9 caroline-ff-card">
                 <div class="w-layout-grid grid-5">
                   <div id="w-node-798ac7fc12eb-7d6aca7a">
@@ -103,12 +109,12 @@ document.addEventListener("DOMContentLoaded", stuff);
                 <div class="div-block-28">
                   <div class="featured-film-card-info caroline-ff-stats">12 min  |  English  |  USA</div>
                 </div>
-                <div class="featured-film-card-images-wrapper"><img src="images/caroline-small-img-one.png" width="77" srcset="images/caroline-small-img-one-p-500.png 500w, images/caroline-small-img-one-p-800.png 800w, images/caroline-small-img-one.png 1345w" sizes="(max-width: 767px) 100vw, (max-width: 991px) 74px, (max-width: 1919px) 122px, 95px" alt="" class="film-screenshots-small"><img src="images/caroline-small-img-two.png" width="77" srcset="images/caroline-small-img-two-p-500.png 500w, images/caroline-small-img-two-p-800.png 800w, images/caroline-small-img-two.png 1353w" sizes="(max-width: 767px) 100vw, (max-width: 991px) 74px, (max-width: 1919px) 122px, 95px" alt="" class="film-screenshots-small"><img src="images/caroline-small-img-three.png" width="77" srcset="images/caroline-small-img-three-p-500.png 500w, images/caroline-small-img-three-p-800.png 800w, images/caroline-small-img-three-p-1080.png 1080w, images/caroline-small-img-three.png 1353w" sizes="(max-width: 767px) 100vw, (max-width: 991px) 74px, (max-width: 1919px) 122px, 95px" alt="" class="film-screenshots-small"><img src="images/caroline-small-img-four.png" width="77" srcset="images/caroline-small-img-four-p-500.png 500w, images/caroline-small-img-four-p-800.png 800w, images/caroline-small-img-four.png 1352w" sizes="(max-width: 767px) 100vw, (max-width: 991px) 74px, (max-width: 1919px) 122px, 95px" alt="" class="film-screenshots-small"></div>
+                <div class="featured-film-card-images-wrapper"><img src="images/caroline-small-img-one.png" width="77" sizes="(max-width: 767px) 100vw, (max-width: 991px) 74px, (max-width: 1919px) 122px, 95px" srcset="images/caroline-small-img-one-p-500.png 500w, images/caroline-small-img-one-p-800.png 800w, images/caroline-small-img-one.png 1345w" alt="" class="film-screenshots-small"><img src="images/caroline-small-img-two.png" width="77" sizes="(max-width: 767px) 100vw, (max-width: 991px) 74px, (max-width: 1919px) 122px, 95px" srcset="images/caroline-small-img-two-p-500.png 500w, images/caroline-small-img-two-p-800.png 800w, images/caroline-small-img-two.png 1353w" alt="" class="film-screenshots-small"><img src="images/caroline-small-img-three.png" width="77" sizes="(max-width: 767px) 100vw, (max-width: 991px) 74px, (max-width: 1919px) 122px, 95px" srcset="images/caroline-small-img-three-p-500.png 500w, images/caroline-small-img-three-p-800.png 800w, images/caroline-small-img-three-p-1080.png 1080w, images/caroline-small-img-three.png 1353w" alt="" class="film-screenshots-small"><img src="images/caroline-small-img-four.png" width="77" sizes="(max-width: 767px) 100vw, (max-width: 991px) 74px, (max-width: 1919px) 122px, 95px" srcset="images/caroline-small-img-four-p-500.png 500w, images/caroline-small-img-four-p-800.png 800w, images/caroline-small-img-four.png 1352w" alt="" class="film-screenshots-small"></div>
               </div>
             </div>
           </div>
           <div class="slide-6 w-slide">
-            <div class="w-layout-grid grid-4 grid-11 grid-15"><img src="images/real-swan-cover-art.jpeg" width="348" srcset="images/real-swan-cover-art-p-500.jpeg 500w, images/real-swan-cover-art-p-800.jpeg 800w, images/real-swan-cover-art.jpeg 960w" sizes="(max-width: 479px) 123px, (max-width: 767px) 165px, (max-width: 991px) 240px, 245px" alt="" class="image-7">
+            <div class="w-layout-grid grid-4 grid-11 grid-15"><img src="images/real-swan-cover-art.jpeg" width="348" sizes="(max-width: 479px) 123px, (max-width: 767px) 165px, (max-width: 991px) 240px, 245px" srcset="images/real-swan-cover-art-p-500.jpeg 500w, images/real-swan-cover-art-p-800.jpeg 800w, images/real-swan-cover-art.jpeg 960w" alt="" class="image-7">
               <div id="w-node-8fd080c41a8b-7d6aca7a" class="div-block-9 lil-buck-feature-card">
                 <div class="w-layout-grid grid-5 lil-buck-title-grid">
                   <div id="w-node-8fd080c41a8d-7d6aca7a">
@@ -127,12 +133,12 @@ document.addEventListener("DOMContentLoaded", stuff);
                 <div class="div-block-28">
                   <div class="featured-film-card-info lil-buck-stats-ff">85 min  |  English  |  France</div>
                 </div>
-                <div class="featured-film-card-images-wrapper"><img src="images/lil-buck-screenshot-1.png" width="77" srcset="images/lil-buck-screenshot-1-p-500.png 500w, images/lil-buck-screenshot-1-p-800.png 800w, images/lil-buck-screenshot-1.png 897w" sizes="(max-width: 767px) 100vw, (max-width: 991px) 74px, (max-width: 1919px) 122px, 95px" alt="" class="film-screenshots-small"><img src="images/lil-buck-screenshot-2.png" width="77" srcset="images/lil-buck-screenshot-2-p-500.png 500w, images/lil-buck-screenshot-2-p-800.png 800w, images/lil-buck-screenshot-2.png 902w" sizes="(max-width: 767px) 100vw, (max-width: 991px) 74px, (max-width: 1919px) 122px, 95px" alt="" class="film-screenshots-small"><img src="images/lil-buck-screenshot-3.png" width="77" srcset="images/lil-buck-screenshot-3-p-500.png 500w, images/lil-buck-screenshot-3-p-800.png 800w, images/lil-buck-screenshot-3.png 902w" sizes="(max-width: 767px) 100vw, (max-width: 991px) 74px, (max-width: 1919px) 122px, 95px" alt="" class="film-screenshots-small"><img src="images/lil-buck-screenshot-4.png" width="77" srcset="images/lil-buck-screenshot-4-p-500.png 500w, images/lil-buck-screenshot-4-p-800.png 800w, images/lil-buck-screenshot-4.png 902w" sizes="(max-width: 767px) 100vw, (max-width: 991px) 74px, (max-width: 1919px) 122px, 95px" alt="" class="film-screenshots-small"></div>
+                <div class="featured-film-card-images-wrapper"><img src="images/lil-buck-screenshot-1.png" width="77" sizes="(max-width: 767px) 100vw, (max-width: 991px) 74px, (max-width: 1919px) 122px, 95px" srcset="images/lil-buck-screenshot-1-p-500.png 500w, images/lil-buck-screenshot-1-p-800.png 800w, images/lil-buck-screenshot-1.png 897w" alt="" class="film-screenshots-small"><img src="images/lil-buck-screenshot-2.png" width="77" sizes="(max-width: 767px) 100vw, (max-width: 991px) 74px, (max-width: 1919px) 122px, 95px" srcset="images/lil-buck-screenshot-2-p-500.png 500w, images/lil-buck-screenshot-2-p-800.png 800w, images/lil-buck-screenshot-2.png 902w" alt="" class="film-screenshots-small"><img src="images/lil-buck-screenshot-3.png" width="77" sizes="(max-width: 767px) 100vw, (max-width: 991px) 74px, (max-width: 1919px) 122px, 95px" srcset="images/lil-buck-screenshot-3-p-500.png 500w, images/lil-buck-screenshot-3-p-800.png 800w, images/lil-buck-screenshot-3.png 902w" alt="" class="film-screenshots-small"><img src="images/lil-buck-screenshot-4.png" width="77" sizes="(max-width: 767px) 100vw, (max-width: 991px) 74px, (max-width: 1919px) 122px, 95px" srcset="images/lil-buck-screenshot-4-p-500.png 500w, images/lil-buck-screenshot-4-p-800.png 800w, images/lil-buck-screenshot-4.png 902w" alt="" class="film-screenshots-small"></div>
               </div>
             </div>
           </div>
           <div class="slide-6 w-slide">
-            <div class="w-layout-grid grid-4 grid-11 grid-15"><img src="images/planet-carlos-cover-art.jpeg" width="348" srcset="images/planet-carlos-cover-art-p-500.jpeg 500w, images/planet-carlos-cover-art-p-800.jpeg 800w, images/planet-carlos-cover-art.jpeg 907w" sizes="(max-width: 479px) 123px, (max-width: 767px) 165px, (max-width: 991px) 240px, 245px" alt="" class="image-7">
+            <div class="w-layout-grid grid-4 grid-11 grid-15"><img src="images/planet-carlos-cover-art.jpeg" width="348" sizes="(max-width: 479px) 123px, (max-width: 767px) 165px, (max-width: 991px) 240px, 245px" srcset="images/planet-carlos-cover-art-p-500.jpeg 500w, images/planet-carlos-cover-art-p-800.jpeg 800w, images/planet-carlos-cover-art.jpeg 907w" alt="" class="image-7">
               <div id="w-node-f6566020450f-7d6aca7a" class="div-block-9">
                 <div class="w-layout-grid grid-5 planet-carlos-title-grid">
                   <div id="w-node-f65660204511-7d6aca7a">
@@ -151,7 +157,7 @@ document.addEventListener("DOMContentLoaded", stuff);
                 <div class="div-block-28">
                   <div class="featured-film-card-info planet-carlos-ff-stats">86 min  |  Spanish  |  Germany</div>
                 </div>
-                <div class="featured-film-card-images-wrapper"><img src="images/planet-carlos-screenshot-1.png" width="77" srcset="images/planet-carlos-screenshot-1-p-500.png 500w, images/planet-carlos-screenshot-1-p-800.png 800w, images/planet-carlos-screenshot-1.png 897w" sizes="(max-width: 767px) 100vw, (max-width: 991px) 74px, (max-width: 1919px) 122px, 95px" alt="" class="film-screenshots-small"><img src="images/planet-carlos-screenshot-2.png" width="77" srcset="images/planet-carlos-screenshot-2-p-500.png 500w, images/planet-carlos-screenshot-2-p-800.png 800w, images/planet-carlos-screenshot-2.png 902w" sizes="(max-width: 767px) 100vw, (max-width: 991px) 74px, (max-width: 1919px) 122px, 95px" alt="" class="film-screenshots-small"><img src="images/planet-carlos-screenshot-3.png" width="77" srcset="images/planet-carlos-screenshot-3-p-500.png 500w, images/planet-carlos-screenshot-3.png 902w" sizes="(max-width: 767px) 100vw, (max-width: 991px) 74px, (max-width: 1919px) 122px, 95px" alt="" class="film-screenshots-small"><img src="images/planet-carlos-screenshot-4.png" width="77" srcset="images/planet-carlos-screenshot-4-p-500.png 500w, images/planet-carlos-screenshot-4-p-800.png 800w, images/planet-carlos-screenshot-4.png 902w" sizes="(max-width: 767px) 100vw, (max-width: 991px) 74px, (max-width: 1919px) 122px, 95px" alt="" class="film-screenshots-small"></div>
+                <div class="featured-film-card-images-wrapper"><img src="images/planet-carlos-screenshot-1.png" width="77" sizes="(max-width: 767px) 100vw, (max-width: 991px) 74px, (max-width: 1919px) 122px, 95px" srcset="images/planet-carlos-screenshot-1-p-500.png 500w, images/planet-carlos-screenshot-1-p-800.png 800w, images/planet-carlos-screenshot-1.png 897w" alt="" class="film-screenshots-small"><img src="images/planet-carlos-screenshot-2.png" width="77" sizes="(max-width: 767px) 100vw, (max-width: 991px) 74px, (max-width: 1919px) 122px, 95px" srcset="images/planet-carlos-screenshot-2-p-500.png 500w, images/planet-carlos-screenshot-2-p-800.png 800w, images/planet-carlos-screenshot-2.png 902w" alt="" class="film-screenshots-small"><img src="images/planet-carlos-screenshot-3.png" width="77" sizes="(max-width: 767px) 100vw, (max-width: 991px) 74px, (max-width: 1919px) 122px, 95px" srcset="images/planet-carlos-screenshot-3-p-500.png 500w, images/planet-carlos-screenshot-3.png 902w" alt="" class="film-screenshots-small"><img src="images/planet-carlos-screenshot-4.png" width="77" sizes="(max-width: 767px) 100vw, (max-width: 991px) 74px, (max-width: 1919px) 122px, 95px" srcset="images/planet-carlos-screenshot-4-p-500.png 500w, images/planet-carlos-screenshot-4-p-800.png 800w, images/planet-carlos-screenshot-4.png 902w" alt="" class="film-screenshots-small"></div>
               </div>
             </div>
           </div>
@@ -581,7 +587,7 @@ document.addEventListener("DOMContentLoaded", stuff);
   <div class="section-2">
     <div class="div-block-40">
       <div class="w-layout-grid grid-8">
-        <div id="w-node-7ccf9330d521-7d6aca7a" class="div-block-39"><img src="images/variety-logo-in-white.png" width="113" srcset="images/variety-logo-in-white-p-500.png 500w, images/variety-logo-in-white.png 1129w" sizes="(max-width: 479px) 113px, (max-width: 767px) 90px, (max-width: 1919px) 113px, 200px" alt="" class="image-34"></div>
+        <div id="w-node-7ccf9330d521-7d6aca7a" class="div-block-39"><img src="images/variety-logo-in-white.png" width="113" sizes="(max-width: 479px) 113px, (max-width: 767px) 90px, (max-width: 1919px) 113px, 200px" srcset="images/variety-logo-in-white-p-500.png 500w, images/variety-logo-in-white.png 1129w" alt="" class="image-34"></div>
         <div data-delay="6000" data-animation="slide" data-autoplay="1" data-duration="500" data-infinite="1" id="w-node-32ad0d279ec3-7d6aca7a" class="slider-2 w-slider">
           <div class="mask-2 w-slider-mask">
             <div class="slide-4 w-slide">
@@ -602,7 +608,7 @@ document.addEventListener("DOMContentLoaded", stuff);
               <div class="div-block-14">
                 <div class="variety-article-element">
                   <div class="w-layout-grid grid-9">
-                    <div class="div-block-22"><img src="images/mulan-icon.png" width="168" srcset="images/mulan-icon-p-500.png 500w, images/mulan-icon.png 1160w" sizes="(max-width: 479px) 105px, (max-width: 767px) 128px, 168px" alt="" class="image-14"></div>
+                    <div class="div-block-22"><img src="images/mulan-icon.png" width="168" sizes="(max-width: 479px) 105px, (max-width: 767px) 128px, 168px" srcset="images/mulan-icon-p-500.png 500w, images/mulan-icon.png 1160w" alt="" class="image-14"></div>
                     <div id="w-node-1859c30aba2d-7d6aca7a" class="div-block-15">
                       <div class="featured-article-title">MULAN&#x27;S BIG MOVE</div>
                       <div class="div-block-13"></div>

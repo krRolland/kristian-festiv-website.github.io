@@ -2941,6 +2941,10 @@
   display: none;
 }
 
+.html-embed-5 {
+  display: none;
+}
+
 @media screen and (min-width: 1280px) {
   .text-block-2 {
     width: 43%;
