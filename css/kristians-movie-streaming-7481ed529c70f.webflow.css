@@ -2822,7 +2822,7 @@
 }
 
 .html-embed-3 {
-  display: none;
+  display: block;
   width: 100px;
   height: 100px;
 }
@@ -2854,6 +2854,10 @@
   padding-left: 80px;
 }
 
+.extra-documents-small-header.about-us-small-header {
+  text-align: center;
+}
+
 .extra-documents-text {
   font-family: 'Brandon re', sans-serif;
 }
@@ -2871,6 +2875,10 @@
   margin-bottom: 15px;
 }
 
+.extra-documents-text.extra-documents-text-centered {
+  text-align: center;
+}
+
 .extra-documents-title-wrapper {
   margin-top: 120px;
   margin-bottom: 35px;
@@ -2879,13 +2887,22 @@
 .bio-grid {
   display: -ms-grid;
   display: grid;
+  margin-top: 30px;
+  margin-bottom: 30px;
   grid-auto-columns: 1fr;
   grid-column-gap: 16px;
   grid-row-gap: 25px;
   -ms-grid-columns: 0.35fr 1fr;
   grid-template-columns: 0.35fr 1fr;
-  -ms-grid-rows: auto auto;
-  grid-template-rows: auto auto;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.bio-grid.bio-grid-flip {
+  -ms-grid-columns: 1fr 0.35fr;
+  grid-template-columns: 1fr 0.35fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
 }
 
 .grid-18 {
@@ -2949,6 +2966,24 @@
 
 .submit-films-footer-js {
   display: none;
+}
+
+.extra-documents-super-small-header {
+  font-family: 'Brandon bld', sans-serif;
+}
+
+.div-block-53 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.extra-documents-festiv-icon {
+  width: 100px;
+}
+
+.div-block-54 {
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 @media screen and (min-width: 1280px) {
