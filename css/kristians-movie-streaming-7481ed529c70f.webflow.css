@@ -2822,7 +2822,7 @@
 }
 
 .html-embed-3 {
-  display: block;
+  display: none;
   width: 100px;
   height: 100px;
 }
@@ -2984,6 +2984,17 @@
 .div-block-54 {
   margin-bottom: 10px;
   text-align: center;
+}
+
+.number-grid {
+  grid-column-gap: 8px;
+  -ms-grid-columns: minmax(80px, 80px) 1fr;
+  grid-template-columns: minmax(80px, 80px) 1fr;
+}
+
+.extra-documents-text-number {
+  font-family: 'Brandon bld', sans-serif;
+  text-align: right;
 }
 
 @media screen and (min-width: 1280px) {
