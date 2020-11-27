@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Fri Nov 27 2020 07:55:01 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Fri Nov 27 2020 12:13:21 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="5fbece389b509d84fa538897" data-wf-site="5f5275e1165352d7446aca77">
 <head>
   <meta charset="utf-8">
@@ -78,6 +78,7 @@ submitFilmsButton.href = "mailto:submissions@festivmedia.com?subject=Film Submis
     setTimeout(function () {btn.style.display = "none";}, 550)
 		var video = document.createElement('video');
     video.style.position = "relative";
+    video.style.outline = "0";
     if(window.mobileAndTabletCheck()) {
     	video.style.width = "90%"
       video.style.height = "100%";
