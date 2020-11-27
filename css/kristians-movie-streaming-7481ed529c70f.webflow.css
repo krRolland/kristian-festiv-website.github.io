@@ -1021,7 +1021,7 @@
 }
 
 .movie-description.the-god-chair-description {
-  padding-top: 16px;
+  padding-top: 2px;
   background-color: #fff;
 }
 
@@ -1029,20 +1029,20 @@
   opacity: 1;
 }
 
-.movie-description.we-the-children-description {
+.movie-description.ivote-description {
   display: block;
-  padding-top: 15px;
+  padding-top: 0px;
   padding-right: 18px;
   padding-left: 18px;
   background-color: #010101;
 }
 
-.movie-description.we-the-children-description:hover {
+.movie-description.ivote-description:hover {
   opacity: 1;
 }
 
 .movie-description.evie-description {
-  padding-top: 10px;
+  padding-top: 0px;
   background-color: #655560;
 }
 
@@ -1055,8 +1055,8 @@
   background-color: #000;
 }
 
-.movie-description.prego-description {
-  padding-top: 26px;
+.movie-description.cb-description {
+  padding-top: 7px;
   background-color: #000;
 }
 
@@ -1355,6 +1355,7 @@
 }
 
 .movie-description-grid-description.evie-desc {
+  margin-bottom: 11px;
   color: #eaddbb;
 }
 
@@ -2922,6 +2923,11 @@
   text-align: center;
 }
 
+.extra-documents-text.extra-documents-text-footnote {
+  font-size: 12px;
+  line-height: 18px;
+}
+
 .extra-documents-title-wrapper {
   margin-top: 120px;
   margin-bottom: 35px;
@@ -3539,7 +3545,7 @@
     padding-top: 56px;
   }
 
-  .movie-description.we-the-children-description {
+  .movie-description.ivote-description {
     padding-top: 34px;
     padding-right: 30px;
     padding-left: 30px;
@@ -3553,7 +3559,7 @@
     padding-top: 58px;
   }
 
-  .movie-description.prego-description {
+  .movie-description.cb-description {
     padding-top: 35px;
     padding-right: 30px;
     padding-left: 30px;
@@ -3956,7 +3962,7 @@
     display: none;
   }
 
-  .movie-description.we-the-children-description {
+  .movie-description.ivote-description {
     display: none;
   }
 

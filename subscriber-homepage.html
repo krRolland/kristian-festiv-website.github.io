@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Thu Nov 26 2020 17:52:40 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Fri Nov 27 2020 06:58:13 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="5f5275e1165352f27d6aca7a" data-wf-site="5f5275e1165352d7446aca77">
 <head>
   <meta charset="utf-8">
@@ -229,7 +229,11 @@ document.addEventListener("DOMContentLoaded", stuff);
 };
   function rerouteUserPlayButtonTablets() {
     if (window.mobileAndTabletCheck()) {
-      document.getElementById('ivote-film').addEventListener('click', function() {window.location.href = "screening-room.html";}); 
+      document.getElementById('ivote-film').addEventListener('click', function() {window.location.href = "screening-room-ivote.html";}); 
+      document.getElementById('the-god-chair-film').addEventListener('click', function() {window.location.href = "screening-room-the-god-chair.html";}); 
+      document.getElementById('out-with-a-bang-film').addEventListener('click', function() {window.location.href = "screening-room-out-with-a-bang.html";});
+      document.getElementById('crappy-birthday-film').addEventListener('click', function() {window.location.href = "screening-room-crappy-birthday.html";}); 
+      document.getElementById('lost-and-found-film').addEventListener('click', function() {window.location.href = "screening-room-lost-and-found.html";}); 
       }
   }
   window.addEventListener("load", rerouteUserPlayButtonTablets); 
@@ -240,7 +244,7 @@ document.addEventListener("DOMContentLoaded", stuff);
         <div id="films-grid" class="w-layout-grid movie-entry-grid">
           <div class="movie-entry">
             <div id="ivote-film" class="movie-div-wrapper">
-              <div class="movie-description we-the-children-description">
+              <div class="movie-description ivote-description">
                 <div class="div-block-19">
                   <div class="div-block-18">
                     <div class="w-layout-grid grid-10">
@@ -263,7 +267,7 @@ document.addEventListener("DOMContentLoaded", stuff);
             </div>
           </div>
           <div class="movie-entry">
-            <div class="movie-div-wrapper">
+            <div id="the-god-chair-film" class="movie-div-wrapper">
               <div class="movie-description the-god-chair-description">
                 <div class="div-block-19">
                   <div class="div-block-18">
@@ -287,7 +291,7 @@ document.addEventListener("DOMContentLoaded", stuff);
             </div>
           </div>
           <div class="movie-entry">
-            <div class="movie-div-wrapper">
+            <div id="out-with-a-bang-film" class="movie-div-wrapper">
               <div class="movie-description out-with-a-bang-description">
                 <div class="div-block-19 owab-title-wrapper">
                   <div class="div-block-18">
@@ -311,7 +315,7 @@ document.addEventListener("DOMContentLoaded", stuff);
             </div>
           </div>
           <div class="movie-entry">
-            <div class="movie-div-wrapper">
+            <div id="evie-film" class="movie-div-wrapper">
               <div class="movie-description evie-description">
                 <div class="div-block-19">
                   <div class="div-block-18">
@@ -335,7 +339,7 @@ document.addEventListener("DOMContentLoaded", stuff);
             </div>
           </div>
           <div class="movie-entry">
-            <div class="movie-div-wrapper">
+            <div id="lost-and-found-film" class="movie-div-wrapper">
               <div class="movie-description lost-and-found-description">
                 <div class="div-block-19">
                   <div class="div-block-18">
@@ -359,8 +363,8 @@ document.addEventListener("DOMContentLoaded", stuff);
             </div>
           </div>
           <div class="movie-entry">
-            <div class="movie-div-wrapper">
-              <div class="movie-description prego-description">
+            <div id="crappy-birthday-film" class="movie-div-wrapper">
+              <div class="movie-description cb-description">
                 <div class="div-block-19">
                   <div class="div-block-18">
                     <div class="w-layout-grid grid-10">
