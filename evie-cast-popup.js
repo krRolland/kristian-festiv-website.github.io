@@ -56,7 +56,7 @@ function showPopup() {
 function hidePopup() {
   hoverPopup.style.zIndex = "-4";
   hoverPopup.style.opacity = "0";
-  setTimeout(function () {popupReady = true;}, 0); 
+  setTimeout(function () {popupReady = true;}, 100); 
 }
 
 function enactPopupProtocol(elemPointer) {
@@ -70,7 +70,7 @@ function enactPopupProtocol(elemPointer) {
         enactPopupProtocol(elemPointer);
       } 
       else {return;}
-    } , 100);
+    } , 200);
   } 
 } 
 
