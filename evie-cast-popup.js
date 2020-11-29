@@ -4,6 +4,7 @@ nameElement = document.getElementById("follow-me-name");
 imdbElement = document.getElementById('imdb-link');
 hoverPopup = document.getElementById("follow-me");
 hoverPopup.style.display = "block";
+// hoverPopup.style.transition = "all 0s";
 
 
 // SOURCE SET & HOVER LOCATION QUEUE
@@ -21,6 +22,7 @@ selectedVerticalCoord = "";
 
 // POPUP READY 
 popupReady = true; 
+beenHoveredThisWholeTime = false; 
 
 // Helper function that sets selected variables to what currently exists inside the queue.
 function updateSourceSetAndHover() {
@@ -56,11 +58,16 @@ function showPopup() {
 function hidePopup() {
   hoverPopup.style.zIndex = "-4";
   hoverPopup.style.opacity = "0";
-  setTimeout(function () {popupReady = true;}, 100); 
+  setTimeout(function () {popupReady = true;}, 0); 
 }
 
 function enactPopupProtocol(elemPointer) {
-  if (popupReady) {
+  console.log("protocol start");
+  console.log("Popup ready");
+  console.log(popupReady);
+  console.log("Has Been hovered this whole time:");
+  console.log(beenHoveredThisWholeTime);
+  if (popupReady && beenHoveredThisWholeTime) {
     updateSourceSetAndHover(); 
     showPopup(); 
   } 
@@ -70,15 +77,16 @@ function enactPopupProtocol(elemPointer) {
         enactPopupProtocol(elemPointer);
       } 
       else {return;}
-    } , 200);
+    } , 1);
   } 
 } 
 
 
 // HOVER AWAY WORKS FOR ALL STARS
 function hoverAwayForEachStar() {
+  // beenHoveredThisWholeTime = false; 
   // If you're not hovered over the selected text, or the popup, then hide the popup. Delay logic for a couple of milliseconds. 
-  setTimeout(() => {if(this.matches(':hover') == false) {if(hoverPopup.matches(':hover') == false) {hidePopup();}}}, 200);
+  if(this.matches(':hover') == false) {if(hoverPopup.matches(':hover') == false) {hidePopup()}};
 } 
 
 hoverPopup.addEventListener('mouseleave', hoverAwayForEachStar);
@@ -97,6 +105,7 @@ function hoverOverPeebler() {
   else {
     queuedHorizontalCoord = this.getBoundingClientRect().left - 100 + "px"; 
   } 
+  beenHoveredThisWholeTime = true; 
   enactPopupProtocol(this);
 } 
 
@@ -120,6 +129,7 @@ function hoverOverSuchan() {
   else {
     queuedHorizontalCoord = this.getBoundingClientRect().left - 100 + "px"; 
   } 
+  beenHoveredThisWholeTime = true; 
   enactPopupProtocol(this);
 } 
 
@@ -143,6 +153,7 @@ function hoverOverErez() {
   else {
     queuedHorizontalCoord = this.getBoundingClientRect().left - 100 + "px"; 
   } 
+  beenHoveredThisWholeTime = true; 
   enactPopupProtocol(this);
 } 
 
@@ -165,6 +176,7 @@ function hoverOverDurkin() {
   else {
     queuedHorizontalCoord = this.getBoundingClientRect().left - 100 + "px"; 
   } 
+  beenHoveredThisWholeTime = true; 
   enactPopupProtocol(this);
 } 
 
@@ -187,6 +199,7 @@ function hoverOverTurnip() {
   else {
     queuedHorizontalCoord = this.getBoundingClientRect().left - 100 + "px"; 
   } 
+  beenHoveredThisWholeTime = true; 
   enactPopupProtocol(this);
 } 
 
@@ -209,6 +222,7 @@ function hoverOverStamile() {
   else {
     queuedHorizontalCoord = this.getBoundingClientRect().left - 100 + "px"; 
   } 
+  beenHoveredThisWholeTime = true; 
   enactPopupProtocol(this);
 } 
 
@@ -232,6 +246,7 @@ function hoverOverPeat() {
   else {
     queuedHorizontalCoord = this.getBoundingClientRect().left - 100 + "px"; 
   } 
+  beenHoveredThisWholeTime = true; 
   enactPopupProtocol(this);
 } 
 
@@ -255,6 +270,7 @@ function hoverOverTurbiak() {
   else {
     queuedHorizontalCoord = this.getBoundingClientRect().left - 100 + "px"; 
   } 
+  beenHoveredThisWholeTime = true; 
   enactPopupProtocol(this);
 } 
 
@@ -278,6 +294,7 @@ function hoverOverHunt() {
   else {
     queuedHorizontalCoord = this.getBoundingClientRect().left - 100 + "px"; 
   } 
+  beenHoveredThisWholeTime = true; 
   enactPopupProtocol(this);
 } 
 
@@ -300,6 +317,7 @@ function hoverOverPhillips() {
   else {
     queuedHorizontalCoord = this.getBoundingClientRect().left - 100 + "px"; 
   } 
+  beenHoveredThisWholeTime = true; 
   enactPopupProtocol(this);
 } 
 
