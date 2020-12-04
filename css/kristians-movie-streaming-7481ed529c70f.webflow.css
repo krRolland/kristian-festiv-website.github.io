@@ -32,27 +32,27 @@
   position: absolute;
   left: 33%;
   width: 34%;
-  height: 8vh;
-  margin-top: -8vh;
+  height: 7vh;
+  margin-top: -7vh;
 }
 
 .three-different-tabs.filmmakers-tab {
-  height: 8vh;
-  margin-top: -8vh;
+  height: 7vh;
+  margin-top: -7vh;
 }
 
 .three-different-tabs.filmmakers-tab.w--current {
   position: absolute;
   left: 0px;
-  height: 8vh;
-  margin-top: -8vh;
+  height: 7vh;
+  margin-top: -7vh;
 }
 
 .three-different-tabs.audiences-tab {
   position: absolute;
   left: 67%;
-  height: 8vh;
-  margin-top: -8vh;
+  height: 7vh;
+  margin-top: -7vh;
 }
 
 .movie-entry-grid {
@@ -124,10 +124,11 @@
 
 .tab-pane-tab-1 {
   width: 100%;
-  height: 92vh;
+  height: 85vh;
+  max-height: 650px;
   background-image: url('../images/jakob-owens-UI5rpRF8tTU-unsplash-1.png');
-  background-position: 50% 0px;
-  background-size: cover;
+  background-position: 50% -30px;
+  background-size: 119%;
   background-repeat: repeat;
   background-attachment: fixed;
 }
@@ -143,7 +144,7 @@
 
 .text-block-2.white-subtitle {
   width: 49%;
-  max-width: 450px;
+  max-width: 470px;
   color: #fff;
   letter-spacing: 1.5px;
 }
@@ -204,16 +205,18 @@
 
 .tab-pane-tab-2 {
   width: 100%;
-  height: 92vh;
+  height: 85vh;
+  max-height: 650px;
   background-image: url('../images/business-deal-stock-image.png');
-  background-position: 50% 0%;
-  background-size: cover;
-  background-attachment: fixed;
+  background-position: 30% -4vh;
+  background-size: 130%;
+  background-attachment: scroll;
 }
 
 .tab-pane-tab-3 {
   width: 100%;
-  height: 92vh;
+  height: 85vh;
+  max-height: 650px;
   background-image: url('../images/audience-stock-photo.png');
   background-position: 0px 0px;
   background-size: cover;
@@ -245,26 +248,20 @@
   padding-left: 0px;
 }
 
-.div-block-4 {
-  margin-top: 3vh;
-  padding-top: 0%;
-}
-
 .text-block-5 {
-  font-size: 17px;
-  line-height: 8vh;
+  font-size: 16px;
+  line-height: 7vh;
   letter-spacing: 1px;
 }
 
 .heading {
-  margin-top: 0px;
+  margin-top: 9px;
   font-size: 26px;
   line-height: 47px;
   letter-spacing: 2px;
 }
 
 .heading.white-heading {
-  margin-top: 0px;
   color: #fff;
 }
 
@@ -273,7 +270,7 @@
 }
 
 .movie-image {
-  width: 100%;
+  width: 200px;
   height: 300px;
   -webkit-transition: all 250ms cubic-bezier(.439, .161, .322, .518);
   transition: all 250ms cubic-bezier(.439, .161, .322, .518);
@@ -301,13 +298,13 @@
 }
 
 .image-6 {
-  width: 62%;
+  width: 46%;
   max-width: 1200px;
-  padding-top: 1vh;
+  padding-top: 3vh;
 }
 
 .image-6.fuel-your-passion-white-text {
-  width: 45%;
+  width: 46%;
   padding-top: 3vh;
 }
 
@@ -315,7 +312,8 @@
   position: absolute;
   top: 0px;
   width: 100%;
-  height: 96vh;
+  height: 85vh;
+  max-height: 650px;
   padding-right: 8%;
   padding-left: 8%;
   -ms-grid-columns: 1fr;
@@ -533,7 +531,7 @@
 
 .footer {
   margin-top: 0px;
-  padding-top: 40px;
+  padding-top: 50px;
   padding-right: 60px;
   padding-left: 60px;
   background-color: #fff;
@@ -609,14 +607,16 @@
 .featured-film-card-description {
   margin-top: 25px;
   font-family: Brandon, sans-serif;
-  color: rgba(51, 63, 79, 0.76);
-  font-size: 21px;
-  line-height: 30px;
+  color: rgba(51, 63, 79, 0.88);
+  font-size: 18px;
+  line-height: 134%;
   text-align: left;
 }
 
 .featured-film-card-description.ivote-description {
   margin-top: 16px;
+  margin-bottom: 15px;
+  color: rgba(51, 63, 79, 0.88);
 }
 
 .featured-film-card-description.lil-buck-decription {
@@ -628,15 +628,16 @@
 }
 
 .featured-film-card-description.caroline-ff-description {
-  margin-top: 19px;
+  margin-top: 18px;
 }
 
 .featured-film-card-date {
   padding-top: 3px;
   padding-bottom: 3px;
   font-family: Brandon, sans-serif;
-  font-size: 25px;
+  font-size: 28px;
   line-height: 24px;
+  font-weight: 300;
   text-align: left;
 }
 
@@ -644,13 +645,13 @@
   display: block;
   padding-top: 7px;
   font-family: 'Brandon bld', sans-serif;
-  font-size: 30px;
+  font-size: 28px;
   line-height: 31px;
   text-align: left;
 }
 
 .image-7 {
-  width: 245px;
+  width: 240px;
   height: 360px;
 }
 
@@ -670,7 +671,8 @@
 }
 
 .film-screenshots-small {
-  width: 122px;
+  width: auto;
+  height: 80px;
 }
 
 .image-9 {
@@ -686,22 +688,33 @@
 }
 
 .div-block-9 {
-  padding: 25px 65px 0% 30px;
+  padding: 33px 65px 0% 30px;
+}
+
+.div-block-9.lil-buck-feature-card {
+  padding-top: 35px;
 }
 
 .div-block-9.caroline-ff-card {
+  padding-top: 43px;
+}
+
+.div-block-9.ivote-ff-card {
   padding-top: 26px;
 }
 
 .featured-film-card-info {
   margin-top: 15px;
-  font-size: 20px;
+  color: rgba(51, 63, 79, 0.88);
+  font-size: 18px;
   line-height: 27px;
   text-align: left;
 }
 
 .featured-film-card-info.ivote-stats-feature-film {
-  margin-top: 10px;
+  margin-top: 0px;
+  margin-bottom: 23px;
+  font-size: 18px;
 }
 
 .featured-film-card-info.lil-buck-stats-ff {
@@ -772,12 +785,15 @@
 }
 
 .heading-4 {
+  display: inline-block;
+  width: 100%;
   margin-top: 40px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-family: 'Brandon blk', sans-serif;
   font-size: 24px;
   line-height: 38px;
   font-weight: 400;
+  text-align: left;
   letter-spacing: 5px;
 }
 
@@ -785,14 +801,14 @@
   display: inline-block;
   width: 100%;
   max-width: 850px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   text-align: left;
 }
 
 .heading-4.recc-films-title {
   display: inline-block;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 40px;
   margin-bottom: 25px;
   text-align: left;
 }
@@ -832,9 +848,9 @@
 }
 
 .image-12 {
-  width: 22px;
-  height: 26px;
-  margin-left: 6px;
+  width: 16px;
+  height: 20px;
+  margin-left: 5px;
   cursor: pointer;
 }
 
@@ -904,8 +920,8 @@
   grid-auto-columns: 1fr;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
-  -ms-grid-columns: auto 1fr;
-  grid-template-columns: auto 1fr;
+  -ms-grid-columns: minmax(160px, 160px) 1fr;
+  grid-template-columns: minmax(160px, 160px) 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
 }
@@ -982,6 +998,7 @@
 .featured-articles-title-wrapper {
   padding-right: 8%;
   padding-left: 8%;
+  text-align: center;
 }
 
 .div-block-16 {
@@ -1021,7 +1038,7 @@
 }
 
 .movie-description.the-god-chair-description {
-  padding-top: 8px;
+  padding-top: 16px;
   background-color: #fff;
 }
 
@@ -1031,7 +1048,7 @@
 
 .movie-description.ivote-description {
   display: block;
-  padding-top: 12px;
+  padding-top: 23px;
   padding-right: 18px;
   padding-left: 18px;
   background-color: #010101;
@@ -1042,66 +1059,72 @@
 }
 
 .movie-description.evie-description {
-  padding-top: 8px;
+  padding-top: 24px;
   background-color: #655560;
 }
 
 .movie-description.out-with-a-bang-description {
+  padding-top: 21px;
   background-color: #010101;
 }
 
 .movie-description.lost-and-found-description {
-  padding-top: 24px;
+  padding-top: 50px;
   background-color: #000;
 }
 
 .movie-description.cb-description {
-  padding-top: 7px;
+  padding-top: 16px;
   background-color: #000;
 }
 
 .movie-description.real-swan-description {
+  padding-top: 13px;
   background-color: #d45840;
 }
 
 .movie-description.the-school-bag-description {
-  padding-top: 9px;
+  padding-top: 35px;
   background-color: #c29053;
 }
 
 .movie-description.tremors-description {
+  padding-top: 20px;
   background-color: #191010;
 }
 
 .movie-description.magic-bullet-description {
+  padding-top: 5px;
   background-color: #040404;
 }
 
 .movie-description.staff-only-description {
-  padding-top: 19px;
+  padding-top: 15px;
   background-color: #d5d5d3;
 }
 
 .movie-description.the-judgment-description {
-  padding-top: 7px;
+  padding-top: 25px;
   background-color: #002e48;
 }
 
 .movie-description.epiphany-description {
-  padding-top: 1px;
+  padding-top: 10px;
   background-color: #69523a;
 }
 
 .movie-description.dis-ek-anna-description {
+  padding-top: 10px;
   background-color: #000;
 }
 
 .movie-description.la-llorena-description {
+  padding-top: 10px;
   background-color: #e7e4de;
 }
 
 .movie-description.papi-chulo-description {
-  padding-top: 16px;
+  padding-top: 40px;
   background-color: #bcdeea;
 }
 
@@ -1118,21 +1141,21 @@
 }
 
 .div-block-19 {
-  padding-top: 14px;
+  padding-top: 10px;
   padding-bottom: 18px;
   text-align: center;
 }
 
 .div-block-19.owab-title-wrapper {
-  padding-top: 45px;
+  padding-top: 34px;
 }
 
 .div-block-19.tremors-title-wrapper {
-  padding-top: 27px;
+  padding-top: 19px;
 }
 
 .div-block-19.mb-title-wrapper {
-  padding-top: 27px;
+  padding-top: 23px;
 }
 
 .div-block-19.lbrs-title-wrapper {
@@ -1144,7 +1167,7 @@
 }
 
 .div-block-19.ep-title-wrapper {
-  padding-top: 25px;
+  padding-top: 19px;
 }
 
 .div-block-19.ll-title-wrapper {
@@ -1152,7 +1175,7 @@
 }
 
 .div-block-19.dea-title-wrapper {
-  padding-top: 28px;
+  padding-top: 23px;
 }
 
 .movie-description-grid-year {
@@ -1296,7 +1319,7 @@
   margin-bottom: 20px;
   font-family: Brandon, sans-serif;
   color: #fff;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 21px;
   text-align: left;
 }
@@ -1321,7 +1344,7 @@
 }
 
 .movie-description-grid-description.cb-dsc {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .movie-description-grid-description.mb-dsc {
@@ -1524,12 +1547,13 @@
 }
 
 .play-button-wrapper-div {
-  width: 58px;
-  height: 58px;
-  padding-top: 16px;
+  width: 46px;
+  height: 46px;
+  padding-top: 11px;
   border-radius: 100%;
   background-color: #fff;
-  background-image: linear-gradient(145deg, #586479, #121a33);
+  background-image: linear-gradient(145deg, #31384e, #131b34);
+  box-shadow: 0 1px 6px 0 #919191;
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
@@ -1785,13 +1809,13 @@
 }
 
 .text-block-22 {
-  font-size: 17px;
-  line-height: 8vh;
+  font-size: 16px;
+  line-height: 7vh;
 }
 
 .text-block-23 {
-  font-size: 17px;
-  line-height: 8vh;
+  font-size: 16px;
+  line-height: 7vh;
 }
 
 .grid-14 {
@@ -1823,7 +1847,7 @@
   display: -ms-grid;
   display: grid;
   width: 850px;
-  height: 359px;
+  height: 360px;
   max-height: 375px;
   margin-left: 0px;
   -webkit-box-align: stretch;
@@ -3046,11 +3070,15 @@
   text-align: right;
 }
 
+.div-block-55 {
+  display: inline-block;
+  width: 100%;
+  max-width: 850px;
+}
+
 @media screen and (min-width: 1280px) {
   .text-block-2 {
     width: 43%;
-    font-size: 19px;
-    line-height: 30px;
     letter-spacing: 1.2px;
   }
 
@@ -3071,6 +3099,10 @@
   .text-block-4 {
     font-size: 17px;
     line-height: 24px;
+  }
+
+  .tab-pane-tab-2 {
+    background-size: 130%;
   }
 
   .div-block-4 {
@@ -3105,6 +3137,10 @@
     line-height: 28px;
   }
 
+  .heading-4 {
+    margin-top: 0px;
+  }
+
   .text-block-13 {
     color: #333e51;
   }
@@ -3113,12 +3149,20 @@
     width: 100%;
   }
 
+  .featured-articles-title-wrapper {
+    margin-top: 40px;
+  }
+
   .movie-description-grid-year.evie-year {
     color: #fff;
   }
 
   .script-for-popup-navbar {
     display: none;
+  }
+
+  .featured-films-title-wrapper {
+    padding-top: 109px;
   }
 
   .text-block-22 {
@@ -3141,6 +3185,10 @@
 
   .slide-5 {
     width: auto;
+  }
+
+  .slider-4 {
+    height: 400px;
   }
 
   .left-arrow {
@@ -3174,6 +3222,11 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .tab-pane-tab-1 {
+    background-position: 50% -10vh;
+    background-size: 100%;
+  }
+
   .text-block-2 {
     width: 50%;
     max-width: 1000px;
@@ -3193,14 +3246,9 @@
     margin-top: -9px;
   }
 
-  .text-block-3 {
-    font-size: 22px;
-    line-height: 27px;
-  }
-
-  .text-block-4 {
-    font-size: 24px;
-    line-height: 26px;
+  .tab-pane-tab-2 {
+    background-position: 0% 0vh;
+    background-size: 100%;
   }
 
   .div-block-4 {
@@ -3230,6 +3278,10 @@
     margin-bottom: 14px;
   }
 
+  .footer {
+    padding-top: 80px;
+  }
+
   .footer-col-text-title {
     font-size: 21px;
     line-height: 31px;
@@ -3252,14 +3304,6 @@
 
   .featured-film-card-description {
     margin-top: 0px;
-    font-size: 24px;
-    line-height: 34px;
-  }
-
-  .featured-film-card-description.ivote-description {
-    margin-top: 18px;
-    font-size: 22px;
-    line-height: 30px;
   }
 
   .featured-film-card-date {
@@ -3267,29 +3311,12 @@
     line-height: 27px;
   }
 
-  .featured-film-card-title {
-    font-size: 33px;
-    line-height: 36px;
-  }
-
   .div-block-9 {
     padding-top: 20px;
   }
 
   .featured-film-card-info {
-    font-size: 24px;
-    line-height: 20px;
     text-align: left;
-  }
-
-  .featured-film-card-info.ivote-stats-feature-film {
-    font-size: 21px;
-    line-height: 19px;
-  }
-
-  .image-12 {
-    width: 23px;
-    height: 29px;
   }
 
   .slide-template {
@@ -3302,12 +3329,6 @@
 
   .script-for-popup-navbar {
     display: none;
-  }
-
-  .play-button-wrapper-div {
-    width: 70px;
-    height: 70px;
-    padding-top: 20px;
   }
 
   .text-block-21.how-it-works-description {
@@ -3343,23 +3364,25 @@
   }
 
   .movie-entry-grid {
-    grid-column-gap: 70px;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .tab-pane-tab-1 {
+    max-height: 840px;
+    background-position: 70% -11vh;
   }
 
   .text-block-2 {
     width: 50%;
     max-width: 1000px;
     margin-bottom: 20px;
-    font-size: 31px;
-    line-height: 45px;
     letter-spacing: 2px;
   }
 
   .button-2 {
     padding-right: 40px;
     padding-left: 40px;
-    font-size: 21px;
-    line-height: 47px;
     letter-spacing: 2px;
   }
 
@@ -3367,14 +3390,16 @@
     margin-top: -8px;
   }
 
-  .text-block-3 {
-    font-size: 26px;
-    line-height: 38px;
+  .tab-pane-tab-2 {
+    max-height: 840px;
   }
 
-  .text-block-4 {
-    font-size: 26px;
-    line-height: 28px;
+  .tab-pane-tab-3 {
+    max-height: 840px;
+  }
+
+  .div-block-4 {
+    margin-top: -1%;
   }
 
   .text-block-5 {
@@ -3383,16 +3408,11 @@
   }
 
   .heading {
-    font-size: 43px;
     letter-spacing: 4px;
   }
 
-  .movie-image {
-    height: 520px;
-  }
-
   .image-6 {
-    width: 65%;
+    max-width: 1010px;
     font-size: 19px;
   }
 
@@ -3407,38 +3427,18 @@
 
   .featured-film-card-description {
     margin-top: 4px;
-    font-size: 24px;
-    line-height: 32px;
   }
 
   .featured-film-card-description.ivote-description {
     margin-bottom: 14px;
-    line-height: 31px;
   }
 
   .featured-film-card-description.lil-buck-decription {
     margin-top: 6px;
-    font-size: 22px;
-    line-height: 32px;
   }
 
   .featured-film-card-description.planet-carlos-ff-description {
     margin-bottom: 20px;
-    font-size: 22px;
-  }
-
-  .featured-film-card-description.caroline-ff-description {
-    font-size: 22px;
-  }
-
-  .featured-film-card-date {
-    font-size: 32px;
-    line-height: 35px;
-  }
-
-  .featured-film-card-title {
-    font-size: 34px;
-    line-height: 29px;
   }
 
   .film-screenshots-small {
@@ -3446,12 +3446,12 @@
   }
 
   .div-block-9 {
-    padding-top: 35px;
+    padding-top: 30px;
     padding-right: 27px;
   }
 
   .div-block-9.lil-buck-feature-card {
-    padding-top: 24px;
+    padding-top: 35px;
     padding-right: 39px;
   }
 
@@ -3461,25 +3461,6 @@
 
   .featured-film-card-info {
     margin-top: 16px;
-    font-size: 24px;
-    line-height: 23px;
-  }
-
-  .featured-film-card-info.ivote-stats-feature-film {
-    font-size: 23px;
-    line-height: 23px;
-  }
-
-  .featured-film-card-info.lil-buck-stats-ff {
-    font-size: 23px;
-  }
-
-  .featured-film-card-info.caroline-ff-stats {
-    font-size: 23px;
-  }
-
-  .featured-film-card-info.planet-carlos-ff-stats {
-    font-size: 23px;
   }
 
   .grid-8 {
@@ -3488,6 +3469,10 @@
 
   .slider-2 {
     width: 1400px;
+  }
+
+  .heading-4 {
+    margin-bottom: 30px;
   }
 
   .heading-4.featured-films-title-subhomepage {
@@ -3507,8 +3492,6 @@
   }
 
   .image-12 {
-    width: 28px;
-    height: 33px;
     margin-left: 7px;
   }
 
@@ -3536,49 +3519,14 @@
     width: 1400px;
   }
 
-  .movie-description {
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-
-  .movie-description.the-god-chair-description {
-    padding-top: 56px;
-  }
-
-  .movie-description.ivote-description {
-    padding-top: 34px;
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-
-  .movie-description.evie-description {
-    padding-top: 38px;
-  }
-
-  .movie-description.lost-and-found-description {
-    padding-top: 58px;
-  }
-
-  .movie-description.cb-description {
-    padding-top: 35px;
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-
-  .movie-description.real-swan-description {
-    padding-top: 25px;
+  .featured-articles-title-wrapper {
+    padding-top: 20px;
+    padding-right: 0%;
+    padding-left: 0%;
   }
 
   .movie-description.the-school-bag-description {
-    padding-top: 36px;
-  }
-
-  .movie-description.tremors-description {
-    padding-top: 46px;
-  }
-
-  .movie-description.magic-bullet-description {
-    padding-top: 23px;
+    padding-top: 25px;
   }
 
   .movie-description.staff-only-description {
@@ -3589,87 +3537,16 @@
     padding-top: 29px;
   }
 
-  .movie-description.epiphany-description {
-    padding-top: 34px;
-  }
-
-  .movie-description.dis-ek-anna-description {
-    padding-top: 15px;
-  }
-
-  .movie-description.la-llorena-description {
-    padding-top: 33px;
-  }
-
   .movie-description.papi-chulo-description {
     padding-top: 38px;
   }
 
-  .movie-description-grid-year {
-    font-size: 35px;
-    line-height: 35px;
-  }
-
-  .movie-description-grid-title {
-    font-size: 35px;
-    line-height: 43px;
-  }
-
-  .movie-description-grid-title.we-the-children-title {
-    font-size: 35px;
-    line-height: 43px;
-  }
-
-  .movie-description-grid-description {
-    margin-bottom: 25px;
-    font-size: 30px;
-    line-height: 39px;
-  }
-
-  .movie-description-grid-description.wth-desc {
-    padding-top: 2px;
-    font-size: 30px;
-    line-height: 35px;
-  }
-
   .movie-description-grid-description.tgc-dsc {
     margin-bottom: 5px;
-    font-size: 24px;
-  }
-
-  .movie-description-grid-description.cb-dsc {
-    font-size: 30px;
-  }
-
-  .movie-description-grid-stats {
-    font-size: 30px;
-    line-height: 30px;
   }
 
   .movie-description-grid-stats.we-the-children-time {
     padding-top: 2px;
-    font-size: 29px;
-    line-height: 33px;
-  }
-
-  .movie-description-grid-stats.tgc-stats {
-    font-size: 28px;
-  }
-
-  .movie-description-grid-stats.evie-stats {
-    font-size: 28px;
-  }
-
-  .movie-description-grid-stats.tremors-stats {
-    font-size: 26px;
-  }
-
-  .movie-description-grid-stats.mb-stats {
-    font-size: 26px;
-  }
-
-  .movie-description-grid-stats.ll-stats {
-    font-size: 27px;
   }
 
   .script-for-popup-navbar {
@@ -3677,13 +3554,7 @@
   }
 
   .featured-films-title-homepage {
-    max-width: 1500px;
-  }
-
-  .play-button-wrapper-div {
-    width: 70px;
-    height: 70px;
-    padding-top: 19px;
+    max-width: 1700px;
   }
 
   .div-block-23 {
@@ -3760,29 +3631,43 @@
   .image-34 {
     width: 200px;
   }
+
+  .div-block-55 {
+    max-width: 1700px;
+  }
+
+  .section-7 {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (max-width: 991px) {
   .movie-entry-grid {
-    grid-column-gap: 58px;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 15px;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   .tab-pane-tab-1 {
-    height: 70vh;
-    background-position: 55% 0%;
+    height: 80vh;
+    max-height: 490px;
+    background-position: 55% 13%;
     background-repeat: repeat;
     background-attachment: scroll;
   }
 
   .text-block-2 {
     width: 56%;
-    font-size: 17px;
-    line-height: 21px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .text-block-2.white-subtitle {
+    width: 60%;
   }
 
   .button-2 {
+    margin-top: 1vh;
     padding-right: 20px;
     padding-left: 20px;
     font-size: 12px;
@@ -3794,39 +3679,53 @@
   }
 
   .tab-pane-tab-2 {
-    height: 70vh;
+    height: 85vh;
+    max-height: 490px;
+    background-position: 0% -2vw;
+    background-size: 123%;
   }
 
   .tab-pane-tab-3 {
-    height: 70vh;
+    height: 85vh;
+    max-height: 490px;
+    background-size: auto 50%;
   }
 
   .div-block-3 {
-    margin-top: 52px;
+    margin-top: 32px;
+    padding-top: 3vh;
   }
 
   .div-block-4 {
-    margin-top: -8%;
+    margin-top: -182px;
+  }
+
+  .text-block-5 {
+    font-size: 15px;
   }
 
   .heading {
     width: 68%;
-    font-size: 24px;
+    font-size: 21px;
     line-height: 29px;
   }
 
   .movie-image {
-    width: 280px;
-    height: 400px;
+    width: 150px;
+    height: 225px;
   }
 
   .image-6 {
-    width: 74%;
-    padding-top: 0%;
+    width: 60%;
+  }
+
+  .image-6.fuel-your-passion-white-text {
+    width: 60%;
   }
 
   .grid {
-    height: 63vh;
+    height: 80vh;
+    max-height: 490px;
   }
 
   .nav-link-2 {
@@ -3867,14 +3766,13 @@
   }
 
   .featured-film-card-description {
-    font-size: 19px;
-    line-height: 29px;
+    margin-top: 11px;
+    font-size: 16px;
+    line-height: 26px;
   }
 
   .featured-film-card-description.lil-buck-decription {
-    margin-top: 15px;
-    font-size: 18px;
-    line-height: 27px;
+    margin-top: 10px;
   }
 
   .featured-film-card-description.planet-carlos-ff-description {
@@ -3882,13 +3780,13 @@
   }
 
   .featured-film-card-date {
-    font-size: 23px;
-    line-height: 23px;
+    font-size: 25px;
+    line-height: 30px;
   }
 
-  .featured-film-card-title.lil-buck-feature-film-title {
+  .featured-film-card-title {
     font-size: 25px;
-    line-height: 29px;
+    line-height: 30px;
   }
 
   .featured-film-card-title.planet-carlos-ff-description {
@@ -3902,27 +3800,37 @@
   }
 
   .film-screenshots-small {
-    width: 74px;
+    height: 50px;
   }
 
   .div-block-9.lil-buck-feature-card {
     padding-top: 21px;
   }
 
+  .div-block-9.ivote-ff-card {
+    padding-top: 25px;
+  }
+
   .featured-film-card-info {
-    font-size: 19px;
+    font-size: 16px;
     line-height: 26px;
   }
 
   .grid-8 {
-    -ms-grid-columns: 0.25fr;
-    grid-template-columns: 0.25fr;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
     -ms-grid-rows: auto auto;
     grid-template-rows: auto auto;
   }
 
   .heading-4.featured-films-title-subhomepage {
     max-width: 650px;
+  }
+
+  .featured-film-card-images-wrapper.ivote-card-images-wrapper {
+    margin-top: 15px;
   }
 
   .code-for-film-grid {
@@ -3971,9 +3879,8 @@
   }
 
   .featured-films-title-homepage {
-    max-width: 618px;
-    margin-bottom: 20px;
-    padding-top: 0px;
+    max-width: 645px;
+    margin-bottom: 0px;
     font-size: 18px;
     line-height: 31px;
   }
@@ -3998,28 +3905,28 @@
     line-height: 23px;
   }
 
-  .actor-hyperlink.rob-adler-link-one {
+  .actor-hyperlink.adler-link-one {
     font-size: 17px;
     line-height: 21px;
   }
 
-  .actor-hyperlink.eric-roberts-link {
+  .actor-hyperlink.roberts-link {
     font-size: 17px;
     line-height: 21px;
   }
 
-  .actor-hyperlink.dan-lauria-link {
+  .actor-hyperlink.lauria-link {
     font-size: 17px;
     line-height: 21px;
   }
 
-  .actor-hyperlink.sharon-lawrence-link {
+  .actor-hyperlink.lawrence-link {
     font-size: 17px;
     line-height: 23px;
   }
 
   .div-block-23 {
-    max-width: 618px;
+    max-width: 645px;
   }
 
   .div-block-25 {
@@ -4164,6 +4071,14 @@
     cursor: pointer;
   }
 
+  .text-block-22 {
+    font-size: 15px;
+  }
+
+  .text-block-23 {
+    font-size: 15px;
+  }
+
   .grid-15 {
     width: 650px;
     height: 350px;
@@ -4233,6 +4148,11 @@
 
   .div-block-39 {
     padding-top: 10px;
+    text-align: center;
+  }
+
+  .div-block-40 {
+    display: block;
     text-align: center;
   }
 
@@ -4379,17 +4299,20 @@
 
 @media screen and (max-width: 767px) {
   .movie-entry-grid {
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
     grid-column-gap: 30px;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .tab-pane-tab-1 {
     background-position: 70% 50%;
+    background-size: auto 100%;
   }
 
   .text-block-2 {
-    width: 70%;
+    width: 62%;
     margin-top: 59px;
     font-size: 15px;
     line-height: 21px;
@@ -4414,12 +4337,21 @@
     line-height: 23px;
   }
 
+  .tab-pane-tab-2 {
+    background-position: 31% -2vw;
+    background-size: auto 110%;
+  }
+
+  .tab-pane-tab-3 {
+    background-size: auto 51%;
+  }
+
   .div-block-3 {
     margin-top: 48px;
   }
 
   .div-block-4 {
-    margin-top: -21%;
+    margin-top: -283px;
   }
 
   .text-block-5 {
@@ -4434,8 +4366,8 @@
   }
 
   .movie-image {
-    width: 180px;
-    height: 268px;
+    width: 150px;
+    height: 225px;
   }
 
   .image-6 {
@@ -4460,6 +4392,10 @@
     line-height: 27px;
   }
 
+  .grid-5 {
+    grid-column-gap: 13px;
+  }
+
   .grid-5.lil-buck-title-grid {
     grid-column-gap: 4px;
   }
@@ -4482,6 +4418,11 @@
 
   .text-block-8 {
     font-size: 17px;
+  }
+
+  .featured-film-card-description {
+    font-size: 14px;
+    line-height: 20px;
   }
 
   .featured-film-card-description.ivote-description {
@@ -4510,13 +4451,13 @@
   }
 
   .featured-film-card-date {
-    font-size: 18px;
-    line-height: 14px;
+    font-size: 19px;
+    line-height: 19px;
   }
 
   .featured-film-card-title {
-    font-size: 23px;
-    line-height: 23px;
+    font-size: 19px;
+    line-height: 19px;
   }
 
   .featured-film-card-title.lil-buck-feature-film-title {
@@ -4544,7 +4485,7 @@
   }
 
   .div-block-9 {
-    padding: 18px 25px 0% 4px;
+    padding: 16px 25px 0% 4px;
   }
 
   .div-block-9.lil-buck-feature-card {
@@ -4554,6 +4495,15 @@
 
   .div-block-9.caroline-ff-card {
     padding-top: 22px;
+  }
+
+  .div-block-9.ivote-ff-card {
+    padding-top: 15px;
+  }
+
+  .featured-film-card-info {
+    font-size: 13px;
+    line-height: 19px;
   }
 
   .featured-film-card-info.ivote-stats-feature-film {
@@ -4584,10 +4534,15 @@
   }
 
   .grid-8 {
+    padding-top: 0px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     grid-column-gap: 16px;
-    grid-row-gap: 0px;
-    -ms-grid-columns: 0.5fr;
-    grid-template-columns: 0.5fr;
+    grid-row-gap: 15px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
     -ms-grid-rows: auto auto;
     grid-template-rows: auto auto;
   }
@@ -4597,8 +4552,8 @@
   }
 
   .image-12 {
-    width: 20px;
-    height: 24px;
+    width: 16px;
+    height: 20px;
   }
 
   .featured-film-card-images-wrapper {
@@ -4645,14 +4600,14 @@
   }
 
   .featured-films-title-homepage {
-    padding-right: 40px;
-    padding-left: 40px;
+    max-width: 330px;
+    padding-top: 20px;
   }
 
   .play-button-wrapper-div {
-    width: 50px;
-    height: 50px;
-    padding-top: 13px;
+    width: 40px;
+    height: 40px;
+    padding-top: 9px;
   }
 
   .film-description-section {
@@ -4796,8 +4751,11 @@
   }
 
   .div-block-39 {
-    width: 90px;
     margin-top: 10px;
+  }
+
+  .div-block-40 {
+    display: inline-block;
   }
 
   .right-arrow-3 {
@@ -4870,7 +4828,7 @@
   .movie-entry-grid {
     padding-right: 0px;
     padding-left: 0px;
-    grid-column-gap: 6vw;
+    grid-column-gap: 10px;
     grid-row-gap: 15px;
   }
 
@@ -4901,7 +4859,7 @@
   }
 
   .tab-pane-tab-1 {
-    background-position: 66% 109%;
+    background-position: 67% 109%;
     background-size: cover;
     background-attachment: scroll;
   }
@@ -4948,7 +4906,8 @@
   }
 
   .tab-pane-tab-2 {
-    background-position: 39% 50%;
+    background-position: 39% 0%;
+    background-size: auto 120%;
   }
 
   .navbar {
@@ -4963,11 +4922,11 @@
   }
 
   .div-block-3 {
-    margin-top: 63px;
+    margin-top: 23px;
   }
 
   .div-block-4 {
-    margin-top: -21%;
+    margin-top: -216px;
   }
 
   .text-block-5 {
@@ -4977,8 +4936,8 @@
 
   .heading {
     width: 62%;
-    margin-top: 34px;
-    font-size: 19px;
+    margin-top: 12px;
+    font-size: 17px;
     line-height: 25px;
   }
 
@@ -4989,13 +4948,14 @@
 
   .image-6 {
     width: 90%;
-    margin-top: -14px;
+    margin-top: 21px;
     padding-top: 0%;
   }
 
   .image-6.fuel-your-passion-white-text {
-    width: 63%;
+    width: 90%;
     margin-top: 0px;
+    padding-top: 1vh;
   }
 
   .nav-link {
@@ -5050,6 +5010,12 @@
     box-shadow: 1px 1px 9px -5px #000;
   }
 
+  .grid-5 {
+    grid-column-gap: 8px;
+    -ms-grid-rows: minmax(50px, 50px);
+    grid-template-rows: minmax(50px, 50px);
+  }
+
   .grid-5.lil-buck-title-grid {
     grid-column-gap: 0px;
   }
@@ -5084,6 +5050,12 @@
     font-size: 13px;
   }
 
+  .featured-film-card-description {
+    margin-top: 0px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
   .featured-film-card-description.ivote-description {
     width: 122px;
     margin-top: 8px;
@@ -5105,11 +5077,16 @@
   }
 
   .featured-film-card-description.caroline-ff-description {
-    width: 111px;
-    margin-top: 25px;
+    width: auto;
+    margin-top: 7px;
+    margin-bottom: 14px;
     font-size: 12px;
     line-height: 15px;
     letter-spacing: 0px;
+  }
+
+  .featured-film-card-description.ff-card-ivote {
+    width: 127px;
   }
 
   .featured-film-card-date {
@@ -5124,6 +5101,7 @@
   }
 
   .featured-film-card-title.lil-buck-feature-film-title {
+    width: 90px;
     font-size: 12px;
     line-height: 15px;
   }
@@ -5139,34 +5117,32 @@
   }
 
   .image-7 {
-    width: 123px;
+    width: 133px;
     height: 200px;
   }
 
-  .div-block-8 {
-    padding-left: 5px;
-  }
-
   .div-block-9 {
-    padding-top: 16px;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-
-  .div-block-9.lil-buck-feature-card {
-    padding-top: 10px;
-    padding-left: 15px;
+    padding-left: 10px;
   }
 
   .div-block-9.caroline-ff-card {
-    padding-top: 19px;
-    padding-left: 15px;
+    padding-top: 26px;
+    padding-right: 10px;
   }
 
   .div-block-9.ivote-ff-card {
-    padding-top: 11px;
-    padding-right: 5px;
-    padding-left: 15px;
+    padding-top: 5px;
+    padding-right: 8px;
+  }
+
+  .div-block-9.planet-carlos-card {
+    padding-top: 25px;
+  }
+
+  .featured-film-card-info {
+    margin-top: 9px;
+    font-size: 10px;
+    line-height: 14px;
   }
 
   .featured-film-card-info.ivote-stats-feature-film {
@@ -5182,6 +5158,7 @@
   }
 
   .featured-film-card-info.caroline-ff-stats {
+    margin-top: 11px;
     font-size: 11px;
     line-height: 22px;
   }
@@ -5199,8 +5176,9 @@
 
   .grid-8 {
     grid-column-gap: 0px;
-    -ms-grid-columns: 0.5fr;
-    grid-template-columns: 0.5fr;
+    grid-row-gap: 5px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
     -ms-grid-rows: auto auto;
     grid-template-rows: auto auto;
   }
@@ -5210,12 +5188,16 @@
   }
 
   .heading-4 {
-    padding-left: 30px;
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 31px;
     letter-spacing: 2px;
   }
 
   .heading-4.featured-films-title-subhomepage {
-    padding-left: 30px;
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 31px;
   }
 
   .heading-4.recc-films-title {
@@ -5301,7 +5283,7 @@
   }
 
   .featured-films-title-homepage {
-    margin-top: 40px;
+    margin-top: 15px;
     margin-bottom: 0px;
     padding-right: 25px;
     padding-left: 25px;
@@ -5337,25 +5319,25 @@
     font-size: 15px;
   }
 
-  .actor-hyperlink.rob-adler-link-one {
+  .actor-hyperlink.adler-link-one {
     font-size: 15px;
   }
 
-  .actor-hyperlink.eric-roberts-link {
+  .actor-hyperlink.roberts-link {
     font-size: 15px;
   }
 
-  .actor-hyperlink.dan-lauria-link {
+  .actor-hyperlink.lauria-link {
     display: block;
     font-size: 15px;
   }
 
-  .actor-hyperlink.sharon-lawrence-link {
+  .actor-hyperlink.lawrence-link {
     display: block;
     font-size: 15px;
   }
 
-  .actor-hyperlink.rob-adler-link-two {
+  .actor-hyperlink.adler-link-two {
     font-size: 15px;
   }
 
@@ -5370,6 +5352,10 @@
   .share-film-wrapper {
     padding-top: 10px;
     text-align: left;
+  }
+
+  .div-block-27 {
+    margin-top: 0%;
   }
 
   .image-17 {
@@ -5474,8 +5460,10 @@
   }
 
   .grid-15 {
-    width: 275px;
+    width: 290px;
     height: 200px;
+    margin-left: 0px;
+    box-shadow: 0 1px 4px -1px #9e9e9e;
   }
 
   .slide-5 {
@@ -5492,34 +5480,38 @@
 
   .slider-4 {
     width: 320px;
-    padding-left: 16px;
+    padding-left: 10px;
   }
 
   .left-arrow {
     left: 9px;
     top: 1px;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 60px;
+    border-radius: 10px;
   }
 
   .image-18 {
-    width: 12px;
-    margin-top: 10px;
-    margin-left: 11px;
+    width: 9px;
+    margin-top: 23px;
+    margin-left: 4px;
+    opacity: 0.8;
   }
 
   .right-arrow-2 {
-    left: 269px;
+    left: 286px;
     top: 1px;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 60px;
+    border-radius: 10px;
   }
 
   .image-19 {
-    width: 12px;
-    margin-top: 10px;
-    margin-left: 15px;
+    width: 9px;
+    margin-top: 23px;
+    margin-left: 6px;
     clear: left;
+    opacity: 0.8;
   }
 
   .nav-menu {
@@ -5612,7 +5604,9 @@
   }
 
   .slide-7 {
-    width: 275px;
+    width: 290px;
+    margin-right: 5px;
+    margin-left: 5px;
   }
 
   .div-block-38 {
@@ -6483,10 +6477,16 @@
   }
 
   #w-node-87a548750e90-48750e8f {
-    -webkit-align-self: start;
-    -ms-flex-item-align: start;
     -ms-grid-row-align: start;
     align-self: start;
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+    -ms-grid-column: span 1;
+    grid-column-start: span 1;
+    -ms-grid-column-span: 1;
+    grid-column-end: span 1;
   }
 
   #w-node-87a548750e94-48750e8f {
