@@ -127,8 +127,8 @@
   height: 85vh;
   max-height: 650px;
   background-image: url('../images/jakob-owens-UI5rpRF8tTU-unsplash-1.png');
-  background-position: 50% -30px;
-  background-size: 119%;
+  background-position: 0px -40px;
+  background-size: cover;
   background-repeat: repeat;
   background-attachment: fixed;
 }
