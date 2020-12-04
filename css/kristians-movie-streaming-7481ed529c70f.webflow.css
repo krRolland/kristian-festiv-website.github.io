@@ -5120,27 +5120,36 @@
     height: 200px;
   }
 
+  .div-block-8 {
+    padding-left: 0px;
+  }
+
   .div-block-9 {
     padding-right: 19px;
     padding-left: 15px;
   }
 
-  .div-block-9.caroline-ff-card {
+  .div-block-9.lil-buck-feature-card {
     padding-top: 20px;
+    padding-right: 14px;
+  }
+
+  .div-block-9.caroline-ff-card {
+    padding-top: 22px;
     padding-right: 19px;
   }
 
   .div-block-9.ivote-ff-card {
-    padding-top: 5px;
-    padding-right: 18px;
+    padding-top: 4px;
+    padding-right: 16px;
   }
 
   .div-block-9.planet-carlos-card {
-    padding-top: 25px;
+    padding-top: 30px;
   }
 
   .featured-film-card-info {
-    margin-top: 9px;
+    margin-top: 7px;
     font-size: 10px;
     line-height: 14px;
   }
