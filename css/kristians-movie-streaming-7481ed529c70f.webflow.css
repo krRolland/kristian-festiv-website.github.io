@@ -5101,7 +5101,6 @@
   }
 
   .featured-film-card-title.lil-buck-feature-film-title {
-    width: 90px;
     font-size: 12px;
     line-height: 15px;
   }
@@ -5122,17 +5121,18 @@
   }
 
   .div-block-9 {
-    padding-right: 30px;
+    padding-right: 19px;
     padding-left: 15px;
   }
 
   .div-block-9.caroline-ff-card {
-    padding-top: 26px;
+    padding-top: 20px;
+    padding-right: 19px;
   }
 
   .div-block-9.ivote-ff-card {
     padding-top: 5px;
-    padding-right: 8px;
+    padding-right: 18px;
   }
 
   .div-block-9.planet-carlos-card {
