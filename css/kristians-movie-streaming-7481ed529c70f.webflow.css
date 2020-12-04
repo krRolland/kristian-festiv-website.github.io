@@ -5064,7 +5064,7 @@
   }
 
   .featured-film-card-description.lil-buck-decription {
-    width: 108px;
+    width: auto;
     margin-top: 9px;
     font-size: 12px;
     line-height: 15px;
@@ -5122,12 +5122,12 @@
   }
 
   .div-block-9 {
-    padding-left: 10px;
+    padding-right: 30px;
+    padding-left: 15px;
   }
 
   .div-block-9.caroline-ff-card {
     padding-top: 26px;
-    padding-right: 10px;
   }
 
   .div-block-9.ivote-ff-card {
