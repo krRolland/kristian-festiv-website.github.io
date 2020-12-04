@@ -5065,15 +5065,15 @@
 
   .featured-film-card-description.lil-buck-decription {
     width: auto;
-    margin-top: 14px;
-    margin-bottom: 7px;
+    margin-top: 7px;
+    margin-bottom: 14px;
     font-size: 12px;
     line-height: 15px;
   }
 
   .featured-film-card-description.planet-carlos-ff-description {
     width: 103px;
-    margin-top: 14px;
+    margin-top: 7px;
     margin-bottom: 14px;
     font-size: 12px;
     line-height: 15px;
@@ -5133,7 +5133,7 @@
   }
 
   .div-block-9.lil-buck-feature-card {
-    padding-top: 20px;
+    padding-top: 17px;
     padding-right: 10px;
   }
 
@@ -5148,7 +5148,7 @@
   }
 
   .div-block-9.planet-carlos-card {
-    padding-top: 21px;
+    padding-top: 15px;
   }
 
   .featured-film-card-info {
@@ -5187,6 +5187,7 @@
   }
 
   .grid-8 {
+    padding-bottom: 10px;
     grid-column-gap: 0px;
     grid-row-gap: 5px;
     -ms-grid-columns: 1fr;
@@ -5629,6 +5630,7 @@
     width: 100%;
     margin-top: 0px;
     padding-top: 20px;
+    padding-bottom: 5px;
     text-align: center;
   }
 
