@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Fri Dec 04 2020 08:10:36 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Fri Jan 01 2021 02:42:33 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="5f5275e1165352db626aca79" data-wf-site="5f5275e1165352d7446aca77">
 <head>
   <meta charset="utf-8">
@@ -18,9 +18,9 @@
 </head>
 <body class="body-2">
   <div data-collapse="medium" data-animation="default" data-duration="400" id="navbar-home-transparent" role="banner" class="navbar navbar-home w-nav">
-    <a href="index.html" class="brand w-nav-brand"><img src="images/blue-festiv-logo-with-text.png" width="115" id="festiv-logo-navbar" sizes="(max-width: 479px) 100vw, (max-width: 767px) 21vw, 114.99999237060547px" srcset="images/blue-festiv-logo-with-text-p-500.png 500w, images/blue-festiv-logo-with-text-p-800.png 800w, images/blue-festiv-logo-with-text-p-1080.png 1080w, images/blue-festiv-logo-with-text.png 1280w" alt="" class="image-32"></a>
+    <a href="index.html" class="brand w-nav-brand"><img src="images/blue-festiv-logo-with-text.png" width="115" id="festiv-logo-navbar" sizes="(max-width: 479px) 80px, (max-width: 767px) 100px, 115px" srcset="images/blue-festiv-logo-with-text-p-500.png 500w, images/blue-festiv-logo-with-text-p-800.png 800w, images/blue-festiv-logo-with-text-p-1080.png 1080w, images/blue-festiv-logo-with-text.png 1280w" alt="" class="image-32"></a>
     <nav role="navigation" class="nav-menu-2 w-nav-menu">
-      <a id="sign-in-navbar-button" href="subscriber-homepage.html" class="button w-button">SIGN IN</a>
+      <a id="sign-in-navbar-button" href="#" class="button w-button">SIGN IN</a>
     </nav>
     <div class="script-for-popup-navbar w-embed w-script">
       <script>
@@ -202,7 +202,6 @@ document.addEventListener("DOMContentLoaded", () => {
     monthlyBillingButton.addEventListener('click', clickMonthly);
     // Load Homepage On Click
     function loadSubHomepage () {
-        window.location.href = "subscriber-homepage.html"
     } 
     // This will route users to the subscriber homepage when they click through the signup process 
     document.getElementById('start-plan').addEventListener('click', loadSubHomepage);
@@ -253,7 +252,7 @@ Webflow.push(function () {
           <div class="plan-title-wrapper">
             <div class="select-plan-title-text">DISTRIBUTOR</div>
           </div>
-          <div class="select-plan-image"><img src="images/business-image-cropped-2.png" width="320" srcset="images/business-image-cropped-2-p-500.png 500w, images/business-image-cropped-2-p-800.png 800w, images/business-image-cropped-2-p-1080.png 1080w, images/business-image-cropped-2-p-2000.png 2000w, images/business-image-cropped-2.png 2399w" sizes="(max-width: 479px) 80vw, (max-width: 991px) 54vw, 72vw" alt="" class="plan-image">
+          <div class="select-plan-image"><img src="images/business-image-cropped-2.png" width="320" sizes="(max-width: 479px) 80vw, (max-width: 991px) 54vw, 72vw" srcset="images/business-image-cropped-2-p-500.png 500w, images/business-image-cropped-2-p-800.png 800w, images/business-image-cropped-2-p-1080.png 1080w, images/business-image-cropped-2-p-2000.png 2000w, images/business-image-cropped-2.png 2399w" alt="" class="plan-image">
             <div class="hidden-description">
               <div class="plan-card-icon-wor"><img src="images/distributor-icon.png" alt="" class="image-17"></div>
               <div class="plan-card-title-row">
@@ -272,7 +271,7 @@ Webflow.push(function () {
           <div class="plan-title-wrapper">
             <div id="hidden-description-filmmaker" class="select-plan-title-text">FILMMAKER</div>
           </div>
-          <div class="select-plan-image"><img src="images/filmmaker-image-cropped-2.png" width="320" srcset="images/filmmaker-image-cropped-2-p-500.png 500w, images/filmmaker-image-cropped-2-p-800.png 800w, images/filmmaker-image-cropped-2-p-1080.png 1080w, images/filmmaker-image-cropped-2.png 1333w" sizes="(max-width: 479px) 80vw, (max-width: 991px) 54vw, 72vw" alt="" class="plan-image">
+          <div class="select-plan-image"><img src="images/filmmaker-image-cropped-2.png" width="320" sizes="(max-width: 479px) 80vw, (max-width: 991px) 54vw, 72vw" srcset="images/filmmaker-image-cropped-2-p-500.png 500w, images/filmmaker-image-cropped-2-p-800.png 800w, images/filmmaker-image-cropped-2-p-1080.png 1080w, images/filmmaker-image-cropped-2.png 1333w" alt="" class="plan-image">
             <div class="hidden-description">
               <div class="plan-card-icon-wor"><img src="images/filmmaker-icon.png" alt="" class="image-17"></div>
               <div class="plan-card-title-row">
@@ -291,7 +290,7 @@ Webflow.push(function () {
           <div class="plan-title-wrapper">
             <div id="hidden-description-audience" class="select-plan-title-text">AUDIENCE</div>
           </div>
-          <div class="select-plan-image"><img src="images/audience-image-cropped-2.png" width="320" srcset="images/audience-image-cropped-2-p-500.png 500w, images/audience-image-cropped-2-p-800.png 800w, images/audience-image-cropped-2-p-1080.png 1080w, images/audience-image-cropped-2.png 2399w" sizes="(max-width: 479px) 80vw, (max-width: 991px) 54vw, 72vw" alt="" class="plan-image">
+          <div class="select-plan-image"><img src="images/audience-image-cropped-2.png" width="320" sizes="(max-width: 479px) 80vw, (max-width: 991px) 54vw, 72vw" srcset="images/audience-image-cropped-2-p-500.png 500w, images/audience-image-cropped-2-p-800.png 800w, images/audience-image-cropped-2-p-1080.png 1080w, images/audience-image-cropped-2.png 2399w" alt="" class="plan-image">
             <div class="hidden-description">
               <div class="plan-card-icon-wor"><img src="images/audiences-icon.png" alt="" class="image-17"></div>
               <div class="plan-card-title-row">
@@ -321,7 +320,7 @@ Webflow.push(function () {
           <div class="mask-6 w-slider-mask">
             <div class="w-slide">
               <div class="w-layout-grid benefits-and-image-grid">
-                <div class="benefits-image-wrapper"><img src="images/ipad-image-together-draft.png" loading="lazy" sizes="100vw" srcset="images/ipad-image-together-draft-p-500.png 500w, images/ipad-image-together-draft.png 585w" alt=""></div>
+                <div class="benefits-image-wrapper"><img src="images/ipad-image-together-draft.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 629px) 93vw, (max-width: 991px) 585px, 545.703125px" srcset="images/ipad-image-together-draft-p-500.png 500w, images/ipad-image-together-draft.png 585w" alt=""></div>
                 <div class="benefits-wrapper">
                   <div class="benefits-list-title">BENEFITS</div>
                   <div id="benefits-description" class="benefits-list">▸ Exclusive 90 day access window to screen<br>▸ Stream from any device anytime<br>▸ New films launched daily<br>▸ Watch festival and student films<br>▸ View films, get points, win prizes<br>▸ Connect with global movie fans<br>▸ First month free!</div>
@@ -329,7 +328,7 @@ Webflow.push(function () {
               </div>
             </div>
             <div class="w-slide">
-              <div class="computer-image-wrapper"><img src="images/computer-images-together-draft.png" loading="lazy" sizes="100vw" srcset="images/computer-images-together-draft-p-500.png 500w, images/computer-images-together-draft-p-800.png 800w, images/computer-images-together-draft-p-1080.png 1080w, images/computer-images-together-draft.png 1473w" alt="" class="image-36"></div>
+              <div class="computer-image-wrapper"><img src="images/computer-images-together-draft.png" loading="lazy" sizes="(max-width: 479px) 89vw, 410px" srcset="images/computer-images-together-draft-p-500.png 500w, images/computer-images-together-draft-p-800.png 800w, images/computer-images-together-draft-p-1080.png 1080w, images/computer-images-together-draft.png 1473w" alt="" class="image-36"></div>
             </div>
           </div>
           <div id="benefits-left-arrow" class="left-arrow-4 w-slider-arrow-left">
@@ -374,7 +373,7 @@ Webflow.push(function () {
             </div>
             <div class="slide-9 w-slide">
               <div class="billing-information-wrapper">
-                <div class="billing-information-title">BILLING INFORMATION</div><img src="images/billing-information-stock-photo.png" loading="lazy" sizes="100vw" srcset="images/billing-information-stock-photo-p-500.png 500w, images/billing-information-stock-photo-p-800.png 800w, images/billing-information-stock-photo-p-1080.png 1080w, images/billing-information-stock-photo.png 1493w" alt="" class="image-38">
+                <div class="billing-information-title">BILLING INFORMATION</div><img src="images/billing-information-stock-photo.png" loading="lazy" sizes="(max-width: 479px) 100vw, 160px" srcset="images/billing-information-stock-photo-p-500.png 500w, images/billing-information-stock-photo-p-800.png 800w, images/billing-information-stock-photo-p-1080.png 1080w, images/billing-information-stock-photo.png 1493w" alt="" class="image-38">
                 <div class="billing-info-form-wrapper">
                   <div class="w-form">
                     <form id="email-form-2" name="email-form-2" data-name="Email Form 2" class="w-clearfix"><input type="text" class="form-input form-input-half-row billing-input w-input" maxlength="256" name="name-7" data-name="Name 7" placeholder="First Name" id="name-7"><input type="text" class="form-input form-input-half-row last-half billing-input w-input" maxlength="256" name="name-6" data-name="Name 6" placeholder="Last Name" id="name-6"><input type="text" class="form-input billing-input w-input" maxlength="256" name="name-5" data-name="Name 5" placeholder="Card Number" id="name-5"><input type="text" class="form-input billing-input w-input" maxlength="256" name="name-4" data-name="Name 4" placeholder="Expiration Date (MM/YY)" id="name-4"><input type="text" class="form-input billing-input w-input" maxlength="256" name="name-3" data-name="Name 3" placeholder="Security Code (CVV)" id="name-3"><input type="text" class="form-input billing-input w-input" maxlength="256" name="name-2" data-name="Name 2" placeholder="Billing Zip Code" id="name-2">
