@@ -3085,6 +3085,10 @@
   display: none;
 }
 
+.video-grid-js {
+  display: none;
+}
+
 @media screen and (min-width: 1280px) {
   .text-block-2 {
     width: 43%;
