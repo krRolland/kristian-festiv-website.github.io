@@ -2308,7 +2308,7 @@
   position: relative;
   z-index: 2;
   display: inline-block;
-  width: 10%;
+  width: 130px;
   -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
   cursor: pointer;
@@ -2327,10 +2327,16 @@
 }
 
 .div-block-46 {
-  position: absolute;
-  top: 44%;
+  position: relative;
+  top: 38%;
   z-index: 2;
+  display: block;
   width: 100%;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
 }
 
 .div-block-47 {
@@ -3100,6 +3106,28 @@
   display: none;
 }
 
+.div-block-57 {
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  justify-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
 @media screen and (min-width: 1280px) {
   .tab-pane-tab-1 {
     background-position: 75% -70px;
@@ -3395,10 +3423,6 @@
 
   .right-arrow-2 {
     left: 427px;
-  }
-
-  .div-block-46 {
-    top: 42%;
   }
 }
 
