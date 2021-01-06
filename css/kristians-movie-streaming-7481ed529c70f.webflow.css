@@ -131,7 +131,7 @@
   height: 85vh;
   max-height: 650px;
   background-image: url('../images/jakob-owens-UI5rpRF8tTU-unsplash-1.png');
-  background-position: 0px -40px;
+  background-position: 75% -60px;
   background-size: cover;
   background-repeat: repeat;
   background-attachment: fixed;
@@ -865,12 +865,14 @@
   padding-top: 5px;
   color: #333e51;
   font-size: 14px;
+  text-decoration: none;
   cursor: pointer;
 }
 
 .image-13 {
   margin-top: -8px;
   margin-left: 10px;
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -2158,6 +2160,10 @@
   left: -65px;
 }
 
+.link-block-6.w--current {
+  text-decoration: none;
+}
+
 .code-for-popup {
   display: none;
 }
@@ -3089,7 +3095,15 @@
   display: none;
 }
 
+.html-embed-5 {
+  display: none;
+}
+
 @media screen and (min-width: 1280px) {
+  .tab-pane-tab-1 {
+    background-position: 75% -70px;
+  }
+
   .text-block-2 {
     width: 43%;
     letter-spacing: 1.2px;
@@ -3150,10 +3164,6 @@
     line-height: 28px;
   }
 
-  .heading-4 {
-    margin-top: 0px;
-  }
-
   .text-block-13 {
     color: #333e51;
   }
@@ -3175,7 +3185,7 @@
   }
 
   .featured-films-title-wrapper {
-    padding-top: 109px;
+    padding-top: 96px;
   }
 
   .text-block-22 {
@@ -3236,7 +3246,7 @@
 
 @media screen and (min-width: 1440px) {
   .tab-pane-tab-1 {
-    background-position: 50% -10vh;
+    background-position: 50% -6vw;
     background-size: 100%;
   }
 
@@ -3387,7 +3397,7 @@
 
   .tab-pane-tab-1 {
     max-height: 840px;
-    background-position: 70% -11vh;
+    background-position: 70% -7vh;
   }
 
   .text-block-2 {
