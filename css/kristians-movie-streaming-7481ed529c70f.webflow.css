@@ -2356,6 +2356,7 @@
 
 .image-35 {
   width: 70%;
+  max-width: 900px;
 }
 
 .utility-page-wrap {
@@ -3249,6 +3250,10 @@
     background-position: 0% 50%;
     background-size: cover;
     background-attachment: scroll;
+  }
+
+  .image-35 {
+    height: auto;
   }
 }
 
