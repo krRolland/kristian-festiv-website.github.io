@@ -1799,7 +1799,7 @@
 }
 
 .featured-films-title-wrapper {
-  padding-top: 55px;
+  padding-top: 60px;
 }
 
 .plan-title-wrapper {
@@ -3164,6 +3164,14 @@
     line-height: 28px;
   }
 
+  .heading-4.recommended-films-title-subhomepage {
+    margin-top: 0px;
+  }
+
+  .heading-4.featured-articles-title-subhomepage {
+    margin-top: 60px;
+  }
+
   .text-block-13 {
     color: #333e51;
   }
@@ -3185,7 +3193,7 @@
   }
 
   .featured-films-title-wrapper {
-    padding-top: 96px;
+    padding-top: 81px;
   }
 
   .text-block-22 {
@@ -3514,6 +3522,10 @@
 
   .heading-4.recc-films-title {
     max-width: 1700px;
+  }
+
+  .heading-4.featured-articles-title-subhomepage {
+    margin-top: 20px;
   }
 
   .div-block-11 {
