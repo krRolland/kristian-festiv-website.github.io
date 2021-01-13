@@ -240,6 +240,7 @@
 
 .navbar.navbar-home {
   height: 67px;
+  padding-right: 25px;
   padding-bottom: 4px;
   background-color: hsla(0, 0%, 100%, 0);
   box-shadow: none;
@@ -3126,6 +3127,16 @@
   grid-template-columns: 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
+}
+
+.link-block-9 {
+  color: #333;
+  text-decoration: none;
+}
+
+.link-block-10 {
+  color: #333;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 1280px) {
