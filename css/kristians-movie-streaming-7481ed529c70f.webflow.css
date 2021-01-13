@@ -10,6 +10,14 @@
   grid-column-gap: 16px;
 }
 
+a {
+  text-decoration: underline;
+}
+
+a.w--current {
+  text-decoration: none;
+}
+
 .three-different-tabs {
   width: 33%;
   height: 7vh;
@@ -3145,6 +3153,10 @@
 
 .button-5 {
   display: none;
+}
+
+.link-block-11 {
+  text-decoration: none;
 }
 
 @media screen and (min-width: 1280px) {
