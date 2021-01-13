@@ -131,7 +131,7 @@
   height: 85vh;
   max-height: 650px;
   background-image: url('../images/jakob-owens-UI5rpRF8tTU-unsplash-1.png');
-  background-position: 75% -30px;
+  background-position: 75% -20px;
   background-size: cover;
   background-repeat: repeat;
   background-attachment: fixed;
@@ -1986,6 +1986,10 @@
   opacity: 0.85;
 }
 
+.nav-menu {
+  text-decoration: none;
+}
+
 .spacer-div {
   height: 60px;
 }
@@ -3137,6 +3141,10 @@
 .link-block-10 {
   color: #333;
   text-decoration: none;
+}
+
+.button-5 {
+  display: none;
 }
 
 @media screen and (min-width: 1280px) {
@@ -6053,6 +6061,12 @@
     width: 100%;
     height: auto;
     text-align: center;
+  }
+
+  .button-5 {
+    display: block;
+    background-color: #333e51;
+    color: #fff;
   }
 }
 
